@@ -1,0 +1,49 @@
+// Header
+.header {
+  border-bottom: 1px solid var(--light-blue);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+
+  .logo {
+    img {
+      width: 155px;
+    }
+  }
+
+  &Nav {
+    position: absolute;
+    top: 81px;
+    padding-top: 40px;
+    background-color: #fff;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    padding-bottom: 50px;
+    display: none;
+    width: 100%;
+
+    &.active {
+      display: block;
+      -webkit-animation: shows 0.2s;
+      animation: shows 0.2s;
+    }
+
+    ul {
+      border-bottom: 1px solid #e3e3e3;
+
+      li {
+        a {
+          line-height: 160%;
+
+          &:hover {
+            color: var(--grey);
+          }
+        }
+      }
+    }
+  }
+}

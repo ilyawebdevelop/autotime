@@ -1,0 +1,42 @@
+<section class="sect">
+  <div class="container">
+    <h3 class="mb-4 pb-2 text-center">Регистрация</h3>
+    <form class="form" action="#">
+      <div class="mb-3 form-floating">
+        <input id="register-fio" type="text" class="formInput form-control" placeholder="ФИО"
+          value="Иванов Иван Иванович">
+        <label for="register-fio">ФИО</label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="register-phone" type="tel" class="formInput form-control" placeholder="Телефон"
+          value="+7 (912) 345 67-89">
+        <label for="register-phone">Телефон</label>
+      </div>
+      <div class="mb-32 form-floating">
+        <input id="register-city" type="text" class="formInput form-control" placeholder="Город" value="Иркутск">
+        <label for="register-city">Город</label>
+      </div>
+      <div class="fz-14 color-grey mb-12">
+        Я выражаю своё конкретное, предметное, информированное, сознательное и однозначное:
+      </div>
+      <div class="agreement mb-32">
+        <input type="checkbox" id="register_agree" hidden checked>
+        <label class="d-flex" for="register_agree">
+          <div class="rect"></div>
+          <div class="afreementText color-grey underline fz-14">
+            Согласие на передачу данных третьим лицам
+          </div>
+        </label>
+      </div>
+
+      <button class="button button--yellow w-100 text-uppercase mb-32 formBtn">
+        отправить заявку
+      </button>
+      <div class="d-flex justify-content-center gap-2 fz-14">
+        <span class="color-grey-blue">Уже зарегистрированы?</span>
+        <a class="link color-grey-blue" href="#">Войти</a>
+      </div>
+
+    </form>
+  </div>
+</section>

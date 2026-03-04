@@ -1,0 +1,98 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  column-gap: 10px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: 0.02em;
+  border-radius: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
+
+  &--lg {
+    height: 65px;
+
+    @media(max-width: 991px) {
+      height: 50px;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--black {
+    background-color: var(--total-black);
+
+    &:hover {
+      background-color: var(--grey);
+    }
+  }
+
+  &--light-blue {
+    background-color: var(--light-blue);
+
+    &:hover {
+      background-color: var(--light-grey-blue);
+    }
+  }
+
+  &--yellow {
+    background-color: var(--yellow);
+
+    &:hover {
+      background-color: var(--yellow-dark);
+    }
+  }
+
+  &--transparent-grey {
+    border: 1px solid var(--grey);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: #000;
+  }
+
+  &:disabled {
+    opacity: 0.33;
+    pointer-events: none;
+  }
+}
+
+.form:has(.agreement input:not(:checked)) .formBtn {
+  opacity: .33;
+  pointer-events: none;
+}
+
+.togglePasswordBtn {
+  background: url('@img/icons/eye.svg') no-repeat center center / 18px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+
+.photo-item-remove-image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--grey);
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+  background-color: #fff;
+}

@@ -1,0 +1,48 @@
+<section class="sect">
+  <div class="container">
+    <h3 class="mb-32 text-center">Заполните анкету</h3>
+    <form class="form" action="#">
+      <div class="photo-item mb-3 rounded-15 border-light-grey-blue p-20">
+        <img src="@img/admin/anketa/image-file.svg" alt="image" class="mb-3 mx-auto">
+        <input class="photo-item-input" id="input-file" type="file" hidden>
+        <label for="input-file" class="button button--transparent-grey text-uppercase w-100">
+          <img src="@img/icons/file.svg" alt="icon">
+          загрузить фото
+        </label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="auth-fio" type="text" class="formInput form-control" placeholder="ФИО">
+        <label for="auth-fio">ФИО</label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Дата рождения">
+        <label for="auth-date">Дата рождения</label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="auth-adres" type="text" class="formInput form-control" placeholder="Адрес площадки авто">
+        <label for="auth-adres">Адрес площадки авто</label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Количество продаваемых авто">
+        <label for="auth-col-auto">Количество продаваемых авто</label>
+      </div>
+      <div class="mb-32 form-floating">
+        <select id="select-1" class="formSelect">        
+          <option value="1">Площадка</option>
+          <option value="2">автоэксперт</option>
+          <option value="3">продавец</option>
+          <option value="4">блогер</option>
+          <option value="5">банк</option>
+        </select>
+        <label for="select-1">Сфера деятельности</label>
+      </div>
+      <div class="color-grey fz-14 mb-12">
+        Я выражаю своё конкретное, предметное, информированное, сознательное и однозначное:
+      </div>
+      @@include('../agreement-not-checked.html',{})
+      <button class="button button--yellow w-100 text-uppercase mb-32 formBtn">
+        Сохранить и продолжить
+      </button>
+    </form>
+  </div>
+</section>

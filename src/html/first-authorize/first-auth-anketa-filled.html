@@ -1,0 +1,54 @@
+<section class="sect">
+  <div class="container">
+    <h3 class="mb-32 text-center">Заполните анкету</h3>
+    <form class="form" action="#">
+      <div class="photo-item position-relative mb-3 rounded-15 w-fit mx-auto">
+        <img src="@img/admin/anketa/image-1.jpg" alt="image" class="anketa-image mb-3">
+        <input class="photo-item-input" id="input-file" type="file" hidden>
+        <label for="input-file" class="button button--transparent-grey text-uppercase w-100" style="display: none;">
+          <img src="@img/icons/file.svg" alt="icon">
+          загрузить фото
+        </label>
+        <button class="photo-item-remove-image" type="button">
+          <img src="@img/icons/file-remove.svg" alt="icon">
+        </button>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="auth-fio" type="text" class="formInput form-control" placeholder="ФИО" value="ivanov@mail.com">
+        <label for="auth-fio">ФИО</label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Дата рождения"
+          value="10.12.1997">
+        <label for="auth-date">Дата рождения</label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="auth-adres" type="text" class="formInput form-control" placeholder="Адрес площадки авто"
+          value="г. Иркутск, ул. Автомобильная, 2">
+        <label for="auth-adres">Адрес площадки авто</label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Количество продаваемых авто"
+          value="800">
+        <label for="auth-col-auto">Количество продаваемых авто</label>
+      </div>
+      <div class="mb-32 form-floating">
+        <select id="select-1" class="formSelect">
+          <option value="1">Площадка</option>
+          <option value="2">автоэксперт</option>
+          <option value="3" selected>Продавец</option>
+          <option value="4">блогер</option>
+          <option value="5">банк</option>
+        </select>
+        <label for="select-1">Сфера деятельности</label>
+      </div>
+      <div class="color-grey fz-14 mb-12">
+        Я выражаю своё конкретное, предметное, информированное, сознательное и однозначное:
+      </div>
+      @@include('../agreement-checked.html',{})
+      <button class="button button--yellow w-100 text-uppercase mb-32 formBtn">
+        Сохранить и продолжить
+      </button>
+    </form>
+  </div>
+</section>

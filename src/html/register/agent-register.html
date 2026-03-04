@@ -1,0 +1,33 @@
+<section class="sect">
+  <div class="container">
+    <h3 class="mb-4 pb-2 text-center">Регистрация</h3>
+    <form class="form" action="#">
+      <div class="mb-3 form-floating">
+        <input id="register-fio" type="text" class="formInput form-control" placeholder="ФИО">
+        <label for="register-fio">ФИО</label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input id="register-phone" type="tel" class="formInput form-control" placeholder="Телефон">
+        <label for="register-phone">Телефон</label>
+      </div>
+      <div class="mb-32 form-floating">
+        <input id="register-city" type="text" class="formInput form-control" placeholder="Город">
+        <label for="register-city">Город</label>
+      </div>
+      <div class="fz-14 color-grey mb-12">
+        Я выражаю своё конкретное, предметное, информированное, сознательное и однозначное:
+      </div>
+
+      @@include('../agreement-not-checked.html',{})
+
+      <button class="button button--yellow w-100 text-uppercase mb-32 formBtn">
+        отправить заявку
+      </button>
+      <div class="d-flex justify-content-center gap-2 fz-14">
+        <span class="color-grey-blue">Уже зарегистрированы?</span>
+        <a class="link color-grey-blue" href="#">Войти</a>
+      </div>
+
+    </form>
+  </div>
+</section>

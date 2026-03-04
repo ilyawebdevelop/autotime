@@ -1,0 +1,30 @@
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// bootstrap v5.3.2
+@import "./bootstrap.min";
+
+// air datepicker
+@import "../../node_modules/air-datepicker/air-datepicker";
+
+// Базовые подключения
+@import 'vars';
+@import 'mixins';
+// @import 'fonts';
+@import 'reset';
+@import 'specifications';
+
+// Подключения компонентов страницы
+@import "./components/btn";
+@import "./components/burger";
+@import "./components/modal";
+@import "./components/tabs";
+@import "./components/header";
+@import "./components/first-auth-slider";
+
+
+
+@import "./components/footer";
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Вход агента введите код</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="d-flex align-items-center gap-3 justify-content-between">
+      <a href="#" class="headerLogo logo">
+        <img src="img/admin/logo/logo.svg" alt="logo">
+      </a>
+      <div class="hamburger" id="toggle">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div><!-- /Hamburger Menu -->
+    </div>
+  </div>
+  <nav class="headerNav">
+    <div class="container">
+      <ul class="d-flex flex-column gap-3 pb-3 mb-3">
+        <li><a href="#">Как работает партнерская программа</a></li>
+        <li><a href="#">Преимущества программы</a></li>
+        <li><a href="#">Краткая статистика сервиса</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <button class="button button--yellow text-uppercase w-100">
+        Войти
+      </button>
+      <a href="#" class="color-black text-center d-flex justify-content-center mt-3">Регистрация агента</a>
+    </div>
+
+  </nav>
+</header>
+		<main class="main">
+			<section class="sect">
+  <div class="container">
+    <h3 class="mb-2 text-center">Введите код</h3>
+    <div class="d-flex flex-column mb-32">
+      <div class="color-grey-blue text-center fz-14 mx-auto fw-medium">
+        код был выслан по SMS на номер
+      </div>
+      <div class="color-grey-blue text-center fz-14 mx-auto fw-medium">
+        +7 (912) 345 67-89
+      </div>
+    </div>
+
+    <form class="form" action="#">
+      <div class="mb-32">
+        <div class="otp-container d-flex gap-3 justify-content-center" id="otpContainer">
+          <input type="number" class="otp-input" maxlength="1" data-next="1">
+          <input type="number" class="otp-input" maxlength="1" data-next="2">
+          <input type="number" class="otp-input" maxlength="1" data-next="3">
+          <input type="number" class="otp-input" maxlength="1" data-next="4">
+        </div>
+      </div>
+      <div class="mb-32 color-grey-blue fz-14 text-center">
+        Новый код можно получить через 52 сек
+      </div>
+      <button class="button button--yellow w-100 text-uppercase mb-32 formBtn" disabled>
+        войти
+      </button>
+      <a href="#" class="color-black fz-14 text-center underline d-flex justify-content-center mb-32">
+        Подтвердить через Телеграм
+      </a>
+      <div class="d-flex flex-column justify-content-center gap-2 fz-14">
+        <span class="color-grey-blue text-center">Ещё не зарегистрированы??</span>
+        <a class="link color-grey-blue text-center" href="#">Зарегистрироваться</a>
+      </div>
+    </form>
+  </div>
+</section>
+		</main>
+		<a href="#" class="underline fz-14 d-flex justify-content-center py-32 color-black">Вход для сотрудника</a>
+		<!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead">
+    <h2 class="h2">Оставьте заявку</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    </p>
+    <div class="modalForm">
+      <div class="inputW">
+        <input type="text" class="formInput" placeholder="Как вас зовут?">
+      </div>
+      <div class="inputW">
+        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
+      </div>
+      <button class="button button--blue formBtn">
+        Отправить заявку
+      </button>
+      <div class="agreement">
+        <p>
+          Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+// Containers
+:root {
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --font-family: "Golos Text", sans-serif;
+  --main-color: #303030;
+  --link: #1c42bd;
+  --grey: #5c5c5c;
+  --middlegrey: #8f8f8f;
+  --white: #fff;
+  --yellow: #fd0;
+  --error: #f00;
+  --total-black: #1a1a18;
+  --black: #303030;
+  --grey-blue: #7e84a3;
+  --light-grey-blue: #bac7cf;
+  --light-blue: #ddebf3;
+  --background: #f4f8fb;
+  --green: #3dd598;
+  --green-light: #d4ffee;
+  --yellow-light: #fff7c4;
+  --red-light: #ffdbdb;
+  --yellow-dark: #d8bb00;
+}

@@ -1,0 +1,23 @@
+// modal
+.modal {
+  display: none;
+  &-header {
+    padding: 45px;
+    padding-bottom: 25px;
+    border-bottom: none;
+  }
+
+  &-body {
+    padding: 45px;
+    padding-top: 0;
+  }
+
+  &-title {
+    font-size: 23px;
+  }
+  .btn-close {
+    background: none;
+    opacity: 1;
+  }
+}
+
