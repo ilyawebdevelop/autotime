@@ -1,0 +1,22 @@
+.range-admin {
+  min-height: 20px;
+
+  .progressBar {
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+    height: 8px;
+    background-color: var(--light-grey-blue);
+    border-radius: 8px;
+    position: relative;
+
+    .thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateX(-10px);
+    }
+  }
+}

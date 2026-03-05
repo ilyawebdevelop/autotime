@@ -52,17 +52,104 @@
 
   &--transparent-grey {
     border: 1px solid var(--grey);
+
+    &:hover {
+      background-color: var(--black);
+      border-color: var(--black);
+      color: #fff;
+
+      svg {
+        &.fill-black {
+          fill: var(--white);
+        }
+
+        &.stroke-black {
+          stroke: var(--white);
+        }
+      }
+
+    }
+
+    svg {
+      &.fill-transparent {
+        fill: transparent;
+      }
+
+      &.fill-black {
+        fill: var(--black);
+      }
+
+      &.stroke-black {
+        stroke: var(--black);
+      }
+
+      &.stroke-transparent {
+        stroke: transparent;
+      }
+    }
+  }
+
+  &--green-light {
+    background-color: var(--green-light);
+    color: var(--green);
+  }
+
+  &--yellow-light {
+    background-color: var(--yellow-light);
+    color: var(--yellow-dark);
+  }
+
+  &--red-light {
+    background-color: var(--red-light);
+    color: var(--error);
   }
 
   svg {
     width: 16px;
     height: 16px;
     stroke: #000;
+
+    &.w-24 {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--h-25 {
+    height: 25px;
   }
 
   &:disabled {
     opacity: 0.33;
     pointer-events: none;
+  }
+
+  &.px-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.button-round {
+  border-radius: 50%;
+  transition: background-color .2s linear, color .2s linear;
+
+  &.bg--light-blue {
+    &:hover {
+      background-color: var(--light-grey-blue);
+    }
+  }
+
+  &.width-50 {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  svg {
+    &.w-24 {
+      width: 24px;
+    }
   }
 }
 
@@ -95,4 +182,22 @@
   bottom: 0;
   right: -25px;
   background-color: #fff;
+}
+
+.headerBtnRound {
+  background-color: var(--yellow);
+  height: 70px;
+  padding-bottom: 12px;
+  border-radius: 0 0 30px 30px;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: var(--yellow-dark);
+  }
+
+  img {
+    width: 24px;
+    position: relative;
+    top: 2px;
+  }
 }

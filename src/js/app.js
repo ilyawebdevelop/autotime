@@ -2,6 +2,9 @@ import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
 import AirDatepicker from 'air-datepicker';
 import "./modules/bootstrap.bundle.min.js";
+import { Fancybox } from "./modules/fancybox.esm.js";
+import ClipboardJS from 'clipboard'; // or require('clipboard')
+
 import './components.js';
 
 flsFunctions.isWebp();
@@ -9,6 +12,10 @@ flsFunctions.isWebp();
 // Import swiper
 import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar]);
+
+Fancybox.bind("[data-fancybox]", {
+  closeButton: false,
+});
 
 // air datepicker
 new AirDatepicker('.calendar', {
@@ -90,7 +97,7 @@ var mySwiperFirstAuth = new Swiper(firstAuthSlider, {
   speed: 800,
   spaceBetween: 20,
   navigation: {
-    nextEl: firstAuthSlider.querySelector('.navArrowNext'),
+    nextEl: firstAuthSlider?.querySelector('.navArrowNext'),
   },
   pagination: {
     el: document.querySelector('.first-auth-slider .swiper-pagination'),
@@ -109,7 +116,7 @@ function updateSkipLink(swiperInstance) {
   const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
 
   // Извлекаем значение data-link из активного слайда
-  const dataLinkValue = activeSlide.getAttribute('data-link');
+  const dataLinkValue = activeSlide?.getAttribute('data-link');
 
   if (dataLinkValue) {
     // Устанавливаем новое значение в атрибут href кнопки
@@ -144,11 +151,49 @@ const bodyOverflow = function () {
   bodyEl.classList.toggle('hidden');
 }
 
-
 btnMenu?.addEventListener('click', function (e) {
   e.stopPropagation();
   toggleMenu();
   toggleBurger();
   bodyOverflow();
   overlayToggle();
+});
+
+
+let copyBtnArray = document.querySelectorAll('.copyBtn');
+copyBtnArray.forEach(el => {
+  var clipboard = new ClipboardJS(el);
+  clipboard.on('success', function (e) {
+    console.log('Action:', e.action);
+    console.log('Text:', e.text);
+    el.classList.add('copied');
+    e.clearSelection();
+    var tooltipEl = el;
+    var tooltip = new bootstrap.Tooltip(tooltipEl);
+    tooltip.show()
+
+    setTimeout(function () {
+      tooltip.hide();
+      tooltip.disable();
+    }, 2000);
+
+  });
+});
+
+
+
+let searchClearBtn = document.querySelectorAll('.form-floating .remove-text');
+searchClearBtn.forEach(el => {
+  let input = el.closest('.form-floating').querySelector('input');
+
+  input.addEventListener("focus", (event) => {
+    el.classList.add('active');
+  });
+
+  el.addEventListener('click', () => {
+    input.value = '';
+    // input.focus();
+    el.classList.remove('active');
+  });
+
 });

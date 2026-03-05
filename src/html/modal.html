@@ -1,35 +1,249 @@
 <!-- modal -->
-<!-- order -->
-<div class="modal" id="modalOrder">
+<!-- modalAnketaClient -->
+<div class="modal rounded-60 p-40-32" id="modalAnketaClient">
 
-  <div class="modalHead">
-    <h2 class="h2">Оставьте заявку</h2>
-    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
-  </div>
+  <h4 class="h4 text-center mb-2">
+    Ссылка на&nbsp;анкету
+    для клиента
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
 
   <div class="modalContent">
-    <p class="modalDescr">
-      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    <p class="text-center fz-12 mb-32 color-grey">
+      Отправьте реферальную ссылку покупателю, чтобы он мог самостоятельно заполнить анкету для создания заявки.
     </p>
-    <div class="modalForm">
-      <div class="inputW">
-        <input type="text" class="formInput" placeholder="Как вас зовут?">
-      </div>
-      <div class="inputW">
-        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
-      </div>
-      <button class="button button--blue formBtn">
-        Отправить заявку
-      </button>
-      <div class="agreement">
-        <p>
-          Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
-        </p>
-      </div>
+
+    <div class="mb-32 form-floating">
+      <input id="copy-link" type="tel" class="formInput form-control" placeholder="Телефон"
+        value="https://автотайм.рф/?r=123456789">
+      <label for="copy-link">Ссылка</label>
     </div>
+
+    <button class="button button--yellow text-uppercase w-100 mb-12 copyBtn tooltipEl"
+      data-clipboard-target="#copy-link" data-bs-toggle="tooltip" title="Скопировано" type="button">
+      Скопировать
+    </button>
+    <button class="button button--transparent-grey text-uppercase w-100 mb-12" type="button">
+      <svg class="w-24 fill-black stroke-transparent">
+        <use xlink:href="img/icons/icons.svg#send-btn"></use>
+      </svg>
+      отправить
+    </button>
+
+  </div>
+</div>
+
+<!-- sellers-filter -->
+<div class="modal rounded-60 p-40-32" id="sellers-filter">
+
+  <h4 class="h4 text-center mb-32">
+    Фильтры
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Статус сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="sellers-filter-1" type="checkbox" hidden checked>
+            <label class="align-items-center" for="sellers-filter-1">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Новая
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="sellers-filter-2" type="checkbox" hidden checked>
+            <label class="align-items-center" for="sellers-filter-2">
+              <div class="rect"></div>
+              <div class="fz-14">
+                В работе
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="sellers-filter-3" type="checkbox" hidden checked>
+            <label class="align-items-center" for="sellers-filter-3">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Завершена
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="sellers-filter-4" type="checkbox" hidden checked>
+            <label class="align-items-center" for="sellers-filter-4">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Отклонена
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- sellers-sort -->
+<div class="modal rounded-60 p-40-32" id="sellers-sort">
+
+  <h4 class="h4 text-center mb-32">
+    Сортировка
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="sellers-sort-1" type="radio" name="sellers-sort" hidden checked>
+            <label class="align-items-start" for="sellers-sort-1">
+              <div class="rect"></div>
+              <img src="@img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала новые</span>
+              </div>
+
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="sellers-sort-2" type="radio" name="sellers-sort" hidden>
+            <label class="align-items-start" for="sellers-sort-2">
+              <div class="rect"></div>
+              <img src="@img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала старые</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="sellers-sort-3" type="radio" name="sellers-sort" hidden>
+            <label class="align-items-start" for="sellers-sort-3">
+              <div class="rect"></div>
+              <img src="@img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала больше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="sellers-sort-4" type="radio" name="sellers-sort" hidden>
+            <label class="align-items-start" for="sellers-sort-4">
+              <div class="rect"></div>
+              <img src="@img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала меньше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- sellers-new-order -->
+<div class="modal rounded-60 p-40-32" id="sellers-new-order">
+
+  <h4 class="h4 text-center mb-32">
+    Новая заявка
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+    <p class="text-center fz-14 mb-20">
+      Укажите ФИО и телефон клиента
+    </p>
+    <form action="#">
+
+      <div class="mb-32">
+        <div class="mb-3 form-floating">
+          <input id="register-fio" type="text" class="formInput form-control" placeholder="ФИО">
+          <label for="register-fio">ФИО</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="register-phone" type="tel" class="formInput form-control" placeholder="+7 ___ ___ ____">
+          <label for="register-phone">+7 ___ ___ ____</label>
+        </div>
+      </div>
+
+      <button class="button button--yellow text-uppercase w-100" type="button" disabled>
+        создать заявку
+      </button>
+    </form>
+
   </div>
 </div>

@@ -4,6 +4,9 @@
 // bootstrap v5.3.2
 @import "./bootstrap.min";
 
+// fancybox
+@import './fancybox';
+
 // air datepicker
 @import "../../node_modules/air-datepicker/air-datepicker";
 
@@ -18,6 +21,10 @@
 @import "./components/btn";
 @import "./components/burger";
 @import "./components/modal";
+@import "./components/range";
+@import "./components/fixed-menu";
+@import "./components/nav";
+@import "./components/chart";
 @import "./components/tabs";
 @import "./components/header";
 @import "./components/first-auth-slider";
@@ -25,6 +32,3 @@
 
 
 @import "./components/footer";
-
-
-

@@ -1,0 +1,40 @@
+.terminNav {
+
+
+  ul {
+    column-gap: 2px;
+
+    li {
+      
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        @media(max-width: 375px){
+          font-size: 11px;
+          padding: 7px;
+        }
+
+        &:hover {
+          background-color: var(--total-black);
+          color: #fff;
+        }
+      }
+
+      &.active {
+        a {
+          background-color: var(--total-black);
+          color: #fff;
+        }
+      }
+    }
+  }
+}

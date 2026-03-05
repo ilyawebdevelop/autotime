@@ -18,95 +18,489 @@
 
 	<div class="wrapper">
 		<!-- Header -->
-<header class="header" id="header">
+<header class="header header-seller" id="header">
   <div class="container">
-    <div class="d-flex align-items-center gap-3 justify-content-between">
-      <a href="#" class="headerLogo logo">
-        <img src="img/admin/logo/logo.svg" alt="logo">
+    <div class="headerT">
+      <div class="d-flex align-items-center gap-3 justify-content-between">
+        <a href="#" class="headerLogo logo">
+          <img src="img/admin/logo/logo.svg" alt="logo">
+        </a>
+        <div class="d-flex gap-2">
+          <a href="#" class="headerBtn">
+            <img src="img/icons/info.svg" alt="icon">
+          </a>
+          <a href="#" class="headerBtn">
+            <img src="img/icons/profile.svg" alt="icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="headerB">
+      <a href="#" class="headerBtnRound d-flex gap-3 align-items-end justify-content-center text-uppercase fw-medium" data-fancybox data-src="#modalAnketaClient">
+        <img src="img/icons/link.svg" alt="link">
+        Отправить анкету клиенту
       </a>
     </div>
   </div>
 </header>
-		<main class="main">
-			<section class="sect">
-  <div class="container">
-    <h3 class="mb-4 pb-2 text-center">Регистрация</h3>
-    <form class="form" action="#">
-      <div class="mb-3 form-floating">
-        <input id="register-fio" type="text" class="formInput form-control" placeholder="ФИО">
-        <label for="register-fio">ФИО</label>
-      </div>
-      <div class="mb-3 form-floating">
-        <input id="register-phone" type="tel" class="formInput form-control" placeholder="Телефон">
-        <label for="register-phone">Телефон</label>
-      </div>
-      <div class="mb-32 form-floating">
-        <input id="register-city" type="text" class="formInput form-control" placeholder="Город">
-        <label for="register-city">Город</label>
-      </div>
-      <div class="fz-14 color-grey mb-12">
-        Я выражаю своё конкретное, предметное, информированное, сознательное и однозначное:
-      </div>
+		<main class="main bg--bg main-sellers-offset-menu main-sellers-offset-header">
+			<section class="sect pt-3">
+  <div class="container container--sm">
+    <nav class="terminNav mb-3">
+  <ul class="d-flex bg--light-blue p-2 rounded-30 w-100 justify-content-center">
+    <li><a href="#">за все время</a></li>
+    <li class="active"><a href="#">месяц</a></li>
+    <li><a href="#">квартал</a></li>
+    <li><a href="#">год</a></li>
+  </ul>
+</nav>
 
-      <div class="agreement mb-32">
-  <input type="checkbox" id="register_agree" hidden>
-  <label class="d-flex" for="register_agree">
-    <div class="rect"></div>
-    <div class="afreementText color-grey underline fz-14">
-      Согласие на передачу данных третьим лицам
-    </div>
-  </label>
-</div>
-
-      <button class="button button--yellow w-100 text-uppercase mb-32 formBtn">
-        отправить заявку
-      </button>
-      <div class="d-flex justify-content-center gap-2 fz-14">
-        <span class="color-grey-blue">Уже зарегистрированы?</span>
-        <a class="link color-grey-blue" href="#">Войти</a>
-      </div>
-
-    </form>
   </div>
+
+  <div class="container">
+    <div class="rounded-60 bg-white p-32 mb-3">
+      <h4 class="text-center mb-4">Вознаграждение</h4>
+      <div class="d-flex align-items-center gap-2 mb-4">
+
+        <div class="d-flex gap-1 flex-column w-100">
+          <div class="color-grey-blue fz-12 text-uppercase">
+            Общая сумма вознаграждения
+          </div>
+          <div class="d-flex gap-2 align-items-center">
+            <span class="fz-20 fw-medium color-total-black">1 220 870₽</span>
+            <span class="color-green fw-medium fz-14">+25%</span>
+          </div>
+        </div>
+        <div class="chart chart--donut" style="background: conic-gradient(#FFC542 55%, var(--green) 0 79%, #0062FF 0);">
+
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-2">
+
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color chart-color-blue"></span>
+            <span class="fz-12 color-grey-blue w-130">Планируемая сумма</span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">220 000₽</span>
+            <span class="color-green fw-medium fz-14 text-end">+3%</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color bg--green"></span>
+            <span class="fz-12 color-grey-blue w-130">Ожидается к выплате</span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">320 000₽</span>
+            <span class="color-green fw-medium fz-14 text-end">+3%</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color chart-color-yellow"></span>
+            <span class="fz-12 color-grey-blue w-130">Выплачено</span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">520 000₽</span>
+            <span class="color-green fw-medium fz-14 text-end">+3%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="rounded-60 bg-white p-32 mb-3">
+      <h4 class="text-center mb-4">Заявки</h4>
+      <div class="d-flex align-items-center gap-2 mb-4">
+
+        <div class="d-flex gap-1 flex-column w-100">
+          <div class="color-grey-blue fz-12 text-uppercase">
+            всего заявок
+          </div>
+          <div class="d-flex gap-2 align-items-center">
+            <span class="fz-20 fw-medium color-total-black">228</span>
+            <span class="color-green fw-medium fz-14">+25%</span>
+          </div>
+        </div>
+        <div class="chart chart--donut"
+          style="background: conic-gradient(var(--light-blue) 51%, #fe5c73 0 61%, var(--green) 0 77%, #ffc542 0);">
+
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-2">
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color bg--green"></span>
+            <span class="fz-12 color-grey-blue w-170">Новых</span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">12</span>
+            <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color chart-color-yellow"></span>
+            <span class="fz-12 color-grey-blue w-170">В работе</span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">22</span>
+            <span class="color-green fw-medium fz-14 w-40 text-end">+5%</span>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color chart-color-red"></span>
+            <span class="fz-12 color-grey-blue w-170">Отклонённых</span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">6</span>
+            <span class="color-red fw-medium fz-14 w-40 text-end">-15%</span>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color bg--light-blue"></span>
+            <span class="fz-12 color-grey-blue w-170">Завершённых</span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">48</span>
+            <span class="color-green fw-medium fz-14 w-40 text-end">+10%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="rounded-60 bg-white p-32 mb-3">
+      <h4 class="text-center mb-4">Сумма вознаграждения со&nbsp;сделки</h4>
+
+      <div class="range-admin mb-4">
+        <div class="progressBar">
+          <div class="thumb chart-color-red" style="left:0%;"></div>
+          <div class="thumb chart-color-yellow" style="left: 30%;"></div>
+          <div class="thumb bg--green" style="left: 100%;"></div>
+        </div>
+
+      </div>
+
+      <div class="d-flex flex-column gap-2">
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color chart-color-yellow"></span>
+            <span class="fz-12 color-grey-blue">Минимальная </span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">20 000₽</span>
+            <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color chart-color-red"></span>
+            <span class="fz-12 color-grey-blue">Средняя </span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">220 000₽</span>
+            <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <span class="chart-color bg--green"></span>
+            <span class="fz-12 color-grey-blue">Максимальная</span>
+          </div>
+          <div class="d-flex gap-2">
+            <span class="fz-14 fw-medium color-total-black">1 240 000₽</span>
+            <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
 </section>
 		</main>
+		<div class="seller-fixed-menu-wrap">
+  <div class="container">
 
-		<!-- modal -->
-<!-- order -->
-<div class="modal" id="modalOrder">
-
-  <div class="modalHead">
-    <h2 class="h2">Оставьте заявку</h2>
-    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
+    <ul class="d-flex justify-content-center seller-fixed-menu">
+      <li class="menu-item-dashboard active">
+        <a href="#">
+          <div class="menu-item menu-item-icon"></div>
+          <span class="fz-12">Дашборд</span>
+        </a>
+      </li>
+      <li class="menu-item menu-item-orders">
+        <a href="#">
+          <div class="menu-item-icon"></div>
+          <span class="fz-12">Заявки</span>
+        </a>
+      </li>
+      <li class="menu-item menu-item-admin">
+        <a href="#">
+          <div class="menu-item-icon"></div>
+          <span class="fz-12">Менеджер</span>
+        </a>
+      </li>
+    </ul>
   </div>
 
+</div>
+		<!-- modal -->
+<!-- modalAnketaClient -->
+<div class="modal rounded-60 p-40-32" id="modalAnketaClient">
+
+  <h4 class="h4 text-center mb-2">
+    Ссылка на&nbsp;анкету
+    для клиента
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
   <div class="modalContent">
-    <p class="modalDescr">
-      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    <p class="text-center fz-12 mb-32 color-grey">
+      Отправьте реферальную ссылку покупателю, чтобы он мог самостоятельно заполнить анкету для создания заявки.
     </p>
-    <div class="modalForm">
-      <div class="inputW">
-        <input type="text" class="formInput" placeholder="Как вас зовут?">
-      </div>
-      <div class="inputW">
-        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
-      </div>
-      <button class="button button--blue formBtn">
-        Отправить заявку
-      </button>
-      <div class="agreement">
-        <p>
-          Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
-        </p>
-      </div>
+
+    <div class="mb-32 form-floating">
+      <input id="copy-link" type="tel" class="formInput form-control" placeholder="Телефон"
+        value="https://автотайм.рф/?r=123456789">
+      <label for="copy-link">Ссылка</label>
     </div>
+
+    <button class="button button--yellow text-uppercase w-100 mb-12 copyBtn tooltipEl"
+      data-clipboard-target="#copy-link" data-bs-toggle="tooltip" title="Скопировано" type="button">
+      Скопировать
+    </button>
+    <button class="button button--transparent-grey text-uppercase w-100 mb-12" type="button">
+      <svg class="w-24 fill-black stroke-transparent">
+        <use xlink:href="img/icons/icons.svg#send-btn"></use>
+      </svg>
+      отправить
+    </button>
+
   </div>
 </div>
 
+<!-- sellers-filter -->
+<div class="modal rounded-60 p-40-32" id="sellers-filter">
+
+  <h4 class="h4 text-center mb-32">
+    Фильтры
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Статус сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="sellers-filter-1" type="checkbox" hidden checked>
+            <label class="align-items-center" for="sellers-filter-1">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Новая
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="sellers-filter-2" type="checkbox" hidden checked>
+            <label class="align-items-center" for="sellers-filter-2">
+              <div class="rect"></div>
+              <div class="fz-14">
+                В работе
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="sellers-filter-3" type="checkbox" hidden checked>
+            <label class="align-items-center" for="sellers-filter-3">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Завершена
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="sellers-filter-4" type="checkbox" hidden checked>
+            <label class="align-items-center" for="sellers-filter-4">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Отклонена
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- sellers-sort -->
+<div class="modal rounded-60 p-40-32" id="sellers-sort">
+
+  <h4 class="h4 text-center mb-32">
+    Сортировка
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="sellers-sort-1" type="radio" name="sellers-sort" hidden checked>
+            <label class="align-items-start" for="sellers-sort-1">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала новые</span>
+              </div>
+
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="sellers-sort-2" type="radio" name="sellers-sort" hidden>
+            <label class="align-items-start" for="sellers-sort-2">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала старые</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="sellers-sort-3" type="radio" name="sellers-sort" hidden>
+            <label class="align-items-start" for="sellers-sort-3">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала больше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="sellers-sort-4" type="radio" name="sellers-sort" hidden>
+            <label class="align-items-start" for="sellers-sort-4">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала меньше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- sellers-new-order -->
+<div class="modal rounded-60 p-40-32" id="sellers-new-order">
+
+  <h4 class="h4 text-center mb-32">
+    Новая заявка
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+    <p class="text-center fz-14 mb-20">
+      Укажите ФИО и телефон клиента
+    </p>
+    <form action="#">
+
+      <div class="mb-32">
+        <div class="mb-3 form-floating">
+          <input id="register-fio" type="text" class="formInput form-control" placeholder="ФИО">
+          <label for="register-fio">ФИО</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="register-phone" type="tel" class="formInput form-control" placeholder="+7 ___ ___ ____">
+          <label for="register-phone">+7 ___ ___ ____</label>
+        </div>
+      </div>
+
+      <button class="button button--yellow text-uppercase w-100" type="button" disabled>
+        создать заявку
+      </button>
+    </form>
+
+  </div>
+</div>
 	</div>
 
 	<script src="js/app.min.js"></script>

@@ -46,4 +46,47 @@
       }
     }
   }
+
+  &-seller {
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color: transparent;
+
+    .container {
+      @media(max-width: 575px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .headerT {
+      border-radius: 0 0 30px 30px;
+      background-color: #fff;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .headerB {
+      position: relative;
+      bottom: 26px;
+
+      @media(max-width: 991px) {
+        bottom: 23px;
+      }
+    }
+
+    .headerBtn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        opacity: .85;
+      }
+    }
+  }
 }
