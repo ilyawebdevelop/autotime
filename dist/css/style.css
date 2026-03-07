@@ -15839,6 +15839,10 @@ a.color-grey-blue:hover {
   letter-spacing: 0.02em;
 }
 
+.shadow-card {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -15858,7 +15862,6 @@ a.color-grey-blue:hover {
   .button {
     padding-left: 12px;
     padding-right: 12px;
-    font-size: 15px;
     column-gap: 5px;
   }
 }

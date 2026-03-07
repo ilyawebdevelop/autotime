@@ -11,7 +11,7 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Продавец дашборд</title>
+	<title>Продавцы</title>
 </head>
 
 <body>
@@ -44,183 +44,208 @@
   </div>
 </header>
 		<main class="main bg--bg main-sellers-offset-menu main-sellers-offset-header">
-			<section class="sect pt-3">
-  <div class="container container--sm">
-    <nav class="terminNav mb-3">
-  <ul class="d-flex bg--light-blue p-2 rounded-30 w-100 justify-content-center">
-    <li><a href="#">за все время</a></li>
-    <li class="active"><a href="#">месяц</a></li>
-    <li><a href="#">квартал</a></li>
-    <li><a href="#">год</a></li>
-  </ul>
-</nav>
-
-  </div>
+			<section class="sect pt-20">
 
   <div class="container">
-    <div class="rounded-60 bg-white p-32 mb-3">
-      <h4 class="text-center mb-4">Вознаграждение</h4>
-      <div class="d-flex align-items-center gap-2 mb-4">
 
-        <div class="d-flex gap-1 flex-column w-100">
-          <div class="color-grey-blue fz-12 text-uppercase">
-            Общая сумма вознаграждения
-          </div>
-          <div class="d-flex gap-2 align-items-center">
-            <span class="fz-20 fw-medium color-total-black">1 220 870₽</span>
-            <span class="color-green fw-medium fz-14">+25%</span>
-          </div>
-        </div>
-        <div class="chart chart--donut" style="background: conic-gradient(#FFC542 55%, var(--green) 0 79%, #0062FF 0);">
+    <h3 class="text-center mb-3 pb-1">Продавцы</h3>
 
-        </div>
-      </div>
-      <div class="d-flex flex-column gap-2">
-
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color chart-color-blue"></span>
-            <span class="fz-12 color-grey-blue w-130">Планируемая сумма</span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">220 000₽</span>
-            <span class="color-green fw-medium fz-14 text-end">+3%</span>
-          </div>
-        </div>
-
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color bg--green"></span>
-            <span class="fz-12 color-grey-blue w-130">Ожидается к выплате</span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">320 000₽</span>
-            <span class="color-green fw-medium fz-14 text-end">+3%</span>
-          </div>
-        </div>
-
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color chart-color-yellow"></span>
-            <span class="fz-12 color-grey-blue w-130">Выплачено</span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">520 000₽</span>
-            <span class="color-green fw-medium fz-14 text-end">+3%</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="rounded-60 bg-white p-32 mb-3">
-      <h4 class="text-center mb-4">Заявки</h4>
-      <div class="d-flex align-items-center gap-2 mb-4">
-
-        <div class="d-flex gap-1 flex-column w-100">
-          <div class="color-grey-blue fz-12 text-uppercase">
-            всего заявок
-          </div>
-          <div class="d-flex gap-2 align-items-center">
-            <span class="fz-20 fw-medium color-total-black">228</span>
-            <span class="color-green fw-medium fz-14">+25%</span>
-          </div>
-        </div>
-        <div class="chart chart--donut"
-          style="background: conic-gradient(var(--light-blue) 51%, #fe5c73 0 61%, var(--green) 0 77%, #ffc542 0);">
-
-        </div>
-      </div>
-      <div class="d-flex flex-column gap-2">
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color bg--green"></span>
-            <span class="fz-12 color-grey-blue w-170">Новых</span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">12</span>
-            <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color chart-color-yellow"></span>
-            <span class="fz-12 color-grey-blue w-170">В работе</span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">22</span>
-            <span class="color-green fw-medium fz-14 w-40 text-end">+5%</span>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color chart-color-red"></span>
-            <span class="fz-12 color-grey-blue w-170">Отклонённых</span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">6</span>
-            <span class="color-red fw-medium fz-14 w-40 text-end">-15%</span>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color bg--light-blue"></span>
-            <span class="fz-12 color-grey-blue w-170">Завершённых</span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">48</span>
-            <span class="color-green fw-medium fz-14 w-40 text-end">+10%</span>
-          </div>
-        </div>
-
-      </div>
+    <div class="d-flex justify-content-center gap-2 mb-3 pb-1">
+      <button class="button button--light-blue text-uppercase w-100" data-fancybox data-src="#sellers-new-order">
+        <svg class="w-24" style="stroke: transparent; fill: var(--black);">
+          <use xlink:href="img/icons/icons.svg#plus"></use>
+        </svg>
+        добавить
+      </button>
     </div>
 
-    <div class="rounded-60 bg-white p-32 mb-3">
-      <h4 class="text-center mb-4">Сумма вознаграждения со&nbsp;сделки</h4>
-
-      <div class="range-admin mb-4">
-        <div class="progressBar">
-          <div class="thumb chart-color-red" style="left:0%;"></div>
-          <div class="thumb chart-color-yellow" style="left: 30%;"></div>
-          <div class="thumb bg--green" style="left: 100%;"></div>
-        </div>
-
+    <div class="mb-3 d-flex gap-2">
+      <div class="form-floating w-100">
+        <input type="tel" class="formInput formInput--search rounded-25 form-control bg-white"
+          placeholder="Поиск по моим заявкам">
+        <label for="copy-link">Поиск</label>
+        <button class="remove-text" type="button">
+          <img src="img/icons/remove.svg" alt="remove-text">
+        </button>
       </div>
-
-      <div class="d-flex flex-column gap-2">
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color chart-color-yellow"></span>
-            <span class="fz-12 color-grey-blue">Минимальная </span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">20 000₽</span>
-            <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color chart-color-red"></span>
-            <span class="fz-12 color-grey-blue">Средняя </span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">220 000₽</span>
-            <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
-          <div class="d-flex gap-2 align-items-center">
-            <span class="chart-color bg--green"></span>
-            <span class="fz-12 color-grey-blue">Максимальная</span>
-          </div>
-          <div class="d-flex gap-2">
-            <span class="fz-14 fw-medium color-total-black">1 240 000₽</span>
-            <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
-          </div>
-        </div>
-
-      </div>
+      <button class="button-round width-50 bg--light-blue d-flex justify-content-center align-items-center"
+        data-fancybox data-src="#agent-seller-sort">
+        <svg class="w-24">
+          <use xlink:href="img/icons/icons.svg#sort"></use>
+        </svg>
+      </button>
     </div>
+
+    <div class="mb-20 rounded-40 bg--white px-4 pt-3 pb-4 shadow-card">
+      <div class="mb-3 d-flex align-items-center justify-content-between">
+        <button class="button button--h-25 button--red-light fw-normal px-12 pe-none fz-12">
+          Отклонён
+        </button>
+        <div class="fz-12 color-grey-blue">
+          г. Иркутск
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-start mb-3 justify-content-between">
+        <div class="d-flex flex-column gap-1">
+          <span class="color-total-black">
+            Константин Константинопольский
+          </span>
+          <span class="fz-14 color-grey-blue">+7 (912) 345 67-89</span>
+        </div>
+        <span class="color-total-black h5 mb-0 text-nowrap">10%</span>
+      </div>
+
+      <button class="button button--yellow text-uppercase w-100 mx-auto">
+        Подробнее
+      </button>
+    </div>
+
+    <div class="mb-20 rounded-40 bg--white px-4 pt-3 pb-4 shadow-card">
+      <div class="mb-3 d-flex align-items-center justify-content-between">
+        <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12">
+          Активен
+        </button>
+        <img src="img/icons/awards/icon-1.png" alt="icon" style="width: 24px;">
+        <div class="fz-12 color-grey-blue">
+          г. Иркутск
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-start mb-3 justify-content-between">
+        <div class="d-flex flex-column gap-1">
+          <span class="color-total-black">
+            Костров Константин Константинович
+          </span>
+          <span class="fz-14 color-grey-blue">+7 (912) 345 67-89</span>
+        </div>
+        <span class="color-total-black h5 mb-0 text-nowrap">3%</span>
+      </div>
+
+      <button class="button button--light-blue text-uppercase w-100 mx-auto">
+        Подробнее
+      </button>
+    </div>
+
+    <div class="mb-20 rounded-40 bg--white px-4 pt-3 pb-4 shadow-card">
+      <div class="mb-3 d-flex align-items-center justify-content-between">
+        <button class="button button--h-25 bg--light-blue fw-normal px-12 pe-none fz-12">
+          На проверке
+        </button>
+        <div class="fz-12 color-grey-blue">
+          г. Иркутск
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-start mb-3 justify-content-between">
+        <div class="d-flex flex-column gap-1">
+          <span class="color-total-black">
+            Константин Константинопольский
+          </span>
+          <span class="fz-14 color-grey-blue">+7 (912) 345 67-89</span>
+        </div>
+        <span class="color-total-black h5 mb-0 text-nowrap">10%</span>
+      </div>
+
+      <button class="button button--light-blue text-uppercase w-100 mx-auto">
+        Подробнее
+      </button>
+    </div>
+
+    <div class="mb-20 rounded-40 bg--white px-4 pt-3 pb-4 shadow-card">
+      <div class="mb-3 d-flex align-items-center justify-content-between">
+        <button class="button button--h-25 bg--light-blue fw-normal px-12 pe-none fz-12 color-grey-blue">
+          Заблокирован
+        </button>
+        <div class="fz-12 color-grey-blue">
+          г. Иркутск
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-start mb-3 justify-content-between">
+        <div class="d-flex flex-column gap-1">
+          <span class="color-total-black">
+            Ева Ревва
+          </span>
+          <span class="fz-14 color-grey-blue">+7 (912) 345 67-89</span>
+        </div>
+        <span class="color-total-black h5 mb-0 text-nowrap">10%</span>
+      </div>
+
+      <button class="button button--light-blue text-uppercase w-100 mx-auto">
+        Подробнее
+      </button>
+    </div>
+
+    <div class="mb-20 rounded-40 bg--white px-4 pt-3 pb-4 shadow-card">
+      <div class="mb-3 d-flex align-items-center justify-content-between">
+        <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12">
+          Активен
+        </button>
+        <img src="img/icons/awards/icon-3.png" alt="icon" style="width: 24px;">
+        <div class="fz-12 color-grey-blue">
+          г. Иркутск
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-start mb-3 justify-content-between">
+        <div class="d-flex flex-column gap-1">
+          <span class="color-total-black">
+            Имя Фамилия
+          </span>
+          <span class="fz-14 color-grey-blue">+7 (912) 345 67-89</span>
+        </div>
+        <span class="color-total-black h5 mb-0 text-nowrap">10%</span>
+      </div>
+
+      <button class="button button--light-blue text-uppercase w-100 mx-auto">
+        Подробнее
+      </button>
+    </div>
+
+    <div class="mb-20 rounded-40 bg--white px-4 pt-3 pb-4 shadow-card">
+      <div class="mb-3 d-flex align-items-center justify-content-between">
+        <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12">
+          Активен
+        </button>
+        <div class="fz-12 color-grey-blue">
+          г. Иркутск
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-start mb-3 justify-content-between">
+        <div class="d-flex flex-column gap-1">
+          <span class="color-total-black">
+            Имя Фамилия
+          </span>
+          <span class="fz-14 color-grey-blue">+7 (912) 345 67-89</span>
+        </div>
+        <span class="color-total-black h5 mb-0 text-nowrap">10%</span>
+      </div>
+
+      <button class="button button--light-blue text-uppercase w-100 mx-auto">
+        Подробнее
+      </button>
+    </div>
+
+    <div class="mb-20 rounded-40 bg--white px-4 pt-3 pb-4 shadow-card">
+      <div class="mb-3 d-flex align-items-center justify-content-between">
+        <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12">
+          Активен
+        </button>
+        <div class="fz-12 color-grey-blue">
+          г. Иркутск
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-start mb-3 justify-content-between">
+        <div class="d-flex flex-column gap-1">
+          <span class="color-total-black">
+            Имя Фамилия
+          </span>
+          <span class="fz-14 color-grey-blue">+7 (912) 345 67-89</span>
+        </div>
+        <span class="color-total-black h5 mb-0 text-nowrap">10%</span>
+      </div>
+
+      <button class="button button--light-blue text-uppercase w-100 mx-auto">
+        Подробнее
+      </button>
+    </div>
+
 
   </div>
 
@@ -240,6 +265,12 @@
         <a href="#">
           <div class="menu-item-icon"></div>
           <span class="fz-12">Заявки</span>
+        </a>
+      </li>
+      <li class="menu-item menu-item-sellers">
+        <a href="#">
+          <div class="menu-item-icon"></div>
+          <span class="fz-12">Продавцы</span>
         </a>
       </li>
       <li class="menu-item menu-item-admin">
@@ -373,6 +404,157 @@
   </div>
 </div>
 
+<!-- agent-filter -->
+<div class="modal rounded-60 p-40-32" id="agent-filter">
+
+  <h4 class="h4 text-center mb-32">
+    Фильтры
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Статус сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-1" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-1">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Новая
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-2" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-2">
+              <div class="rect"></div>
+              <div class="fz-14">
+                В работе
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-3" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-3">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Завершена
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-4" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-4">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Отклонена
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Тип сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-5" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-5">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Личная
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-6" type="checkbox" hidden>
+            <label class="align-items-center" for="agent-filter-6">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Сделки продавцов
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Тип сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32 form-floating">
+        <select id="select-1" class="formSelect">
+          <option value="1" selected>Все типы</option>
+          <option value="2">автоэксперт</option>
+          <option value="3">Продавец</option>
+          <option value="4">блогер</option>
+          <option value="5">банк</option>
+        </select>
+        <label for="select-1">Сфера деятельности</label>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Продавец</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32 form-floating">
+        <select id="select-2" class="formSelect">
+          <option value="1" selected>Все продавцы</option>
+          <option value="2">автоэксперт</option>
+          <option value="3">Продавец</option>
+          <option value="4">блогер</option>
+          <option value="5">банк</option>
+        </select>
+        <label for="select-2">Сфера деятельности</label>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
 <!-- sellers-sort -->
 <div class="modal rounded-60 p-40-32" id="sellers-sort">
 
@@ -454,6 +636,256 @@
             </label>
           </div>
         </div>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- agent-sort -->
+<div class="modal rounded-60 p-40-32" id="agent-sort">
+
+  <h4 class="h4 text-center mb-32">
+    Сортировка
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-1" type="radio" name="agent-sort" hidden checked>
+            <label class="align-items-start" for="agent-sort-1">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала новые</span>
+              </div>
+
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-2" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-2">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала старые</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-3" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-3">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала больше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-4" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-4">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала меньше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-5" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-5">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По типу
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала личные сделки</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-6" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-6">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По типу
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала сделки продавцов</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- agent-seller-sort -->
+<div class="modal rounded-60 p-40-32" id="agent-seller-sort">
+
+  <h4 class="h4 text-center mb-32">
+    Сортировка
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-seller-sort-1" type="radio" name="agent-seller-sort" hidden checked>
+            <label class="align-items-start" for="agent-seller-sort-1">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате регистрации
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала новые</span>
+              </div>
+
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-seller-sort-2" type="radio" name="agent-seller-sort" hidden>
+            <label class="align-items-start" for="agent-seller-sort-2">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате регистрации
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала старые</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-seller-sort-3" type="radio" name="agent-seller-sort" hidden>
+            <label class="align-items-start" for="agent-seller-sort-3">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По количеству сделок
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала больше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-seller-sort-4" type="radio" name="agent-seller-sort" hidden>
+            <label class="align-items-start" for="agent-seller-sort-4">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По количеству сделок
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала меньше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-seller-sort-5" type="radio" name="agent-seller-sort" hidden>
+            <label class="align-items-start" for="agent-seller-sort-5">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По алфавиту
+                </div>
+                <span class="fz-12 color-grey-blue">От А до Я</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-seller-sort-6" type="radio" name="agent-seller-sort" hidden>
+            <label class="align-items-start" for="agent-seller-sort-6">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                 По алфавиту
+                </div>
+                <span class="fz-12 color-grey-blue">От Я до А</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
       </div>
 
 
