@@ -2,7 +2,15 @@
   &W {
     position: sticky;
     top: 132px;
-    z-index: 2;
+    z-index: 1;
+    transition: transform .2s linear;
+    transform: translateY(0);
+
+    &.header-fixed-hide {
+      transition: transform .2s linear;
+      transform: translateY(-110%);
+      // z-index: -1;
+    }
   }
 
 

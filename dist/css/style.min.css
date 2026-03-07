@@ -16151,7 +16151,13 @@ a.color-grey-blue:hover {
 .terminNavW {
   position: sticky;
   top: 132px;
-  z-index: 2;
+  z-index: 1;
+  transition: transform 0.2s linear;
+  transform: translateY(0);
+}
+.terminNavW.header-fixed-hide {
+  transition: transform 0.2s linear;
+  transform: translateY(-110%);
 }
 .terminNav ul {
   column-gap: 2px;

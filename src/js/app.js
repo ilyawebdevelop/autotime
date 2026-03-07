@@ -29,9 +29,6 @@ calendarArray.forEach(el => {
   });
 });
 
-
-
-
 function enterCode() {
   const inputs = document.querySelectorAll('.otp-input');
 
@@ -188,8 +185,6 @@ copyBtnArray.forEach(el => {
   });
 });
 
-
-
 let searchClearBtn = document.querySelectorAll('.form-floating .remove-text');
 searchClearBtn.forEach(el => {
   let input = el.closest('.form-floating').querySelector('input');
@@ -203,5 +198,22 @@ searchClearBtn.forEach(el => {
     // input.focus();
     el.classList.remove('active');
   });
+});
 
+const terminNavW = document.getElementById('terminNavW');
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+  const currentScrollTop = window.scrollY;
+
+  if (currentScrollTop > lastScrollTop) {
+    // Прокрутка вниз
+    terminNavW.classList.remove('active');
+    terminNavW.classList.add('header-fixed-hide');
+  } else {
+    // Прокрутка вверх
+    terminNavW.classList.add('active');
+    terminNavW.classList.remove('header-fixed-hide');
+  }
+  lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Сохраняем предыдущее значение
 });
