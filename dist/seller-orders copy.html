@@ -11,7 +11,7 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Профиль</title>
+	<title>Сделки</title>
 </head>
 
 <body>
@@ -44,120 +44,229 @@
   </div>
 </header>
 		<main class="main bg--bg main-sellers-offset-menu main-sellers-offset-header">
-			<section class="sect pt-40">
+			<section class="sect pt-3">
 
   <div class="container">
 
-    <div class="position-relative mb-4">
-      <img src="img/admin/avatar/avatar-2.jpg" alt="icon" class="mx-auto w-110 h-110 objec-fit-cover rounded-circle">
-      <button class="button-round width-50 bg--light-blue sellers-profile-edit-btn" data-fancybox data-src="#sellers-profile-edit">
-        <svg class="w-24 h-24">
-          <use xlink:href="img/icons/icons.svg#edit"></use>
+    <h3 class="text-center mb-3 pb-1">Заявки</h3>
+
+    <div class="d-flex justify-content-center gap-2 mb-3 pb-1">
+      <button class="button-round width-50 bg--light-blue d-flex justify-content-center align-items-center" data-fancybox data-src="#sellers-filter">
+        <svg class="w-24">
+          <use xlink:href="img/icons/icons.svg#filter"></use>
         </svg>
       </button>
-    </div>
-    <div class="pb-4 border-b-light-blue mb-20">
-      <div class="fz-20 text-center color-total-black">
-        Сергеев Алексей Викторович
-      </div>
-      <div class="d-flex gap-10 align-items-center justify-content-center">
-        <span class="color-grey-blue">+7 912 (345) 67-89</span>
-        <button class="button-edit" data-fancybox data-src="#sellers-phone-edit">
-          <svg>
-            <use xlink:href="img/icons/icons.svg#edit"></use>
-          </svg>
-        </button>
-      </div>
+      <button class="button-round width-50 bg--light-blue d-flex justify-content-center align-items-center" data-fancybox data-src="#sellers-sort">
+        <svg class="w-24">
+          <use xlink:href="img/icons/icons.svg#sort"></use>
+        </svg>
+      </button>
+      <button class="button button--light-blue text-uppercase w-100" data-fancybox data-src="#sellers-new-order">
+        Создать новую
+      </button>
     </div>
 
-    <div class="pb-20 border-b-light-blue mb-20">
-      <div class="mb-20 d-flex justify-content-between gap-2 align-items-center">
-        <span class="fz-12 text-uppercase color-grey-blue">email</span>
-        <span class="fz-14">sergeev@mail.ru</span>
-      </div>
-      <div class="mb-20 d-flex justify-content-between gap-2 align-items-center">
-        <span class="fz-12 text-uppercase color-grey-blue">Город</span>
-        <span class="fz-14">г. Иркутск</span>
-      </div>
-      <div class="d-flex justify-content-between gap-2 align-items-center">
-        <span class="fz-12 text-uppercase color-grey-blue">дата рождения</span>
-        <span class="fz-14">10.12.1997</span>
-      </div>
+    <div class="mb-3 pb-1 form-floating">
+      <input type="tel" class="formInput formInput--search rounded-25 form-control" placeholder="Поиск по моим заявкам">
+      <label for="copy-link">Поиск по моим заявкам</label>
+      <button class="remove-text" type="button">
+        <img src="img/icons/remove.svg" alt="remove-text">
+      </button>
     </div>
 
-    <div class="pb-20 border-b-light-blue mb-20">
-      <div class="mb-20 d-flex flex-column gap-2">
-        <span class="fz-12 text-uppercase color-grey-blue">адрес площадки авто</span>
-        <span class="fz-14">г. Иркутск, ул. Автомобильная, 2</span>
-      </div>
-      <div class="mb-20 d-flex flex-column gap-2">
-        <span class="fz-12 text-uppercase color-grey-blue">Количество продаваемых авто</span>
-        <span class="fz-14">800</span>
-      </div>
-      <div class="d-flex flex-column gap-2">
-        <span class="fz-12 text-uppercase color-grey-blue">Сфера деятельности</span>
-        <span class="fz-14">Кредитование</span>
-      </div>
-    </div>
-
-    <div class="pb-20 border-b-light-blue mb-20">
-      <div class="mb-2">
-        <span class="fz-12 text-uppercase color-grey-blue">паспортные данные</span>
-      </div>
-      <div class="d-flex flex-column gap-2">
-        <div class="d-flex gap-1">
-          <span class="fz-14 color-grey-blue">Серия:</span>
-          <span class="fz-14">1234</span>
+    <div class="mb-20 bg--white p-3 rounded-20 fz-12">
+      <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex align-items-center gap-1">
+          <span>ID:</span>
+          <span id="copy-link-1">1234567890</span>
+          <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+            title="Скопировано">
+            <img src="img/icons/copy.svg" alt="icon">
+          </button>
         </div>
-        <div class="d-flex gap-1">
-          <span class="fz-14 color-grey-blue">Номер:</span>
-          <span class="fz-14">56789</span>
+        <span>06.02.2026</span>
+      </div>
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Клиент</span>
+          <span class="text-end">Костров Константин Константинович</span>
         </div>
-        <div class="d-flex gap-1">
-          <span class="fz-14 color-grey-blue">Кем выдан: </span>
-          <span class="fz-14">УФМС России по г. Москве</span>
-        </div>
-        <div class="d-flex gap-1">
-          <span class="fz-14 color-grey-blue">Когда выдан: </span>
-          <span class="fz-14">10.01.2012</span>
-        </div>
-        <div class="d-flex gap-1">
-          <span class="fz-14 color-grey-blue">Код подразделения: </span>
-          <span class="fz-14">770-001</span>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">телефон</span>
+          <a class="text-end color-black" href="tel:+79123456789">+7 (912) 345 67-89</a>
         </div>
       </div>
+      <button class="button button--h-25 button--green-light fw-normal px-12 pe-none mx-auto">
+        Новая
+      </button>
     </div>
 
-    <div class="pb-20 border-b-light-blue mb-20">
-      <div class="d-flex flex-column gap-2">
-        <span class="fz-12 text-uppercase color-grey-blue">СНИЛС</span>
-        <span class="fz-14">123-456-789 00</span>
-      </div>
-    </div>
-
-    <div class="pb-20 border-b-light-blue mb-20">
-      <div class="d-flex flex-column gap-2">
-        <span class="fz-12 text-uppercase color-grey-blue">Платежные реквизиты</span>
-        <div class="d-flex flex-column fz-14">
-          <span>Номер счета: 40817810099999999999</span>
-          <span>Банк: ПАО "Сбербанк России"</span>
-          <span>БИК: 044525225</span>
+    <div class="mb-20 bg--white p-3 rounded-20 fz-12">
+      <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex align-items-center gap-1">
+          <span>ID:</span>
+          <span id="copy-link-2">1234567890</span>
+          <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-2" data-bs-toggle="tooltip"
+            title="Скопировано">
+            <img src="img/icons/copy.svg" alt="icon">
+          </button>
         </div>
-        <span class="fz-14">123-456-789 00</span>
+        <span>06.02.2026</span>
       </div>
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">моё вознаграждение</span>
+          <div class="d-flex align-items-center gap-1">
+            <img src="img/icons/percent.svg" alt="icon" class="percent-icon">
+            <span class="h6 text-nowrap mb-0">120 000₽</span>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">сумма сделки</span>
+          <div class="d-flex align-items-center gap-1">
+            <span class="h6 text-nowrap mb-0">2 400 000₽</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-start">
+          <span class="text-uppercase color-grey-blue">Автомобиль</span>
+          <div class="d-flex flex-column align-items-end gap-2">
+            <span>Mercedes-Benz</span>
+            <div class="d-flex gap-1">
+              <span>Maybach S-Класс</span>
+              <span>2023 г.</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Город</span>
+          <span class="text-end">г. Иркутск</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Клиент</span>
+          <span class="text-end">Костров Константин Константинович</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">телефон</span>
+          <a class="text-end color-black" href="tel:+79123456789">+7 (912) 345 67-89</a>
+        </div>
+      </div>
+      <button class="button button--h-25 button--yellow-light fw-normal px-12 pe-none mx-auto">
+        Связываемся с клиентом
+      </button>
     </div>
 
-    <div class="pb-20 border-b-light-blue mb-20">
-      <div class="d-flex flex-column gap-2">
-        <span class="fz-12 text-uppercase color-grey-blue">текущий процент вознаграждения</span>
-        <span class="h5">3%</span>
+    <div class="mb-20 bg--white p-3 rounded-20 fz-12">
+      <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex align-items-center gap-1">
+          <span>ID:</span>
+          <span id="copy-link-3">1234567890</span>
+          <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-3" data-bs-toggle="tooltip"
+            title="Скопировано">
+            <img src="img/icons/copy.svg" alt="icon">
+          </button>
+        </div>
+        <span>06.02.2026</span>
       </div>
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">моё вознаграждение</span>
+          <div class="d-flex align-items-center gap-1">
+            <img src="img/icons/percent.svg" alt="icon" class="percent-icon">
+            <span class="h6 text-nowrap mb-0">400 000₽</span>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">сумма сделки</span>
+          <div class="d-flex align-items-center gap-1">
+            <span class="h6 text-nowrap mb-0">2 400 000₽</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-start">
+          <span class="text-uppercase color-grey-blue">Автомобиль</span>
+          <div class="d-flex flex-column align-items-end gap-2">
+            <div class="d-flex gap-1">
+              <span>Haval </span>
+              <span>Chitu</span>
+              <span>2021 г.</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Город</span>
+          <span class="text-end">г. Иркутск</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Клиент</span>
+          <span class="text-end">Костров Константин Константинович</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">телефон</span>
+          <a class="text-end color-black" href="tel:+79123456789">+7 (912) 345 67-89</a>
+        </div>
+      </div>
+      <button class="button button--h-25 button--light-blue fw-normal px-12 pe-none mx-auto">
+        Завершена
+      </button>
     </div>
 
-    <a href="#" class="d-flex gap-3 align-items-center color-black">
-      <img src="img/icons/logout.svg" alt="icon">
-      <span>Выйти из аккаунта</span>
-    </a>
+    <div class="mb-20 bg--white p-3 rounded-20 fz-12">
+      <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex align-items-center gap-1">
+          <span>ID:</span>
+          <span id="copy-link-3">1234567890</span>
+          <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-3" data-bs-toggle="tooltip"
+            title="Скопировано">
+            <img src="img/icons/copy.svg" alt="icon">
+          </button>
+        </div>
+        <span>06.02.2026</span>
+      </div>
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-start">
+          <span class="text-uppercase color-grey-blue">Автомобиль</span>
+          <div class="d-flex flex-column align-items-end gap-2">
+            <div class="d-flex gap-1">
+              <span>Toyota </span>
+              <span>Vista</span>
+              <span>2012 г.</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Город</span>
+          <span class="text-end">г. Иркутск</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Клиент</span>
+          <span class="text-end">Костров Константин Константинович</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">телефон</span>
+          <a class="text-end color-black" href="tel:+79123456789">+7 (912) 345 67-89</a>
+        </div>
+      </div>
+      <button class="button button--h-25 button--red-light fw-normal px-12 pe-none mx-auto">
+        Не устроили условия
+      </button>
+    </div>
+
+    <button class="button button--light-blue text-uppercase w-100 mx-auto mb-20">
+      загрузить ещё
+    </button>
+
+    <div class="d-flex align-items-center justify-content-between">
+      <button class="navArrow">
+        <img src="img/icons/arrow-prev.svg" alt="icon">
+      </button>
+      <span class="color-grey-blue fz-14">1-10 of 195 items</span>
+      <button class="navArrow">
+        <img src="img/icons/arrow-next.svg" alt="icon">
+      </button>
+    </div>
 
   </div>
 
@@ -177,12 +286,6 @@
         <a href="#">
           <div class="menu-item-icon"></div>
           <span class="fz-12">Заявки</span>
-        </a>
-      </li>
-      <li class="menu-item menu-item-sellers">
-        <a href="#">
-          <div class="menu-item-icon"></div>
-          <span class="fz-12">Продавцы</span>
         </a>
       </li>
       <li class="menu-item menu-item-admin">
@@ -316,157 +419,6 @@
   </div>
 </div>
 
-<!-- agent-filter -->
-<div class="modal rounded-60 p-40-32" id="agent-filter">
-
-  <h4 class="h4 text-center mb-32">
-    Фильтры
-  </h4>
-  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24" tabindex="-1">
-      <path d="M20 20L4 4m16 0L4 20"></path>
-    </svg>
-  </button>
-
-  <div class="modalContent">
-
-    <form action="#">
-
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <h5 class="h5 mb-0">Статус сделки</h5>
-        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
-          Сбросить
-        </button>
-      </div>
-
-      <div class="mb-32">
-        <div class="mb-3">
-          <div class="checkbox">
-            <input id="agent-filter-1" type="checkbox" hidden checked>
-            <label class="align-items-center" for="agent-filter-1">
-              <div class="rect"></div>
-              <div class="fz-14">
-                Новая
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <div class="checkbox">
-            <input id="agent-filter-2" type="checkbox" hidden checked>
-            <label class="align-items-center" for="agent-filter-2">
-              <div class="rect"></div>
-              <div class="fz-14">
-                В работе
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <div class="checkbox">
-            <input id="agent-filter-3" type="checkbox" hidden checked>
-            <label class="align-items-center" for="agent-filter-3">
-              <div class="rect"></div>
-              <div class="fz-14">
-                Завершена
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <div class="checkbox">
-            <input id="agent-filter-4" type="checkbox" hidden checked>
-            <label class="align-items-center" for="agent-filter-4">
-              <div class="rect"></div>
-              <div class="fz-14">
-                Отклонена
-              </div>
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <h5 class="h5 mb-0">Тип сделки</h5>
-        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
-          Сбросить
-        </button>
-      </div>
-
-      <div class="mb-32">
-        <div class="mb-3">
-          <div class="checkbox">
-            <input id="agent-filter-5" type="checkbox" hidden checked>
-            <label class="align-items-center" for="agent-filter-5">
-              <div class="rect"></div>
-              <div class="fz-14">
-                Личная
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <div class="checkbox">
-            <input id="agent-filter-6" type="checkbox" hidden>
-            <label class="align-items-center" for="agent-filter-6">
-              <div class="rect"></div>
-              <div class="fz-14">
-                Сделки продавцов
-              </div>
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <h5 class="h5 mb-0">Тип сделки</h5>
-        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
-          Сбросить
-        </button>
-      </div>
-
-      <div class="mb-32 form-floating">
-        <select id="select-1" class="formSelect">
-          <option value="1" selected>Все типы</option>
-          <option value="2">автоэксперт</option>
-          <option value="3">Продавец</option>
-          <option value="4">блогер</option>
-          <option value="5">банк</option>
-        </select>
-        <label for="select-1">Сфера деятельности</label>
-      </div>
-
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <h5 class="h5 mb-0">Продавец</h5>
-        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
-          Сбросить
-        </button>
-      </div>
-
-      <div class="mb-32 form-floating">
-        <select id="select-2" class="formSelect">
-          <option value="1" selected>Все продавцы</option>
-          <option value="2">автоэксперт</option>
-          <option value="3">Продавец</option>
-          <option value="4">блогер</option>
-          <option value="5">банк</option>
-        </select>
-        <label for="select-2">Сфера деятельности</label>
-      </div>
-
-
-      <button class="button button--yellow text-uppercase w-100" type="button">
-        применить
-      </button>
-    </form>
-
-  </div>
-</div>
-
 <!-- sellers-sort -->
 <div class="modal rounded-60 p-40-32" id="sellers-sort">
 
@@ -548,131 +500,6 @@
             </label>
           </div>
         </div>
-      </div>
-
-
-      <button class="button button--yellow text-uppercase w-100" type="button">
-        применить
-      </button>
-    </form>
-
-  </div>
-</div>
-
-<!-- agent-sort -->
-<div class="modal rounded-60 p-40-32" id="agent-sort">
-
-  <h4 class="h4 text-center mb-32">
-    Сортировка
-  </h4>
-  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24" tabindex="-1">
-      <path d="M20 20L4 4m16 0L4 20"></path>
-    </svg>
-  </button>
-
-  <div class="modalContent">
-
-    <form action="#">
-
-      <div class="mb-32">
-        <div class="mb-3">
-          <div class="radiobtn">
-            <input id="agent-sort-1" type="radio" name="agent-sort" hidden checked>
-            <label class="align-items-start" for="agent-sort-1">
-              <div class="rect"></div>
-              <img src="img/icons/sort-down.svg" alt="icon">
-              <div class="d-flex flex-column gap-1">
-                <div class="fz-14">
-                  По дате создания
-                </div>
-                <span class="fz-12 color-grey-blue">Сначала новые</span>
-              </div>
-
-            </label>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <div class="radiobtn">
-            <input id="agent-sort-2" type="radio" name="agent-sort" hidden>
-            <label class="align-items-start" for="agent-sort-2">
-              <div class="rect"></div>
-              <img src="img/icons/sort-up.svg" alt="icon">
-              <div class="d-flex flex-column gap-1">
-                <div class="fz-14">
-                  По дате создания
-                </div>
-                <span class="fz-12 color-grey-blue">Сначала старые</span>
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <div class="radiobtn">
-            <input id="agent-sort-3" type="radio" name="agent-sort" hidden>
-            <label class="align-items-start" for="agent-sort-3">
-              <div class="rect"></div>
-              <img src="img/icons/sort-down.svg" alt="icon">
-              <div class="d-flex flex-column gap-1">
-                <div class="fz-14">
-                  По сумме вознаграждения
-                </div>
-                <span class="fz-12 color-grey-blue">Сначала больше</span>
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <div class="radiobtn">
-            <input id="agent-sort-4" type="radio" name="agent-sort" hidden>
-            <label class="align-items-start" for="agent-sort-4">
-              <div class="rect"></div>
-              <img src="img/icons/sort-up.svg" alt="icon">
-              <div class="d-flex flex-column gap-1">
-                <div class="fz-14">
-                  По сумме вознаграждения
-                </div>
-                <span class="fz-12 color-grey-blue">Сначала меньше</span>
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <div class="radiobtn">
-            <input id="agent-sort-5" type="radio" name="agent-sort" hidden>
-            <label class="align-items-start" for="agent-sort-5">
-              <div class="rect"></div>
-              <img src="img/icons/sort-up.svg" alt="icon">
-              <div class="d-flex flex-column gap-1">
-                <div class="fz-14">
-                  По типу
-                </div>
-                <span class="fz-12 color-grey-blue">Сначала личные сделки</span>
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <div class="radiobtn">
-            <input id="agent-sort-6" type="radio" name="agent-sort" hidden>
-            <label class="align-items-start" for="agent-sort-6">
-              <div class="rect"></div>
-              <img src="img/icons/sort-up.svg" alt="icon">
-              <div class="d-flex flex-column gap-1">
-                <div class="fz-14">
-                  По типу
-                </div>
-                <span class="fz-12 color-grey-blue">Сначала сделки продавцов</span>
-              </div>
-            </label>
-          </div>
-        </div>
-
       </div>
 
 

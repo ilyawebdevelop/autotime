@@ -1,27 +1,33 @@
-<section class="sect pt-3">
+<section class="sect pt-20">
 
   <div class="container">
 
     <h3 class="text-center mb-3 pb-1">Заявки</h3>
 
     <div class="d-flex justify-content-center gap-2 mb-3 pb-1">
-      <button class="button-round width-50 bg--light-blue d-flex justify-content-center align-items-center" data-fancybox data-src="#sellers-filter">
+      <button class="button-round filterBtn width-50 bg--light-blue d-flex justify-content-center align-items-center"
+        data-fancybox data-src="#sellers-filter">
         <svg class="w-24">
           <use xlink:href="img/icons/icons.svg#filter"></use>
         </svg>
       </button>
-      <button class="button-round width-50 bg--light-blue d-flex justify-content-center align-items-center" data-fancybox data-src="#sellers-sort">
+      <button class="button-round width-50 bg--light-blue d-flex justify-content-center align-items-center"
+        data-fancybox data-src="#sellers-sort">
         <svg class="w-24">
           <use xlink:href="img/icons/icons.svg#sort"></use>
         </svg>
       </button>
       <button class="button button--light-blue text-uppercase w-100" data-fancybox data-src="#sellers-new-order">
+        <svg class="w-24" style="stroke: transparent; fill: var(--black);">
+          <use xlink:href="img/icons/icons.svg#plus"></use>
+        </svg>
         Создать новую
       </button>
     </div>
 
     <div class="mb-3 pb-1 form-floating">
-      <input type="tel" class="formInput formInput--search rounded-25 form-control" placeholder="Поиск по моим заявкам">
+      <input type="tel" class="formInput formInput--search rounded-25 form-control bg-white"
+        placeholder="Поиск по моим заявкам">
       <label for="copy-link">Поиск по моим заявкам</label>
       <button class="remove-text" type="button">
         <img src="@img/icons/remove.svg" alt="remove-text">
@@ -69,7 +75,7 @@
       </div>
       <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
         <div class="d-flex justify-content-between gap-3 align-items-center">
-          <span class="text-uppercase color-grey-blue">моё вознаграждение</span>
+          <span class="text-uppercase color-black">моё вознаграждение</span>
           <div class="d-flex align-items-center gap-1">
             <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
             <span class="h6 text-nowrap mb-0">120 000₽</span>
@@ -125,7 +131,7 @@
       </div>
       <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
         <div class="d-flex justify-content-between gap-3 align-items-center">
-          <span class="text-uppercase color-grey-blue">моё вознаграждение</span>
+          <span class="text-uppercase color-black">моё вознаграждение</span>
           <div class="d-flex align-items-center gap-1">
             <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
             <span class="h6 text-nowrap mb-0">400 000₽</span>

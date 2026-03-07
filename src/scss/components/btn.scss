@@ -10,9 +10,16 @@
   height: 50px;
   letter-spacing: 0.02em;
   border-radius: 30px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
+
+  @media(max-width: 376px) {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 15px;
+    column-gap: 5px;
+  }
 
   &--lg {
     height: 65px;
@@ -112,6 +119,11 @@
     &.w-24 {
       width: 24px;
       height: 24px;
+    }
+
+    &.w-16 {
+      width: 16px;
+      height: 16px;
     }
   }
 
@@ -225,5 +237,22 @@
     stroke: transparent;
     width: 20px;
     height: 20px;
+  }
+}
+
+.filterBtn {
+  position: relative;
+
+  &.active {
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: var(--yellow);
+      position: absolute;
+      border-radius: 50%;
+      top: 12px;
+      right: 8px;
+    }
   }
 }

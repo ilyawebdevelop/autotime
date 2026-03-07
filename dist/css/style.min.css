@@ -14991,7 +14991,7 @@ a:hover {
 }
 
 button {
-  transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear, color 0.2s linear;
   cursor: pointer;
 }
 button svg {
@@ -15193,6 +15193,10 @@ a.color-black:hover {
 
 .fw-bold {
   font-weight: 700;
+}
+
+.color-white {
+  color: #fff;
 }
 
 .sectHead {
@@ -15507,13 +15511,27 @@ h6,
   background-color: var(--white);
 }
 
+.bg--yellow {
+  background-color: var(--yellow);
+}
+
 .bg--yellow-light {
   background-color: #FFF7C4;
+  color: var(--yellow-dark);
+}
+
+.bg--green-light {
+  background-color: var(--green-light);
 }
 
 .fz-12 {
   font-size: 12px;
   line-height: 140%;
+}
+
+.fz-13 {
+  font-size: 13px;
+  line-height: 120%;
 }
 
 .fz-14 {
@@ -15533,8 +15551,21 @@ h6,
   color: var(--error);
 }
 
+.color-link {
+  color: var(--link);
+}
+
+a.color-link:hover {
+  color: var(--black);
+}
+
 .color-light-grey-blue {
   color: var(--light-grey-blue);
+}
+
+a.color-light-grey-blue:hover,
+button.color-light-grey-blue:hover {
+  color: var(--grey-blue);
 }
 
 .color-total-black {
@@ -15543,6 +15574,10 @@ h6,
 
 .color-yellow-dark {
   color: var(--yellow-dark);
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 .mb-12 {
@@ -15684,6 +15719,10 @@ a.color-grey-blue:hover {
   border-radius: 60px;
 }
 
+.w-24 {
+  width: 24px;
+}
+
 .w-40 {
   width: 40px;
 }
@@ -15702,6 +15741,10 @@ a.color-grey-blue:hover {
 
 .border-light-grey-blue {
   border: 1px solid var(--light-grey-blue);
+}
+
+.p-16-12 {
+  padding: 16px 16px 16px 12px;
 }
 
 .p-20 {
@@ -15767,6 +15810,10 @@ a.color-grey-blue:hover {
   border-bottom: 1px solid var(--light-blue);
 }
 
+.border-grey-blue {
+  border: 1px solid var(--grey-blue);
+}
+
 .px-12 {
   padding-left: 12px;
   padding-right: 12px;
@@ -15784,6 +15831,14 @@ a.color-grey-blue:hover {
   top: 1px;
 }
 
+.card-text-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 2px;
+  border-radius: 0 20px 20px 0;
+  letter-spacing: 0.02em;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -15795,9 +15850,17 @@ a.color-grey-blue:hover {
   height: 50px;
   letter-spacing: 0.02em;
   border-radius: 30px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
+}
+@media (max-width: 376px) {
+  .button {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 15px;
+    column-gap: 5px;
+  }
 }
 .button--lg {
   height: 65px;
@@ -15874,6 +15937,10 @@ a.color-grey-blue:hover {
 .button svg.w-24 {
   width: 24px;
   height: 24px;
+}
+.button svg.w-16 {
+  width: 16px;
+  height: 16px;
 }
 .button--h-25 {
   height: 25px;
@@ -15972,6 +16039,20 @@ a.color-grey-blue:hover {
   stroke: transparent;
   width: 20px;
   height: 20px;
+}
+
+.filterBtn {
+  position: relative;
+}
+.filterBtn.active::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--yellow);
+  position: absolute;
+  border-radius: 50%;
+  top: 12px;
+  right: 8px;
 }
 
 /* Hamburger Menu */
@@ -16246,7 +16327,7 @@ a.color-grey-blue:hover {
   top: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 2;
+  z-index: 3;
 }
 .header .logo img {
   width: 155px;

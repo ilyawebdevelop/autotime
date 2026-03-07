@@ -1,0 +1,456 @@
+<section class="sect pt-20">
+
+  <div class="container">
+
+    <h3 class="text-center mb-3 pb-1">Заявки</h3>
+
+    <div class="d-flex justify-content-center gap-2 mb-3 pb-1">
+      <button
+        class="button-round filterBtn active width-50 bg--light-blue d-flex justify-content-center align-items-center"
+        data-fancybox data-src="#agent-filter">
+        <svg class="w-24">
+          <use xlink:href="img/icons/icons.svg#filter"></use>
+        </svg>
+      </button>
+      <button class="button-round width-50 bg--light-blue d-flex justify-content-center align-items-center"
+        data-fancybox data-src="#agent-sort">
+        <svg class="w-24">
+          <use xlink:href="img/icons/icons.svg#sort"></use>
+        </svg>
+      </button>
+      <button class="button button--light-blue text-uppercase w-100" data-fancybox data-src="#sellers-new-order">
+        <svg class="w-24" style="stroke: transparent; fill: var(--black);">
+          <use xlink:href="img/icons/icons.svg#plus"></use>
+        </svg>
+        Создать новую
+      </button>
+    </div>
+
+    <div class="mb-3 pb-1 form-floating">
+      <input type="tel" class="formInput formInput--search rounded-25 form-control bg-white"
+        placeholder="Поиск по моим заявкам">
+      <label for="copy-link">Поиск по моим заявкам</label>
+      <button class="remove-text" type="button">
+        <img src="@img/icons/remove.svg" alt="remove-text">
+      </button>
+    </div>
+
+    <div class="mb-20 bg--white rounded-20 fz-12 d-flex">
+      <span
+        class="card-text-vertical bg--yellow d-flex justify-content-center fz-12 fw-bold text-uppercase color-white">Личная</span>
+      <div class="d-block p-16-12 w-100">
+        <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+          <div class="d-flex align-items-center gap-1">
+            <span>ID:</span>
+            <span id="copy-link-1">1234567890</span>
+            <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+              title="Скопировано">
+              <img src="@img/icons/copy.svg" alt="icon">
+            </button>
+          </div>
+          <span>06.02.2026</span>
+        </div>
+        <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">Клиент</span>
+            <span class="text-end">Костров Константин Константинович</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">телефон</span>
+            <a class="text-end color-black" href="tel:+79123456789">+7 (912) 345 67-89</a>
+          </div>
+        </div>
+        <button class="button button--h-25 button--green-light fw-normal px-12 pe-none mx-auto">
+          Новая
+        </button>
+      </div>
+
+    </div>
+
+    <div class="mb-20 bg--white rounded-20 fz-12 d-flex">
+      <span
+        class="card-text-vertical bg--yellow d-flex justify-content-center fz-12 fw-bold text-uppercase color-white">Личная</span>
+      <div class="d-block p-16-12 w-100">
+        <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+          <div class="d-flex align-items-center gap-1">
+            <span>ID:</span>
+            <span id="copy-link-2">1234567890</span>
+            <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-2" data-bs-toggle="tooltip"
+              title="Скопировано">
+              <img src="@img/icons/copy.svg" alt="icon">
+            </button>
+          </div>
+          <span>06.02.2026</span>
+        </div>
+        <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-black">моё вознаграждение</span>
+            <div class="d-flex align-items-center gap-1">
+              <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+              <span class="h6 text-nowrap mb-0">360 000₽</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">сумма сделки</span>
+            <div class="d-flex align-items-center gap-1">
+              <span class="h6 text-nowrap mb-0">2 400 000₽</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between gap-3 align-items-start">
+            <span class="text-uppercase color-grey-blue">Автомобиль</span>
+            <div class="d-flex flex-column align-items-end gap-2">
+              <span>Mercedes-Benz</span>
+              <div class="d-flex gap-1">
+                <span>Maybach S-Класс</span>
+                <span>2023 г.</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">Город</span>
+            <span class="text-end">г. Иркутск</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">Клиент</span>
+            <span class="text-end">Костров Константин Константинович</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">телефон</span>
+            <a class="text-end color-black" href="tel:+79123456789">+7 (912) 345 67-89</a>
+          </div>
+        </div>
+        <button class="button button--h-25 button--yellow-light fw-normal px-12 pe-none mx-auto">
+          Связываемся с клиентом
+        </button>
+      </div>
+
+    </div>
+
+    <div class="mb-20 bg--white rounded-20 fz-12 d-flex">
+      <span
+        class="card-text-vertical bg--yellow d-flex justify-content-center fz-12 fw-bold text-uppercase color-white">Личная</span>
+      <div class="d-block p-16-12 w-100">
+        <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+          <div class="d-flex align-items-center gap-1">
+            <span>ID:</span>
+            <span id="copy-link-3">1234567890</span>
+            <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-3" data-bs-toggle="tooltip"
+              title="Скопировано">
+              <img src="@img/icons/copy.svg" alt="icon">
+            </button>
+          </div>
+          <span>06.02.2026</span>
+        </div>
+        <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-black">моё вознаграждение</span>
+            <div class="d-flex align-items-center gap-1">
+              <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+              <span class="h6 text-nowrap mb-0">400 000₽</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">сумма сделки</span>
+            <div class="d-flex align-items-center gap-1">
+              <span class="h6 text-nowrap mb-0">2 400 000₽</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between gap-3 align-items-start">
+            <span class="text-uppercase color-grey-blue">Автомобиль</span>
+            <div class="d-flex flex-column align-items-end gap-2">
+              <div class="d-flex gap-1">
+                <span>Haval </span>
+                <span>Chitu</span>
+                <span>2021 г.</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">Город</span>
+            <span class="text-end">г. Иркутск</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">Клиент</span>
+            <span class="text-end">Костров Константин Константинович</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 align-items-center">
+            <span class="text-uppercase color-grey-blue">телефон</span>
+            <a class="text-end color-black" href="tel:+79123456789">+7 (912) 345 67-89</a>
+          </div>
+        </div>
+        <button class="button button--h-25 button--light-blue fw-normal px-12 pe-none mx-auto">
+          Завершена
+        </button>
+      </div>
+    </div>
+
+    <div class="mb-20 bg--white p-3 rounded-20 fz-12">
+      <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex align-items-center gap-1">
+          <span>ID:</span>
+          <span id="copy-link-1">1234567890</span>
+          <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+            title="Скопировано">
+            <img src="@img/icons/copy.svg" alt="icon">
+          </button>
+        </div>
+        <span>06.02.2026</span>
+      </div>
+      <div class="d-flex flex-column justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between w-100 gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">моё вознаграждение</span>
+
+        </div>
+        <div class="d-flex flex-column gap-1">
+          <div class="d-flex justify-content-between w-100 gap-3 align-items-center">
+            <div class="d-flex align-items-center gap-2">
+              <img class="flex-shrink-0" src="@img/icons/long-arrow-down-right.svg" alt="icon">
+              <span class="text-uppercase color-grey-blue">Продавец</span>
+            </div>
+
+          </div>
+          <a class="color-link fz-14">Сергеев Алексей Викторович</a>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Клиент</span>
+          <span class="text-end">Костров Константин К.</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">телефон</span>
+          <a class="text-end color-black" href="tel:+79123456789">+7 (912) **** 789</a>
+        </div>
+      </div>
+      <button class="button button--h-25 button--green-light fw-normal px-12 pe-none mx-auto">
+        Новая
+      </button>
+    </div>
+
+    <div class="mb-20 bg--white p-3 rounded-20 fz-12">
+      <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex align-items-center gap-1">
+          <span>ID:</span>
+          <span id="copy-link-3">1234567890</span>
+          <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-3" data-bs-toggle="tooltip"
+            title="Скопировано">
+            <img src="@img/icons/copy.svg" alt="icon">
+          </button>
+        </div>
+        <span>06.02.2026</span>
+      </div>
+      <div class="d-flex flex-column justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between w-100 gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">моё вознаграждение</span>
+          <div class="d-flex align-items-center gap-1">
+            <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+            <span class="h6 text-nowrap mb-0">360 000₽</span>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-1">
+          <div class="d-flex justify-content-between w-100 gap-3 align-items-center">
+            <div class="d-flex align-items-center gap-2">
+              <img class="flex-shrink-0" src="@img/icons/long-arrow-down-right.svg" alt="icon">
+              <span class="text-uppercase color-grey-blue">Продавец</span>
+            </div>
+            <div class="d-flex align-items-center gap-1">
+              <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+              <span class="h6 text-nowrap mb-0">120 000₽</span>
+            </div>
+          </div>
+          <a class="color-link px-4 fz-14">Сергеев Алексей Викторович</a>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">сумма сделки</span>
+          <div class="d-flex align-items-center gap-1">
+            <span class="h6 text-nowrap mb-0">2 400 000₽</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-start">
+          <span class="text-uppercase color-grey-blue">Автомобиль</span>
+          <div class="d-flex flex-column align-items-end gap-2">
+            <span>Mercedes-Benz</span>
+            <div class="d-flex gap-1">
+              <span>Maybach S-Класс</span>
+              <span>2023 г.</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Город</span>
+          <span class="text-end color-black">г. Иркутск</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Клиент</span>
+          <span class="text-end color-black">Костров Константин Константинович</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">телефон</span>
+          <a class="text-end color-black" href="tel:+79123456789">+7 (912) **** 789</a>
+        </div>
+      </div>
+      <button class="button button--h-25 bg--yellow-light fw-normal px-12 pe-none mx-auto">
+        Подаем заявку в банки
+      </button>
+    </div>
+
+    <div class="mb-20 bg--white p-3 rounded-20 fz-12">
+      <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex align-items-center gap-1">
+          <span>ID:</span>
+          <span id="copy-link-3">1234567890</span>
+          <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-3" data-bs-toggle="tooltip"
+            title="Скопировано">
+            <img src="@img/icons/copy.svg" alt="icon">
+          </button>
+        </div>
+        <span>06.02.2026</span>
+      </div>
+
+      <div class="d-flex flex-column justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between w-100 gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">моё вознаграждение</span>
+          <div class="d-flex align-items-center gap-1">
+            <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+            <span class="h6 text-nowrap mb-0">360 000₽</span>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-1">
+          <div class="d-flex justify-content-between w-100 gap-3 align-items-center">
+            <div class="d-flex align-items-center gap-2">
+              <img class="flex-shrink-0" src="@img/icons/long-arrow-down-right.svg" alt="icon">
+              <span class="text-uppercase color-grey-blue">Продавец</span>
+            </div>
+            <div class="d-flex align-items-center gap-1">
+              <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+              <span class="h6 text-nowrap mb-0">120 000₽</span>
+            </div>
+          </div>
+          <a class="color-link px-4 fz-14">Сергеев Алексей Викторович</a>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">сумма сделки</span>
+          <div class="d-flex align-items-center gap-1">
+            <span class="h6 text-nowrap mb-0">2 400 000₽</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-start">
+          <span class="text-uppercase color-grey-blue">Автомобиль</span>
+          <div class="d-flex flex-column align-items-end gap-2">
+            <div class="d-flex gap-1">
+              <span>Haval </span>
+              <span>Chitu</span>
+              <span>2021 г.</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Город</span>
+          <span class="text-end">г. Иркутск</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Клиент</span>
+          <span class="text-end">Костров Константин Константинович</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">телефон</span>
+          <a class="text-end color-black" href="tel:+79123456789">+7 (912) 345 67-89</a>
+        </div>
+      </div>
+      <button class="button button--h-25 button--light-blue fw-normal px-12 pe-none mx-auto">
+        Завершена
+      </button>
+    </div>
+
+    <div class="mb-20 bg--white p-3 rounded-20 fz-12">
+      <div class="d-flex justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex align-items-center gap-1">
+          <span class="color-grey-blue">ID:</span>
+          <span class="color-grey-blue" id="copy-link-3">1234567890</span>
+          <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-3" data-bs-toggle="tooltip"
+            title="Скопировано">
+            <img src="@img/icons/copy.svg" alt="icon">
+          </button>
+        </div>
+        <span class="color-grey-blue">06.02.2026</span>
+      </div>
+      <div class="d-flex flex-column justify-content-between gap-2 pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between w-100 gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">моё вознаграждение</span>
+          <div class="d-flex align-items-center gap-1">
+            <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+            <span class="h6 text-nowrap mb-0">360 000₽</span>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-1">
+          <div class="d-flex justify-content-between w-100 gap-3 align-items-center">
+            <div class="d-flex align-items-center gap-2">
+              <img class="flex-shrink-0" src="@img/icons/long-arrow-down-right.svg" alt="icon">
+              <span class="text-uppercase color-grey-blue">Продавец</span>
+            </div>
+            <div class="d-flex align-items-center gap-1">
+              <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+              <span class="h6 text-nowrap mb-0">120 000₽</span>
+            </div>
+          </div>
+          <a class="color-link px-4 fz-14">Сергеев Алексей Викторович</a>
+        </div>
+
+      </div>
+
+      <div class="d-flex flex-column gap-2 justify-content-between pb-3 mb-3 border-b-light-blue">
+        <div class="d-flex justify-content-between gap-3 align-items-start">
+          <span class="text-uppercase color-grey-blue">Автомобиль</span>
+          <div class="d-flex flex-column align-items-end gap-2">
+            <div class="d-flex gap-1 color-grey-blue">
+              <span>Toyota </span>
+              <span>Vista</span>
+              <span>2012 г.</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Город</span>
+          <span class="text-end color-grey-blue">г. Иркутск</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">Клиент</span>
+          <span class="text-end color-grey-blue">Костров Константин Константинович</span>
+        </div>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <span class="text-uppercase color-grey-blue">телефон</span>
+          <a class="text-end color-grey-blue" href="tel:+79123456789">+7 (912) **** 789</a>
+        </div>
+      </div>
+      <button class="button button--h-25 button--red-light fw-normal px-12 pe-none mx-auto">
+        Не устроили условия
+      </button>
+    </div>
+
+    <button class="button button--light-blue text-uppercase w-100 mx-auto mb-20">
+      загрузить ещё
+    </button>
+
+    <div class="d-flex align-items-center justify-content-between">
+      <button class="navArrow">
+        <img src="@img/icons/arrow-prev.svg" alt="icon">
+      </button>
+      <span class="color-grey-blue fz-14">1-10 of 195 items</span>
+      <button class="navArrow">
+        <img src="@img/icons/arrow-next.svg" alt="icon">
+      </button>
+    </div>
+
+  </div>
+
+</section>

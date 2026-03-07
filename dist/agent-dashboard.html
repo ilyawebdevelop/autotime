@@ -344,37 +344,50 @@
 
     <div class="rounded-60 bg-white p-32 mb-3">
       <h4 class="text-center mb-4">ТОП агентов в Иркутске</h4>
-      <div class="rounded-24 p-3 bg--bg mb-3">
-        <div class="d-flex flex-column gap-2">
+      <div class="rounded-24 p-3 bg--bg mb-10">
+        <div class="d-flex flex-column gap-3">
 
           <div class="d-flex gap-2 award-item">
             <img src="img/icons/awards/icon-1.png" alt="icon">
-            <span class="fz-14">
+            <span class="fz-14 color-total-black">
               Константин Константинович Костров
             </span>
           </div>
 
           <div class="d-flex gap-2 award-item">
             <img src="img/icons/awards/icon-2.png" alt="icon">
-            <span class="fz-14">
+            <span class="fz-14 color-total-black">
               Софья Ивановна Смирнова
             </span>
           </div>
 
           <div class="d-flex gap-2 award-item">
             <img src="img/icons/awards/icon-3.png" alt="icon">
-            <span class="fz-14">
+            <span class="fz-14 color-total-black">
               Михаил Сергеевич Петров
             </span>
           </div>
 
         </div>
       </div>
-      <div class="rounded-24 p-3 bg--yellow-light d-flex gap-1 align-items-center justify-content-center flex-wrap">
-        <span class="h6  mb-0 fz-14">115.</span>
-        <span class="fz-14">Иванов Иван Иванович</span>
-        <span class="fz-12 color-yellow-dark">Это вы</span>
+      <div class="rounded-24 p-3 d-flex gap-2 award-item bg--green-light mb-10">
+
+        <div class="d-flex gap-2">
+          <img src="img/icons/awards/icon-3.png" alt="icon">
+          <span class="fz-14 color-total-black">
+            Иван Иванович Иванов
+          </span>
+        </div>
+        <span class="fz-12 color-green text-nowrap">Это вы</span>      
       </div>
+      <div class="rounded-24 p-3 bg--yellow-light d-flex gap-1 align-items-center justify-content-start">
+        <div class="d-flex gap-1">
+          <span class="h6  mb-0 fz-14">115.</span>
+          <span class="fz-14 color-total-black"> Константин Константинович Костров</span>
+        </div>
+        <span class="fz-12 color-yellow-dark text-nowrap">Это вы</span>
+      </div>
+
     </div>
 
     <div class="rounded-60 bg-white p-32 mb-3">
@@ -383,47 +396,171 @@
         <span class="color-grey-blue fz-14 text-center d-block">по количеству успешных сделок</span>
       </div>
 
-      <div class="tabs" data-tabs="popup">
-        <ul class="tabs__nav">
-          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Топ-3</button></li>
-          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Топ-10</button></li>
-
+      <div class="tabs round-tabs" data-tabs="popup">
+        <ul class="tabs__nav w-100 p-1 border-grey-blue rounded-30 mb-4">
+          <li class="tabs__nav-item flex-grow-1"><button
+              class="tabs__nav-btn w-100 rounded-20 h-40 text-uppercase fz-13 fw-medium" type="button">Топ-3</button>
+          </li>
+          <li class="tabs__nav-item flex-grow-1"><button
+              class="tabs__nav-btn w-100 rounded-20 h-40 text-uppercase fz-13 fw-medium" type="button">Топ-10</button>
+          </li>
         </ul>
         <div class="tabs__content">
           <div class="tabs__panel">
+
             <div class="rounded-24 p-3 bg--bg mb-3">
-              <div class="d-flex flex-column gap-2">
+              <div class="d-flex flex-column gap-3">
 
                 <div class="d-flex gap-2 award-item">
                   <img src="img/icons/awards/icon-1.png" alt="icon">
-                  <span class="fz-14">
-                    Константин Константинович Костров
-                  </span>
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Константин Константинович Костров
+                    </span>
+                    <span class="h6 mb-0">123</span>
+                  </div>
                 </div>
 
                 <div class="d-flex gap-2 award-item">
                   <img src="img/icons/awards/icon-2.png" alt="icon">
-                  <span class="fz-14">
-                    Софья Ивановна Смирнова
-                  </span>
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Софья Ивановна Смирнова
+                    </span>
+                    <span class="h6 mb-0">120</span>
+                  </div>
                 </div>
 
                 <div class="d-flex gap-2 award-item">
                   <img src="img/icons/awards/icon-3.png" alt="icon">
-                  <span class="fz-14">
-                    Михаил Сергеевич Петров
-                  </span>
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Михаил Сергеевич Петров
+                    </span>
+                    <span class="h6 mb-0">112</span>
+                  </div>
                 </div>
 
               </div>
             </div>
           </div>
-          <div class="tabs__panel"></div>
+          <div class="tabs__panel">
+            <div class="rounded-24 p-3 bg--bg mb-3">
+              <div class="d-flex flex-column gap-3">
+
+                <div class="d-flex gap-2 award-item">
+                  <img src="img/icons/awards/icon-1.png" alt="icon">
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Константин Константинович Костров
+                    </span>
+                    <span class="h6 mb-0">123</span>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-2 award-item">
+                  <img src="img/icons/awards/icon-2.png" alt="icon">
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Софья Ивановна Смирнова
+                    </span>
+                    <span class="h6 mb-0">120</span>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-2 award-item">
+                  <img src="img/icons/awards/icon-3.png" alt="icon">
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Михаил Сергеевич Петров
+                    </span>
+                    <span class="h6 mb-0">112</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="d-flex flex-column gap-3 mb-40">
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">4.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Екатерина Александровна Васильева
+                  </span>
+                  <span class="h6 mb-0">110</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">5.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Даниил Викторович Лебедев
+                  </span>
+                  <span class="h6 mb-0">110</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">6.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Антон Павлович Сидоров
+                  </span>
+                  <span class="h6 mb-0">110</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">7.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Жанна Викторовна Романова
+                  </span>
+                  <span class="h6 mb-0">96</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">8.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Даниил Андреевич Кузнецов
+                  </span>
+                  <span class="h6 mb-0">96</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 d-block w-24 flex-shrink-0">9.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    София Дмитриевна Федорова
+                  </span>
+                  <span class="h6 mb-0">81</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">10.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Михаил Александрович Николаев
+                  </span>
+                  <span class="h6 mb-0">96</span>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
 
         </div>
       </div>
 
-
+      <a href="#" class="fz-13 fw-medium text-uppercase text-center mx-auto d-block mt-32">показать всех</a>
 
     </div>
 
@@ -584,6 +721,157 @@
   </div>
 </div>
 
+<!-- agent-filter -->
+<div class="modal rounded-60 p-40-32" id="agent-filter">
+
+  <h4 class="h4 text-center mb-32">
+    Фильтры
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Статус сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-1" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-1">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Новая
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-2" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-2">
+              <div class="rect"></div>
+              <div class="fz-14">
+                В работе
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-3" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-3">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Завершена
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-4" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-4">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Отклонена
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Тип сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-5" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-5">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Личная
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-6" type="checkbox" hidden>
+            <label class="align-items-center" for="agent-filter-6">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Сделки продавцов
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Тип сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32 form-floating">
+        <select id="select-1" class="formSelect">
+          <option value="1" selected>Все типы</option>
+          <option value="2">автоэксперт</option>
+          <option value="3">Продавец</option>
+          <option value="4">блогер</option>
+          <option value="5">банк</option>
+        </select>
+        <label for="select-1">Сфера деятельности</label>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Продавец</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32 form-floating">
+        <select id="select-2" class="formSelect">
+          <option value="1" selected>Все продавцы</option>
+          <option value="2">автоэксперт</option>
+          <option value="3">Продавец</option>
+          <option value="4">блогер</option>
+          <option value="5">банк</option>
+        </select>
+        <label for="select-2">Сфера деятельности</label>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
 <!-- sellers-sort -->
 <div class="modal rounded-60 p-40-32" id="sellers-sort">
 
@@ -665,6 +953,131 @@
             </label>
           </div>
         </div>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- agent-sort -->
+<div class="modal rounded-60 p-40-32" id="agent-sort">
+
+  <h4 class="h4 text-center mb-32">
+    Сортировка
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-1" type="radio" name="agent-sort" hidden checked>
+            <label class="align-items-start" for="agent-sort-1">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала новые</span>
+              </div>
+
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-2" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-2">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала старые</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-3" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-3">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала больше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-4" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-4">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала меньше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-5" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-5">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По типу
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала личные сделки</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-6" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-6">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По типу
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала сделки продавцов</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
       </div>
 
 

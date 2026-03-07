@@ -173,6 +173,157 @@
   </div>
 </div>
 
+<!-- agent-filter -->
+<div class="modal rounded-60 p-40-32" id="agent-filter">
+
+  <h4 class="h4 text-center mb-32">
+    Фильтры
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Статус сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-1" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-1">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Новая
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-2" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-2">
+              <div class="rect"></div>
+              <div class="fz-14">
+                В работе
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-3" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-3">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Завершена
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-4" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-4">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Отклонена
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Тип сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-5" type="checkbox" hidden checked>
+            <label class="align-items-center" for="agent-filter-5">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Личная
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="agent-filter-6" type="checkbox" hidden>
+            <label class="align-items-center" for="agent-filter-6">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Сделки продавцов
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Тип сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32 form-floating">
+        <select id="select-1" class="formSelect">
+          <option value="1" selected>Все типы</option>
+          <option value="2">автоэксперт</option>
+          <option value="3">Продавец</option>
+          <option value="4">блогер</option>
+          <option value="5">банк</option>
+        </select>
+        <label for="select-1">Сфера деятельности</label>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Продавец</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32 form-floating">
+        <select id="select-2" class="formSelect">
+          <option value="1" selected>Все продавцы</option>
+          <option value="2">автоэксперт</option>
+          <option value="3">Продавец</option>
+          <option value="4">блогер</option>
+          <option value="5">банк</option>
+        </select>
+        <label for="select-2">Сфера деятельности</label>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
 <!-- sellers-sort -->
 <div class="modal rounded-60 p-40-32" id="sellers-sort">
 
@@ -254,6 +405,131 @@
             </label>
           </div>
         </div>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- agent-sort -->
+<div class="modal rounded-60 p-40-32" id="agent-sort">
+
+  <h4 class="h4 text-center mb-32">
+    Сортировка
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-1" type="radio" name="agent-sort" hidden checked>
+            <label class="align-items-start" for="agent-sort-1">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала новые</span>
+              </div>
+
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-2" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-2">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала старые</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-3" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-3">
+              <div class="rect"></div>
+              <img src="img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала больше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-4" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-4">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По сумме вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала меньше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-5" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-5">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По типу
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала личные сделки</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="agent-sort-6" type="radio" name="agent-sort" hidden>
+            <label class="align-items-start" for="agent-sort-6">
+              <div class="rect"></div>
+              <img src="img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По типу
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала сделки продавцов</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
       </div>
 
 

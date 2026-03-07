@@ -291,37 +291,50 @@
 
     <div class="rounded-60 bg-white p-32 mb-3">
       <h4 class="text-center mb-4">ТОП агентов в Иркутске</h4>
-      <div class="rounded-24 p-3 bg--bg mb-3">
-        <div class="d-flex flex-column gap-2">
+      <div class="rounded-24 p-3 bg--bg mb-10">
+        <div class="d-flex flex-column gap-3">
 
           <div class="d-flex gap-2 award-item">
             <img src="@img/icons/awards/icon-1.png" alt="icon">
-            <span class="fz-14">
+            <span class="fz-14 color-total-black">
               Константин Константинович Костров
             </span>
           </div>
 
           <div class="d-flex gap-2 award-item">
             <img src="@img/icons/awards/icon-2.png" alt="icon">
-            <span class="fz-14">
+            <span class="fz-14 color-total-black">
               Софья Ивановна Смирнова
             </span>
           </div>
 
           <div class="d-flex gap-2 award-item">
             <img src="@img/icons/awards/icon-3.png" alt="icon">
-            <span class="fz-14">
+            <span class="fz-14 color-total-black">
               Михаил Сергеевич Петров
             </span>
           </div>
 
         </div>
       </div>
-      <div class="rounded-24 p-3 bg--yellow-light d-flex gap-1 align-items-center justify-content-center flex-wrap">
-        <span class="h6  mb-0 fz-14">115.</span>
-        <span class="fz-14">Иванов Иван Иванович</span>
-        <span class="fz-12 color-yellow-dark">Это вы</span>
+      <div class="rounded-24 p-3 d-flex gap-2 award-item bg--green-light mb-10">
+
+        <div class="d-flex gap-2">
+          <img src="@img/icons/awards/icon-3.png" alt="icon">
+          <span class="fz-14 color-total-black">
+            Иван Иванович Иванов
+          </span>
+        </div>
+        <span class="fz-12 color-green text-nowrap">Это вы</span>      
       </div>
+      <div class="rounded-24 p-3 bg--yellow-light d-flex gap-1 align-items-center justify-content-start">
+        <div class="d-flex gap-1">
+          <span class="h6  mb-0 fz-14">115.</span>
+          <span class="fz-14 color-total-black"> Константин Константинович Костров</span>
+        </div>
+        <span class="fz-12 color-yellow-dark text-nowrap">Это вы</span>
+      </div>
+
     </div>
 
     <div class="rounded-60 bg-white p-32 mb-3">
@@ -330,47 +343,171 @@
         <span class="color-grey-blue fz-14 text-center d-block">по количеству успешных сделок</span>
       </div>
 
-      <div class="tabs" data-tabs="popup">
-        <ul class="tabs__nav">
-          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Топ-3</button></li>
-          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Топ-10</button></li>
-
+      <div class="tabs round-tabs" data-tabs="popup">
+        <ul class="tabs__nav w-100 p-1 border-grey-blue rounded-30 mb-4">
+          <li class="tabs__nav-item flex-grow-1"><button
+              class="tabs__nav-btn w-100 rounded-20 h-40 text-uppercase fz-13 fw-medium" type="button">Топ-3</button>
+          </li>
+          <li class="tabs__nav-item flex-grow-1"><button
+              class="tabs__nav-btn w-100 rounded-20 h-40 text-uppercase fz-13 fw-medium" type="button">Топ-10</button>
+          </li>
         </ul>
         <div class="tabs__content">
           <div class="tabs__panel">
+
             <div class="rounded-24 p-3 bg--bg mb-3">
-              <div class="d-flex flex-column gap-2">
+              <div class="d-flex flex-column gap-3">
 
                 <div class="d-flex gap-2 award-item">
                   <img src="@img/icons/awards/icon-1.png" alt="icon">
-                  <span class="fz-14">
-                    Константин Константинович Костров
-                  </span>
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Константин Константинович Костров
+                    </span>
+                    <span class="h6 mb-0">123</span>
+                  </div>
                 </div>
 
                 <div class="d-flex gap-2 award-item">
                   <img src="@img/icons/awards/icon-2.png" alt="icon">
-                  <span class="fz-14">
-                    Софья Ивановна Смирнова
-                  </span>
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Софья Ивановна Смирнова
+                    </span>
+                    <span class="h6 mb-0">120</span>
+                  </div>
                 </div>
 
                 <div class="d-flex gap-2 award-item">
                   <img src="@img/icons/awards/icon-3.png" alt="icon">
-                  <span class="fz-14">
-                    Михаил Сергеевич Петров
-                  </span>
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Михаил Сергеевич Петров
+                    </span>
+                    <span class="h6 mb-0">112</span>
+                  </div>
                 </div>
 
               </div>
             </div>
           </div>
-          <div class="tabs__panel"></div>
+          <div class="tabs__panel">
+            <div class="rounded-24 p-3 bg--bg mb-3">
+              <div class="d-flex flex-column gap-3">
+
+                <div class="d-flex gap-2 award-item">
+                  <img src="@img/icons/awards/icon-1.png" alt="icon">
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Константин Константинович Костров
+                    </span>
+                    <span class="h6 mb-0">123</span>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-2 award-item">
+                  <img src="@img/icons/awards/icon-2.png" alt="icon">
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Софья Ивановна Смирнова
+                    </span>
+                    <span class="h6 mb-0">120</span>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-2 award-item">
+                  <img src="@img/icons/awards/icon-3.png" alt="icon">
+                  <div class="d-flex gap-12 justify-content-between w-100">
+                    <span class="fz-14 color-total-black">
+                      Михаил Сергеевич Петров
+                    </span>
+                    <span class="h6 mb-0">112</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="d-flex flex-column gap-3 mb-40">
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">4.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Екатерина Александровна Васильева
+                  </span>
+                  <span class="h6 mb-0">110</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">5.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Даниил Викторович Лебедев
+                  </span>
+                  <span class="h6 mb-0">110</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">6.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Антон Павлович Сидоров
+                  </span>
+                  <span class="h6 mb-0">110</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">7.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Жанна Викторовна Романова
+                  </span>
+                  <span class="h6 mb-0">96</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">8.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Даниил Андреевич Кузнецов
+                  </span>
+                  <span class="h6 mb-0">96</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 d-block w-24 flex-shrink-0">9.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    София Дмитриевна Федорова
+                  </span>
+                  <span class="h6 mb-0">81</span>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 award-item px-3">
+                <span class="fz-14 w-24 flex-shrink-0">10.</span>
+                <div class="d-flex gap-12 justify-content-between w-100">
+                  <span class="fz-14 color-total-black">
+                    Михаил Александрович Николаев
+                  </span>
+                  <span class="h6 mb-0">96</span>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
 
         </div>
       </div>
 
-
+      <a href="#" class="fz-13 fw-medium text-uppercase text-center mx-auto d-block mt-32">показать всех</a>
 
     </div>
 
