@@ -3,17 +3,22 @@
   display: none;
   width: 960px;
   height: fit-content;
-.h4 {
-  max-width: calc(100% - 40px);
-  margin-left: auto;
-  margin-right: auto;
-}
+
+  .h4 {
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &.p-40-32 {
     padding: 40px 32px;
   }
 
   color: var(--main-color);
+}
+
+.p-32-24 {
+  padding: 32px 24px;
 }
 
 .is-compact .fancybox__content>.f-button.is-close-btn {

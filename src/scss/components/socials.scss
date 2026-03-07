@@ -1,0 +1,11 @@
+.socials {
+  ul {
+    li {
+      a {
+        &:hover {
+          opacity: .85;
+        }
+      }
+    }
+  }
+}

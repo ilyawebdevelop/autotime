@@ -1,11 +1,16 @@
 .terminNav {
+  &W {
+    position: sticky;
+    top: 132px;
+    z-index: 2;
+  }
 
 
   ul {
     column-gap: 2px;
 
     li {
-      
+
       a {
         display: flex;
         align-items: center;
@@ -18,7 +23,8 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         text-align: center;
-        @media(max-width: 375px){
+
+        @media(max-width: 375px) {
           font-size: 11px;
           padding: 7px;
         }

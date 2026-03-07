@@ -17,11 +17,19 @@ Fancybox.bind("[data-fancybox]", {
   closeButton: false,
 });
 
-// air datepicker
-new AirDatepicker('.calendar', {
-  minDate: new Date(),
-  autoClose: true,
+
+let calendarArray = document.querySelectorAll('.calendar');
+
+calendarArray.forEach(el => {
+  // air datepicker
+  new AirDatepicker(el, {
+    minDate: new Date(),
+    autoClose: true,
+    position: 'top right',
+  });
 });
+
+
 
 
 function enterCode() {

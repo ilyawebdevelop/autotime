@@ -22,11 +22,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
-
-  @media (max-width: 991px) {
-    font-size: 16px;
-    line-height: 24px;
-  }
 }
 
 main {
@@ -153,7 +148,9 @@ section {
   }
 
 }
-
+a.underline {
+  text-underline-offset: 3px;
+}
 a.underline:hover {
   text-decoration: underline;
 }
@@ -514,6 +511,9 @@ h6,
 .bg--white {
   background-color: var(--white);
 }
+.bg--yellow-light {
+  background-color: #FFF7C4;
+}
 
 .fz-12 {
   font-size: 12px;
@@ -544,6 +544,9 @@ h6,
 .color-total-black {
   color: var(--total-black);
 }
+.color-yellow-dark {
+  color: var(--yellow-dark);
+}
 
 .mb-12 {
   margin-bottom: 12px;
@@ -565,7 +568,15 @@ h6,
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
 .link {
   &.color-grey-blue {
     text-decoration: underline;
@@ -653,9 +664,14 @@ a.color-grey-blue {
     column-gap: 12px;
   }
 }
-
+.gap-10 {
+  gap: 10px;
+}
 .gap-12 {
   gap: 12px;
+}
+.gap-30 {
+  gap: 30px;
 }
 
 .rounded-15 {
@@ -665,6 +681,9 @@ a.color-grey-blue {
 .rounded-20 {
   border-radius: 20px;
 }
+.rounded-24 {
+  border-radius: 24px;
+}
 
 .rounded-25 {
   border-radius: 25px;
@@ -673,9 +692,23 @@ a.color-grey-blue {
 .rounded-30 {
   border-radius: 30px;
 }
-
+.rounded-40 {
+  border-radius: 40px;
+}
 .rounded-60 {
   border-radius: 60px;
+}
+.w-40 {
+  width: 40px;
+}
+.h-40 {
+  height: 40px;
+}
+.w-110 {
+  width: 110px;
+}
+.h-110 {
+  height: 110px;
 }
 
 .border-light-grey-blue {
@@ -748,4 +781,16 @@ a.color-grey-blue {
 .px-12 {
   padding-left: 12px;
   padding-right: 12px;
+}
+.air-datepicker-global-container {
+  z-index: 1111;
+}
+.award-item{
+  img {
+    width: 16px;
+    flex-shrink: 0;
+    height: max-content;
+    position: relative;
+    top: 1px;
+  }
 }

@@ -15055,13 +15055,6 @@ body {
   font-size: 16px;
   line-height: normal;
 }
-@media (max-width: 991px) {
-  html,
-body {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
 
 main {
   padding-top: 80px;
@@ -15176,6 +15169,10 @@ section {
 }
 .formInput:focus {
   border-color: var(--yellow);
+}
+
+a.underline {
+  text-underline-offset: 3px;
 }
 
 a.underline:hover {
@@ -15510,6 +15507,10 @@ h6,
   background-color: var(--white);
 }
 
+.bg--yellow-light {
+  background-color: #FFF7C4;
+}
+
 .fz-12 {
   font-size: 12px;
   line-height: 140%;
@@ -15540,6 +15541,10 @@ h6,
   color: var(--total-black);
 }
 
+.color-yellow-dark {
+  color: var(--yellow-dark);
+}
+
 .mb-12 {
   margin-bottom: 12px;
 }
@@ -15559,6 +15564,18 @@ h6,
 .py-32 {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
 }
 
 .link.color-grey-blue {
@@ -15627,8 +15644,16 @@ a.color-grey-blue:hover {
   column-gap: 12px;
 }
 
+.gap-10 {
+  gap: 10px;
+}
+
 .gap-12 {
   gap: 12px;
+}
+
+.gap-30 {
+  gap: 30px;
 }
 
 .rounded-15 {
@@ -15639,6 +15664,10 @@ a.color-grey-blue:hover {
   border-radius: 20px;
 }
 
+.rounded-24 {
+  border-radius: 24px;
+}
+
 .rounded-25 {
   border-radius: 25px;
 }
@@ -15647,8 +15676,28 @@ a.color-grey-blue:hover {
   border-radius: 30px;
 }
 
+.rounded-40 {
+  border-radius: 40px;
+}
+
 .rounded-60 {
   border-radius: 60px;
+}
+
+.w-40 {
+  width: 40px;
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.w-110 {
+  width: 110px;
+}
+
+.h-110 {
+  height: 110px;
 }
 
 .border-light-grey-blue {
@@ -15721,6 +15770,18 @@ a.color-grey-blue:hover {
 .px-12 {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.air-datepicker-global-container {
+  z-index: 1111;
+}
+
+.award-item img {
+  width: 16px;
+  flex-shrink: 0;
+  height: max-content;
+  position: relative;
+  top: 1px;
 }
 
 .button {
@@ -15841,6 +15902,9 @@ a.color-grey-blue:hover {
 .button-round svg.w-24 {
   width: 24px;
 }
+.button-round svg.h-24 {
+  height: 24px;
+}
 
 .form:has(.agreement input:not(:checked)) .formBtn {
   opacity: 0.33;
@@ -15887,6 +15951,27 @@ a.color-grey-blue:hover {
   width: 24px;
   position: relative;
   top: 2px;
+}
+
+.sellers-profile-edit-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.button-edit {
+  width: 40px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.button-edit svg {
+  fill: var(--grey-blue);
+  stroke: transparent;
+  width: 20px;
+  height: 20px;
 }
 
 /* Hamburger Menu */
@@ -15940,6 +16025,10 @@ a.color-grey-blue:hover {
 }
 .modal.p-40-32 {
   padding: 40px 32px;
+}
+
+.p-32-24 {
+  padding: 32px 24px;
 }
 
 .is-compact .fancybox__content > .f-button.is-close-btn {
@@ -16059,6 +16148,11 @@ a.color-grey-blue:hover {
   background-image: url("../img/icons/fixed-menu/admin-active.svg");
 }
 
+.terminNavW {
+  position: sticky;
+  top: 132px;
+  z-index: 2;
+}
 .terminNav ul {
   column-gap: 2px;
 }
@@ -16214,7 +16308,14 @@ a.color-grey-blue:hover {
 .header-seller .headerBtn:hover {
   opacity: 0.85;
 }
+.header.header-no-fixed {
+  position: absolute;
+}
 
 .first-auth-slide-img {
   width: 310px;
+}
+
+.socials ul li a:hover {
+  opacity: 0.85;
 }

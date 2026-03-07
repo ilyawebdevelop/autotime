@@ -325,6 +325,328 @@
 
   </div>
 </div>
+
+<!-- sellers-profile-edit -->
+<div class="modal rounded-0 p-0" id="sellers-profile-edit">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Редактировать
+    </h3>
+  </div>
+
+  <div class="modalContent p-32-24">
+
+    <form action="#">
+      <div class="photo-item position-relative mb-20 rounded-15 w-fit mx-auto">
+        <img src="img/admin/anketa/image-2.jpg" alt="image" class="anketa-image mb-3">
+        <input class="photo-item-input" id="input-file" type="file" hidden>
+        <label for="input-file" class="button button--transparent-grey text-uppercase w-100" style="display: none;">
+          <img src="img/icons/file.svg" alt="icon">
+          загрузить фото
+        </label>
+        <button class="photo-item-remove-image" type="button">
+          <img src="img/icons/file-remove.svg" alt="icon">
+        </button>
+      </div>
+      <div class="pb-20 mb-20 border-b-light-blue">
+        <div class="mb-3 form-floating">
+          <input id="register-fio" type="text" class="formInput form-control" placeholder="ФИО"
+            value="Сергеев Алексей Викторович">
+          <label for="register-fio">ФИО</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="register-phone" type="tel" class="formInput form-control" placeholder="+7 ___ ___ ____"
+            value="+7 (912) 345 67-89">
+          <label for="register-phone">Телефон</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="register-phone" type="email" class="formInput form-control" placeholder="E-mail"
+            value="sergeev@mail.ru">
+          <label for="register-phone">E-mail</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="register-fio" type="text" class="formInput form-control" placeholder="Город" value="Иркутск">
+          <label for="register-fio">Город</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Дата рождения"
+            value="10.12.1997">
+          <label for="auth-date">Дата рождения</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-adres" type="text" class="formInput form-control" placeholder="Адрес площадки авто"
+            value="г. Иркутск, ул. Автомобильная, 2">
+          <label for="auth-adres">Адрес площадки авто</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Количество продаваемых авто"
+            value="800">
+          <label for="auth-col-auto">Количество продаваемых авто</label>
+        </div>
+        <div class="form-floating">
+          <select id="select-1" class="formSelect">
+            <option value="1">Площадка</option>
+            <option value="2">автоэксперт</option>
+            <option value="3">Продавец</option>
+            <option value="4" selected>Блогер</option>
+            <option value="5">банк</option>
+          </select>
+          <label for="select-1">Сфера деятельности</label>
+        </div>
+      </div>
+      <div class="pb-20 mb-20 border-b-light-blue">
+        <div class="mb-20 fz-12 text-uppercase color-grey-blue">
+          паспортные данные
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3 form-floating">
+              <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Серия" value="800">
+              <label for="auth-col-auto">Серия</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3 form-floating">
+              <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Номер" value="567890">
+              <label for="auth-col-auto">Номер</label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Кем выдан"
+            value="УФМС России по г. Москве">
+          <label for="auth-col-auto">Кем выдан</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Когда выдан"
+            value="10.01.2012">
+          <label for="auth-date">Когда выдан</label>
+        </div>
+        <div class="form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Код подразделения"
+            value="770-001">
+          <label for="auth-col-auto">Код подразделения</label>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <div class="mb-3 form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Платежные реквизиты"
+            value="Номер счета: 40817810099999999999 Банк: ПАО 'Сбербанк России' БИК: 044525225">
+          <label for="auth-col-auto">Платежные реквизиты</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Платежные реквизиты"
+            value="Номер счета: 40817810099999999999 Банк: ПАО 'Сбербанк России' БИК: 044525225">
+          <label for="auth-col-auto">Платежные реквизиты</label>
+        </div>
+        <button class="button button--transparent-grey w-100">
+          <svg class="w-24 h-24 fill-black stroke-transparent">
+            <use xlink:href="img/icons/icons.svg#plus"></use>
+          </svg>
+          добавить реквизиты
+        </button>
+      </div>
+
+      <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+        сохранить
+      </button>
+      <button class="button button--light-blue text-uppercase w-100" type="button" data-fancybox-close>
+        отменить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- sellers-phone-edit -->
+<div class="modal rounded-0 p-0" id="sellers-phone-edit">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Изменить телефон
+    </h3>
+  </div>
+
+  <div class="modalContent p-32-24">
+
+    <form action="#">
+      <div class="mb-3 form-floating">
+        <input id="register-phone" type="tel" class="formInput form-control" placeholder="+7 ___ ___ ____"
+          value="+7 (912) 345 67-89">
+        <label for="register-phone">Телефон</label>
+      </div>
+
+      <button class="button button--light-blue text-uppercase w-100" type="button" data-fancybox
+        data-src="#sellers-change-code-success">
+        Подтвердить номер
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- sellers-change-code -->
+<div class="modal rounded-0 p-0" id="sellers-change-code">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Изменить телефон
+    </h3>
+  </div>
+
+  <div class="modalContent p-32-24">
+    <h4 class="mb-2 text-center">Введите код</h4>
+    <div class="d-flex flex-column mb-32">
+      <div class="color-grey-blue text-center fz-14 mx-auto fw-medium">
+        код был выслан по SMS на номер
+      </div>
+      <div class="color-grey-blue text-center fz-14 mx-auto fw-medium">
+        +7 (912) 345 67-89
+      </div>
+    </div>
+    <form action="#">
+      <div class="mb-32">
+        <div class="otp-container d-flex gap-3 justify-content-center" id="otpContainer">
+          <input type="number" class="otp-input" maxlength="1" data-next="1">
+          <input type="number" class="otp-input" maxlength="1" data-next="2">
+          <input type="number" class="otp-input" maxlength="1" data-next="3">
+          <input type="number" class="otp-input" maxlength="1" data-next="4">
+        </div>
+      </div>
+      <div class="mb-32 color-grey-blue fz-14 text-center">
+        Новый код можно получить через 52 сек
+      </div>
+      <button class="button button--yellow w-100 text-uppercase mb-32 formBtn" disabled>
+        Готово
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- sellers-change-code-error -->
+<div class="modal rounded-0 p-0" id="sellers-change-code-error">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Изменить телефон
+    </h3>
+  </div>
+
+  <div class="modalContent p-32-24">
+    <h4 class="mb-2 text-center">Введите код</h4>
+    <div class="d-flex flex-column mb-32">
+      <div class="color-grey-blue text-center fz-14 mx-auto fw-medium">
+        код был выслан по SMS на номер
+      </div>
+      <div class="color-grey-blue text-center fz-14 mx-auto fw-medium">
+        +7 (912) 345 67-89
+      </div>
+    </div>
+    <form action="#">
+      <div class="mb-32">
+        <div class="otp-container d-flex gap-3 justify-content-center" id="otpContainer">
+          <input type="number" class="otp-input error" maxlength="1" data-next="1" value="1">
+          <input type="number" class="otp-input error" maxlength="1" data-next="2" value="2">
+          <input type="number" class="otp-input error" maxlength="1" data-next="3" value="3">
+          <input type="number" class="otp-input error" maxlength="1" data-next="4" value="5">
+        </div>
+      </div>
+      <a href="#" class="mb-32 color-black fz-14 text-center d-flex justify-content-center underline">
+        Получить новый код
+      </a>
+      <button class="button button--yellow w-100 text-uppercase mb-32 formBtn" disabled>
+        Готово
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- sellers-change-code-success -->
+<div class="modal rounded-0 p-0" id="sellers-change-code-success">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Изменить телефон
+    </h3>
+  </div>
+
+  <div class="modalContent p-32-24">
+    <h4 class="mb-2 text-center">Введите код</h4>
+    <div class="d-flex flex-column mb-32">
+      <div class="color-grey-blue text-center fz-14 mx-auto fw-medium">
+        код был выслан по SMS на номер
+      </div>
+      <div class="color-grey-blue text-center fz-14 mx-auto fw-medium">
+        +7 (912) 345 67-89
+      </div>
+    </div>
+    <form action="#">
+      <div class="mb-32">
+        <div class="otp-container d-flex gap-3 justify-content-center" id="otpContainer">
+          <input type="number" class="otp-input success" maxlength="1" data-next="1" value="1">
+          <input type="number" class="otp-input success" maxlength="1" data-next="2" value="2">
+          <input type="number" class="otp-input success" maxlength="1" data-next="3" value="3">
+          <input type="number" class="otp-input success" maxlength="1" data-next="4" value="4">
+        </div>
+      </div>
+      <div class="color-green fz-14 mb-32 text-center">
+        Успех!
+      </div>
+      <button class="button button--yellow w-100 text-uppercase mb-32 formBtn" data-fancybox
+        data-src="#sellers-return-profile">
+        Готово
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- sellers-return-profile -->
+<div class="modal rounded-0 p-0" id="sellers-return-profile">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Изменить телефон
+    </h3>
+  </div>
+
+  <div class="modalContent p-32-24">
+    <h4 class="mb-2 text-center">Номер подтверждён!</h4>
+    <div class="text-center d-flex flex-column mb-32">
+      <span>Ваш новый номер телефона </span>
+      <span>+7 (912) 345 67-89</span>
+    </div>
+    <a href="/seller-profile.html" class="button button--yellow w-100 text-uppercase mb-32 formBtn">
+      вернуться в профиль
+    </a>
+
+  </div>
+</div>
 	</div>
 
 	<script src="js/app.min.js"></script>
