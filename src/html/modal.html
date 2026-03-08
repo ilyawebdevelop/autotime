@@ -660,7 +660,7 @@
         </div>
 
         <div class="d-flex flex-column gap-3">
-          <span class="color-grey-blue text-center text-uppercase">Процент вознаграждения агента</span>
+          <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения агента</span>
           <div class="slider js-range-slider">
             <input type="text" class="js-range-slider">
           </div>
@@ -678,6 +678,67 @@
         <a href="#" class="color-red text-uppercase fw-medium text-center mx-auto d-block">удалить пользователя</a>
       </div>
 
+
+    </form>
+
+  </div>
+</div>
+
+<!-- agent-sellers-new-seller -->
+<div class="modal rounded-0 p-0" id="agent-sellers-new-seller">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Новый продавец
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+
+        <div class="mb-5">
+          <div class="mb-3 form-floating">
+            <input id="auth-fio" type="text" class="formInput form-control" placeholder="ФИО">
+            <label for="auth-fio">ФИО</label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="tel" class="formInput form-control" placeholder="Телефон">
+            <label for="register-phone">Телефон</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-city" type="text" class="formInput form-control" placeholder="Город">
+            <label for="register-city">Город</label>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+          <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения агента</span>
+          <div class="slider js-range-slider">
+            <input type="text" class="js-range-slider">
+          </div>
+          <div class="d-flex flex-column gap-2 mt-3">
+            <span class="color-grey-blue text-center text-uppercase fz-12">мой Процент вознаграждения</span>
+            <span class="h4 mb-0">10%</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="p-32-24 border-t-light-blue">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button" disabled>
+          отправить
+        </button>
+        <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox-close>
+          отменить
+        </button>
+      </div>
 
     </form>
 
