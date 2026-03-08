@@ -908,20 +908,30 @@ a.color-grey-blue {
   border-radius: 50%;
   background-color: var(--black);
   top: 19px;
+  cursor: pointer;
+
   i {
-    display: none!important;
+    display: none !important;
   }
 }
+
 .irs--flat .irs-single {
   background-color: transparent;
   color: var(--main-color);
   font-size: 14px;
+
   &::before {
     display: none;
   }
 }
-.irs--flat .irs-min, .irs--flat .irs-max {
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
   background-color: transparent;
   color: var(--main-color);
   font-size: 14px;
+}
+
+.fancybox__track {
+  transform: none !important;
 }

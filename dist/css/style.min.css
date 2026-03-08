@@ -16609,6 +16609,7 @@ a.color-grey-blue:hover {
   border-radius: 50%;
   background-color: var(--black);
   top: 19px;
+  cursor: pointer;
 }
 .irs--flat .irs-handle i {
   display: none !important;
@@ -16623,10 +16624,15 @@ a.color-grey-blue:hover {
   display: none;
 }
 
-.irs--flat .irs-min, .irs--flat .irs-max {
+.irs--flat .irs-min,
+.irs--flat .irs-max {
   background-color: transparent;
   color: var(--main-color);
   font-size: 14px;
+}
+
+.fancybox__track {
+  transform: none !important;
 }
 
 .button {
@@ -16924,6 +16930,12 @@ a.color-grey-blue:hover {
 
 .fancybox__backdrop {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fancybox__content > .f-button.is-close-btn {
+  color: #000;
+  right: 24px;
+  top: 15px;
 }
 
 .range-admin {

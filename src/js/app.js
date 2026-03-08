@@ -16,6 +16,7 @@ Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Sc
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,
+
 });
 
 
@@ -209,12 +210,12 @@ window.addEventListener('scroll', () => {
 
   if (currentScrollTop > lastScrollTop) {
     // Прокрутка вниз
-    terminNavW.classList.remove('active');
-    terminNavW.classList.add('header-fixed-hide');
+    terminNavW?.classList.remove('active');
+    terminNavW?.classList.add('header-fixed-hide');
   } else {
     // Прокрутка вверх
-    terminNavW.classList.add('active');
-    terminNavW.classList.remove('header-fixed-hide');
+    terminNavW?.classList.add('active');
+    terminNavW?.classList.remove('header-fixed-hide');
   }
   lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Сохраняем предыдущее значение
 });
