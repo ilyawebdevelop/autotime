@@ -848,7 +848,7 @@
               <img src="img/icons/sort-up.svg" alt="icon">
               <div class="d-flex flex-column gap-1">
                 <div class="fz-14">
-                 По алфавиту
+                  По алфавиту
                 </div>
                 <span class="fz-12 color-grey-blue">От Я до А</span>
               </div>
@@ -862,6 +862,78 @@
       <button class="button button--yellow text-uppercase w-100" type="button">
         применить
       </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- agent-sellers-edit -->
+<div class="modal rounded-0 p-0" id="agent-sellers-edit">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Редактировать
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+        <div class="bg--bg p-20 rounded-20 mb-20">
+          <div class="d-flex flex-column gap-10">
+            <div class="fz-12 text-uppercase color-grey-blue text-center">
+              Комментарий андеррайтера
+            </div>
+            <span class="text-center">Проверьте телефон</span>
+            <button class="button button--h-25 button--red-light fw-normal px-12 pe-none fz-12 mx-auto">
+              Отклонён
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <div class="mb-3 form-floating">
+            <input id="auth-fio" type="text" class="formInput form-control" placeholder="ФИО"
+              value="Костров Константин Константинович ">
+            <label for="auth-fio">ФИО <span>*</span></label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="tel" class="formInput form-control" placeholder="Телефон"
+              value="+7 (912) 345 67-89">
+            <label for="register-phone">Телефон <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-city" type="text" class="formInput form-control" placeholder="Город" value="Иркутск">
+            <label for="register-city">Город</label>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+          <span class="color-grey-blue text-center text-uppercase">Процент вознаграждения агента</span>
+          <div class="slider js-range-slider">
+            <input type="text" class="js-range-slider">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="p-32-24 border-t-light-blue">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          сохранить изменения
+        </button>
+        <button class="button button--light-blue text-uppercase w-100 mx-auto mb-4">
+          Подробнее
+        </button>
+        <a href="#" class="color-red text-uppercase fw-medium text-center mx-auto d-block">удалить пользователя</a>
+      </div>
+
+
     </form>
 
   </div>

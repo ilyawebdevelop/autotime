@@ -2,8 +2,9 @@ import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
 import AirDatepicker from 'air-datepicker';
 import "./modules/bootstrap.bundle.min.js";
+import "./modules/ion.rangeSlider.min.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
-import ClipboardJS from 'clipboard'; // or require('clipboard')
+import ClipboardJS from 'clipboard';
 
 import './components.js';
 
@@ -216,4 +217,17 @@ window.addEventListener('scroll', () => {
     terminNavW.classList.remove('header-fixed-hide');
   }
   lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Сохраняем предыдущее значение
+});
+
+
+// http://ionden.com/a/plugins/ion.rangeSlider/start.html
+$(".js-range-slider").ionRangeSlider({
+  min: 0,
+  max: 20,
+  step: 0.5,   
+  from: 10,      
+  onStart: function (data) {
+    console.log(data.input);
+    console.log(data.slider);
+  }
 });

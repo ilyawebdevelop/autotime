@@ -388,6 +388,10 @@ h6,
   }
 }
 
+.form-floating label>span {
+  color: var(--error);
+}
+
 .form-floating>.form-control {
   padding-left: 20px;
   padding-right: 20px;
@@ -556,6 +560,12 @@ h6,
 
 .color-red {
   color: var(--error);
+}
+
+a.color-red {
+  &:hover {
+    color: var(--main-color);
+  }
 }
 
 .color-link {
@@ -843,6 +853,10 @@ a.color-grey-blue {
   border-bottom: 1px solid var(--light-blue);
 }
 
+.border-t-light-blue {
+  border-top: 1px solid var(--light-blue);
+}
+
 .border-grey-blue {
   border: 1px solid var(--grey-blue);
 }
@@ -877,4 +891,37 @@ a.color-grey-blue {
 
 .shadow-card {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.irs--flat .irs-bar {
+  background-color: var(--black);
+  height: 4px;
+}
+
+.irs--flat .irs-line {
+  height: 4px;
+}
+
+.irs--flat .irs-handle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--black);
+  top: 19px;
+  i {
+    display: none!important;
+  }
+}
+.irs--flat .irs-single {
+  background-color: transparent;
+  color: var(--main-color);
+  font-size: 14px;
+  &::before {
+    display: none;
+  }
+}
+.irs--flat .irs-min, .irs--flat .irs-max {
+  background-color: transparent;
+  color: var(--main-color);
+  font-size: 14px;
 }
