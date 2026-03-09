@@ -616,7 +616,10 @@ button.color-light-grey-blue {
 .mt-32 {
   margin-top: 32px;
 }
-
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .py-32 {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -632,6 +635,9 @@ button.color-light-grey-blue {
 
 .pb-20 {
   padding-bottom: 20px;
+}
+.pb-32 {
+  padding-bottom: 32px;
 }
 
 .link {
@@ -785,7 +791,9 @@ a.color-grey-blue {
 .border-light-grey-blue {
   border: 1px solid var(--light-grey-blue);
 }
-
+.p-10-20 {
+  padding: 10px 20px;
+}
 .p-16-12 {
   padding: 16px 16px 16px 12px;
 }
@@ -934,4 +942,15 @@ a.color-grey-blue {
 
 .fancybox__track {
   transform: none !important;
+}
+.anketa-card-award {
+  position: absolute;
+  bottom: -17px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 40px;
+}
+.border-l-4-grey-blue {
+  border-left: 4px solid var(--grey-blue);
 }

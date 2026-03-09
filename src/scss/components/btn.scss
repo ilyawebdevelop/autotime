@@ -166,6 +166,9 @@
       height: 24px;
     }
   }
+  &:disabled {
+    opacity: .3;
+  }
 }
 
 .form:has(.agreement input:not(:checked)) .formBtn {

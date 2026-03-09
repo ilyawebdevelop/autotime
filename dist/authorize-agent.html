@@ -690,7 +690,7 @@
 <!-- agent-sellers-edit -->
 <div class="modal rounded-0 p-0" id="agent-sellers-edit">
 
-  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
     <button class="modalPrevLink" data-fancybox-close>
       <img src="img/icons/arrow-left.svg" alt="icon">
     </button>
@@ -762,7 +762,7 @@
 <!-- agent-sellers-new-seller -->
 <div class="modal rounded-0 p-0" id="agent-sellers-new-seller">
 
-  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
     <button class="modalPrevLink" data-fancybox-close>
       <img src="img/icons/arrow-left.svg" alt="icon">
     </button>
@@ -794,7 +794,7 @@
         </div>
 
         <div class="d-flex flex-column gap-3">
-          <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения агента</span>
+          <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения продавца</span>
           <div class="slider js-range-slider">
             <input type="text" class="js-range-slider">
           </div>
@@ -809,6 +809,256 @@
       <div class="p-32-24 border-t-light-blue">
         <button class="button button--yellow text-uppercase w-100 mb-12" type="button" disabled>
           отправить
+        </button>
+        <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox-close>
+          отменить
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- agent-sellers-card -->
+<div class="modal rounded-0 p-0" id="agent-sellers-card">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Продавец
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+        <div class="mb-20">
+          <div class="position-relative">
+            <img src="img/admin/anketa/image-1.jpg" alt="image"
+              class="w-110 h-110 object-fit-cover rounded-circle mx-auto mb-3">
+            <img class="anketa-card-award" src="img/icons/awards/icon-1.png" alt="icon">
+          </div>
+
+          <div class="color-total-black fz-20 mb-1 text-center">
+            Сергеев Алексей Викторович
+          </div>
+          <a href="tel:+79123456789"
+            class="d-flex align-items-center gap-10 justify-content-center color-grey-blue mb-1">
+            <img src="img/icons/phone-grey-blue.svg" alt="icon">
+            +7 (912) 345 67-89
+          </a>
+          <div class="fz-12 text-center color-grey-blue mb-3">
+            активен: 3 дня назад
+          </div>
+          <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12 mx-auto">
+            Активен
+          </button>
+        </div>
+
+        <div class="mb-20 bg--bg rounded-30 p-20">
+          <div class="mb-10 d-flex justify-content-between gap-10 align-items-center">
+            <span class="h5 mb-0">Процент вознаграждения</span>
+            <button class="agent-sellers-card-edit button-edit" data-fancybox data-src="#agent-sellers-card-edit">
+              <svg style="stroke: transparent; fill: var(--black);">
+                <use xlink:href="img/icons/icons.svg#edit"></use>
+              </svg>
+            </button>
+          </div>
+          <span class="h5 mb-0">3%</span>
+        </div>
+
+        <div class="mb-20 border-b-light-blue">
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">email</span>
+            <a class="color-link fz-14" href="mailto:sergeev@mail.ru">sergeev@mail.ru</a>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">Город</span>
+            <div class="fz-14">г. Иркутск</div>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">дата рождения</span>
+            <div class="fz-14">10.12.1977</div>
+          </div>
+        </div>
+
+        <div class="mb-20 border-b-light-blue">
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">Сфера деятельности</span>
+            <div class="fz-14">Кредитование</div>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">Дата регистрации в сервисе</span>
+            <div class="fz-14">01.02.2026</div>
+          </div>
+        </div>
+
+        <div class="mb-20 border-b-light-blue">
+          <div
+            class="d-flex align-items-center gap-3 justify-content-between justify-content-sm-center pb-20 flex-wrap">
+            <div class="d-flex align-items-center gap-10">
+              <img src="img/icons/heart.svg" alt="icon">
+              <a href="#" class="color-link text-uppercase fw-medium">все сделки продавца</a>
+            </div>
+            <a href="#" class="button-round bg--light-blue width-50 d-flex align-items-center justify-content-center">
+              <img src="img/icons/link-seller.svg" alt="icon">
+            </a>
+          </div>
+        </div>
+
+        <div class="mb-20 pb-20 border-b-light-blue">
+          <div class="d-flex align-items-center gap-2 mb-4">
+
+            <div class="d-flex gap-1 flex-column w-100">
+              <div class="color-grey-blue fz-12 text-uppercase">
+                всего заявок
+              </div>
+              <div class="d-flex gap-2 align-items-center">
+                <span class="fz-20 fw-medium color-total-black">228</span>
+                <span class="color-green fw-medium fz-14">+25%</span>
+              </div>
+            </div>
+            <div class="chart chart--donut"
+              style="background: conic-gradient(var(--light-blue) 51%, #fe5c73 0 61%, var(--green) 0 77%, #ffc542 0);">
+
+            </div>
+          </div>
+
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+              <div class="d-flex gap-2 align-items-center">
+                <span class="chart-color bg--green"></span>
+                <span class="fz-12 color-grey-blue w-170">Новых</span>
+              </div>
+              <div class="d-flex gap-2">
+                <span class="fz-14 fw-medium color-total-black">12</span>
+                <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+              <div class="d-flex gap-2 align-items-center">
+                <span class="chart-color chart-color-yellow"></span>
+                <span class="fz-12 color-grey-blue w-170">В работе</span>
+              </div>
+              <div class="d-flex gap-2">
+                <span class="fz-14 fw-medium color-total-black">22</span>
+                <span class="color-green fw-medium fz-14 w-40 text-end">+5%</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+              <div class="d-flex gap-2 align-items-center">
+                <span class="chart-color chart-color-red"></span>
+                <span class="fz-12 color-grey-blue w-170">Отклонённых</span>
+              </div>
+              <div class="d-flex gap-2">
+                <span class="fz-14 fw-medium color-total-black">6</span>
+                <span class="color-red fw-medium fz-14 w-40 text-end">-15%</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+              <div class="d-flex gap-2 align-items-center">
+                <span class="chart-color bg--light-blue"></span>
+                <span class="fz-12 color-grey-blue w-170">Завершённых</span>
+              </div>
+              <div class="d-flex gap-2">
+                <span class="fz-14 fw-medium color-total-black">48</span>
+                <span class="color-green fw-medium fz-14 w-40 text-end">+10%</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mb-20 pb-20 border-b-light-blue">
+          <div class="d-flex align-items-center gap-2 mb-4">
+
+            <div class="d-flex gap-1 flex-column w-100">
+              <div class="color-grey-blue fz-12 text-uppercase">
+                Общая сумма вознаграждения
+              </div>
+              <div class="d-flex gap-2 align-items-center">
+                <span class="fz-20 fw-medium color-total-black">1 220 870₽</span>
+                <span class="color-green fw-medium fz-14">+25%</span>
+              </div>
+            </div>
+            <div class="chart chart--donut"
+              style="background: conic-gradient(#FFC542 55%, var(--green) 0 79%, #0062FF 0);">
+
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2">
+
+            <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+              <div class="d-flex gap-2 align-items-center">
+                <span class="chart-color chart-color-blue"></span>
+                <span class="fz-12 color-grey-blue w-130">Сумма вознаграждения моя</span>
+              </div>
+              <div class="d-flex gap-2">
+                <span class="fz-14 fw-medium color-total-black">1 037 740₽</span>
+                <span class="color-green fw-medium fz-14 text-end">+3%</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+              <div class="d-flex gap-2 align-items-center">
+                <span class="chart-color bg--green"></span>
+                <span class="fz-12 color-grey-blue w-130">Сумма вознаграждения продавца</span>
+              </div>
+              <div class="d-flex gap-2">
+                <span class="fz-14 fw-medium color-total-black">183 130₽</span>
+                <span class="color-green fw-medium fz-14 text-end">+3%</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- agent-sellers-card-edit -->
+<div class="modal rounded-0 p-0" id="agent-sellers-card-edit">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Редактировать
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+
+        <div class="d-flex flex-column gap-3">
+          <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения продавца</span>
+          <div class="slider js-range-slider">
+            <input type="text" class="js-range-slider">
+          </div>
+          <div class="d-flex flex-column gap-2 mt-3">
+            <span class="color-grey-blue text-center text-uppercase fz-12">мой Процент вознаграждения</span>
+            <span class="h4 mb-0">17%</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="p-32-24 border-t-light-blue">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          сохранить
         </button>
         <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox-close>
           отменить
@@ -860,7 +1110,7 @@
 <!-- sellers-profile-edit -->
 <div class="modal rounded-0 p-0" id="sellers-profile-edit">
 
-  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
     <button class="modalPrevLink" data-fancybox-close>
       <img src="img/icons/arrow-left.svg" alt="icon">
     </button>
@@ -963,7 +1213,13 @@
           <label for="auth-col-auto">Код подразделения</label>
         </div>
       </div>
-
+      <div class="pb-20 mb-20 border-b-light-blue">
+        <div class="form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="СНИЛС"
+            value="123-456-789 00">
+          <label for="auth-col-auto">СНИЛС</label>
+        </div>
+      </div>
       <div class="mb-5">
         <div class="mb-3 form-floating">
           <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Платежные реквизиты"
@@ -975,7 +1231,155 @@
             value="Номер счета: 40817810099999999999 Банк: ПАО 'Сбербанк России' БИК: 044525225">
           <label for="auth-col-auto">Платежные реквизиты</label>
         </div>
-        <button class="button button--transparent-grey w-100">
+        <button class="button button--transparent-grey w-100 text-uppercase">
+          <svg class="w-24 h-24 fill-black stroke-transparent">
+            <use xlink:href="img/icons/icons.svg#plus"></use>
+          </svg>
+          добавить реквизиты
+        </button>
+      </div>
+
+      <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+        сохранить
+      </button>
+      <button class="button button--light-blue text-uppercase w-100" type="button" data-fancybox-close>
+        отменить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- agent-profile-edit -->
+<div class="modal rounded-0 p-0" id="agent-profile-edit">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Редактировать
+    </h3>
+  </div>
+
+  <div class="modalContent p-32-24">
+
+    <form action="#">
+      <div class="photo-item position-relative mb-20 rounded-15 w-fit mx-auto">
+        <img src="img/admin/anketa/image-1.jpg" alt="image" class="anketa-image mb-3">
+        <input class="photo-item-input" id="input-file" type="file" hidden>
+        <label for="input-file" class="button button--transparent-grey text-uppercase w-100" style="display: none;">
+          <img src="img/icons/file.svg" alt="icon">
+          загрузить фото
+        </label>
+        <button class="photo-item-remove-image" type="button">
+          <img src="img/icons/file-remove.svg" alt="icon">
+        </button>
+      </div>
+      <div class="pb-20 mb-20 border-b-light-blue">
+        <div class="mb-3 form-floating">
+          <input id="register-fio" type="text" class="formInput form-control" placeholder="ФИО"
+            value="Иванов Иван Иванович">
+          <label for="register-fio">ФИО</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="register-phone" type="tel" class="formInput form-control" placeholder="+7 ___ ___ ____"
+            value="+7 (912) 345 67-89">
+          <label for="register-phone">Телефон</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="register-phone" type="email" class="formInput form-control" placeholder="E-mail"
+            value="ivanov@mail.ru">
+          <label for="register-phone">E-mail</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="register-fio" type="text" class="formInput form-control" placeholder="Город" value="Иркутск">
+          <label for="register-fio">Город</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Дата рождения"
+            value="10.12.1997">
+          <label for="auth-date">Дата рождения</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-adres" type="text" class="formInput form-control" placeholder="Адрес площадки авто"
+            value="г. Иркутск, ул. Автомобильная, 2">
+          <label for="auth-adres">Адрес площадки авто</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Количество продаваемых авто"
+            value="800">
+          <label for="auth-col-auto">Количество продаваемых авто</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <select id="select-1" class="formSelect">
+            <option value="1">Площадка</option>
+            <option value="2">автоэксперт</option>
+            <option value="3">Продавец</option>
+            <option value="4" selected>Блогер</option>
+            <option value="5">банк</option>
+          </select>
+          <label for="select-1">Сфера деятельности</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="agent_about" type="text" class="formInput form-control" placeholder="О себе"
+            value="На вершине зеленого холма, где цветы танцуют под ветром, стоит загадочный замок с золотыми башнями.">
+          <label for="agent_about">О себе</label>
+        </div>
+      </div>
+      <div class="pb-20 mb-20 border-b-light-blue">
+        <div class="mb-20 fz-12 text-uppercase color-grey-blue">
+          паспортные данные
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3 form-floating">
+              <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Серия" value="800">
+              <label for="auth-col-auto">Серия</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3 form-floating">
+              <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Номер" value="567890">
+              <label for="auth-col-auto">Номер</label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Кем выдан"
+            value="УФМС России по г. Москве">
+          <label for="auth-col-auto">Кем выдан</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Когда выдан"
+            value="10.01.2012">
+          <label for="auth-date">Когда выдан</label>
+        </div>
+        <div class="form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Код подразделения"
+            value="770-001">
+          <label for="auth-col-auto">Код подразделения</label>
+        </div>
+      </div>
+      <div class="pb-20 mb-20 border-b-light-blue">
+        <div class="form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="СНИЛС"
+            value="123-456-789 00">
+          <label for="auth-col-auto">СНИЛС</label>
+        </div>
+      </div>
+      <div class="mb-5">
+        <div class="mb-3 form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Платежные реквизиты"
+            value="Номер счета: 40817810099999999999 Банк: ПАО 'Сбербанк России' БИК: 044525225">
+          <label for="auth-col-auto">Платежные реквизиты</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Платежные реквизиты"
+            value="Номер счета: 40817810099999999999 Банк: ПАО 'Сбербанк России' БИК: 044525225">
+          <label for="auth-col-auto">Платежные реквизиты</label>
+        </div>
+        <button class="button button--transparent-grey w-100 text-uppercase">
           <svg class="w-24 h-24 fill-black stroke-transparent">
             <use xlink:href="img/icons/icons.svg#plus"></use>
           </svg>
@@ -997,7 +1401,7 @@
 <!-- sellers-phone-edit -->
 <div class="modal rounded-0 p-0" id="sellers-phone-edit">
 
-  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
     <button class="modalPrevLink" data-fancybox-close>
       <img src="img/icons/arrow-left.svg" alt="icon">
     </button>
@@ -1027,7 +1431,7 @@
 <!-- sellers-change-code -->
 <div class="modal rounded-0 p-0" id="sellers-change-code">
 
-  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
     <button class="modalPrevLink" data-fancybox-close>
       <img src="img/icons/arrow-left.svg" alt="icon">
     </button>
@@ -1070,7 +1474,7 @@
 <!-- sellers-change-code-error -->
 <div class="modal rounded-0 p-0" id="sellers-change-code-error">
 
-  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
     <button class="modalPrevLink" data-fancybox-close>
       <img src="img/icons/arrow-left.svg" alt="icon">
     </button>
@@ -1113,7 +1517,7 @@
 <!-- sellers-change-code-success -->
 <div class="modal rounded-0 p-0" id="sellers-change-code-success">
 
-  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
     <button class="modalPrevLink" data-fancybox-close>
       <img src="img/icons/arrow-left.svg" alt="icon">
     </button>
@@ -1157,7 +1561,7 @@
 <!-- sellers-return-profile -->
 <div class="modal rounded-0 p-0" id="sellers-return-profile">
 
-  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue">
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
     <button class="modalPrevLink" data-fancybox-close>
       <img src="img/icons/arrow-left.svg" alt="icon">
     </button>
