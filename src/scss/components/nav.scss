@@ -11,6 +11,19 @@
       transform: translateY(-110%);
       // z-index: -1;
     }
+
+    &--manager {
+      top: 85px;
+
+      &.header-fixed-hide {
+        transition: transform .2s linear;
+        transform: translateY(-150%);
+        // z-index: -1;
+      }
+    }
+
+
+
   }
 
 

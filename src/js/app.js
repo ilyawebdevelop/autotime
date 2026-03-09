@@ -133,9 +133,9 @@ function updateSkipLink(swiperInstance) {
 
     skipLink.href = `/${dataLinkValue}`;
 
-    console.log(`Слайд изменен. Кнопка обновлена, href: ${skipLink.href}`);
+    // console.log(`Слайд изменен. Кнопка обновлена, href: ${skipLink.href}`);
   } else {
-    console.warn("Активный слайд не содержит атрибута 'data-link'.");
+    // console.warn("Активный слайд не содержит атрибута 'data-link'.");
   }
 }
 
@@ -171,8 +171,8 @@ let copyBtnArray = document.querySelectorAll('.copyBtn');
 copyBtnArray.forEach(el => {
   var clipboard = new ClipboardJS(el);
   clipboard.on('success', function (e) {
-    console.log('Action:', e.action);
-    console.log('Text:', e.text);
+    // console.log('Action:', e.action);
+    // console.log('Text:', e.text);
     el.classList.add('copied');
     e.clearSelection();
     var tooltipEl = el;
@@ -228,7 +228,7 @@ $(".js-range-slider").ionRangeSlider({
   step: 0.5,   
   from: 10,      
   onStart: function (data) {
-    console.log(data.input);
-    console.log(data.slider);
+    // console.log(data.input);
+    // console.log(data.slider);
   }
 });

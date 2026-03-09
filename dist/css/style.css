@@ -15870,16 +15870,22 @@ section {
   color: var(--total-black);
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../img/icons/select-arrow.svg");
+  background-image: url("../img/icons/select-arrow-blue.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  background-size: 11px;
+  background-size: 13px;
 }
 .formSelect:hover {
   border-color: var(--grey-blue);
 }
 .formSelect:focus {
   border-color: var(--yellow);
+}
+.formSelect:disabled {
+  background-image: none;
+  pointer-events: none;
+  color: var(--grey);
+  opacity: 0.8;
 }
 
 .formInput {
@@ -15909,6 +15915,10 @@ section {
 .formInput:focus {
   border-color: var(--yellow);
 }
+.formInput:disabled {
+  pointer-events: none;
+  opacity: 0.8;
+}
 
 a.underline {
   text-underline-offset: 3px;
@@ -15920,18 +15930,6 @@ a.underline:hover {
 
 a.color-black:hover {
   color: var(--grey);
-}
-
-.fw-medium {
-  font-weight: 500;
-}
-
-.fw-semibold {
-  font-weight: 600;
-}
-
-.fw-bold {
-  font-weight: 700;
 }
 
 .color-white {
@@ -16125,8 +16123,9 @@ h6,
   pointer-events: none;
 }
 
-.form-floating label > span {
-  color: var(--error);
+.form-control:disabled {
+  background-color: unset;
+  color: var(--grey);
 }
 
 .form-floating > .form-control {
@@ -16180,6 +16179,10 @@ h6,
   height: fit-content;
   border-radius: 4px;
 }
+.form-floating > .form-control:focus ~ label > span,
+.form-floating > .form-control:not(:placeholder-shown) ~ label > span {
+  color: var(--error);
+}
 
 .form-floating > .form-control.formInput--search:focus ~ label,
 .form-floating > .form-control.formInput--search:not(:placeholder-shown) ~ label {
@@ -16209,6 +16212,9 @@ h6,
   background-position: right 20px center;
   padding-right: 50px;
 }
+.form-control.calendar:disabled {
+  background-image: none;
+}
 
 .form-floating:has(select) > label {
   padding-bottom: 0;
@@ -16223,6 +16229,9 @@ h6,
   height: fit-content;
   left: 13px;
   top: -7px;
+}
+.form-floating:has(select) > label > span {
+  color: var(--error);
 }
 
 .remove-text {
@@ -16244,6 +16253,10 @@ h6,
 
 .bg--light-blue {
   background-color: var(--light-blue);
+}
+
+.bg--light-red {
+  background-color: var(--red-light);
 }
 
 .bg--green {
@@ -16353,12 +16366,16 @@ button.color-light-grey-blue:hover {
   padding-bottom: 32px;
 }
 
-.pt-40 {
-  padding-top: 40px;
-}
-
 .pt-20 {
   padding-top: 20px;
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+
+.pt-40 {
+  padding-top: 40px;
 }
 
 .pb-20 {
@@ -16443,6 +16460,10 @@ a.color-grey-blue:hover {
   gap: 12px;
 }
 
+.gap-20 {
+  gap: 20px;
+}
+
 .gap-30 {
   gap: 30px;
 }
@@ -16497,6 +16518,10 @@ a.color-grey-blue:hover {
 
 .border-light-grey-blue {
   border: 1px solid var(--light-grey-blue);
+}
+
+.p-10 {
+  padding: 10px;
 }
 
 .p-10-20 {
@@ -16659,6 +16684,18 @@ a.color-grey-blue:hover {
 
 .border-l-4-grey-blue {
   border-left: 4px solid var(--grey-blue);
+}
+
+.border-l-4-error {
+  border-left: 4px solid var(--error);
+}
+
+.form-floating > .form-control:disabled ~ label::after, .form-floating > :disabled ~ label::after {
+  background-color: unset;
+}
+
+.lh-160 {
+  line-height: 160%;
 }
 
 .button {
@@ -16947,8 +16984,8 @@ a.color-grey-blue:hover {
 .is-compact .fancybox__content > .f-button.is-close-btn svg {
   color: var(--grey-blue);
   opacity: 1;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   stroke-width: 3px;
   stroke: var(--grey-blue);
 }
@@ -17063,6 +17100,18 @@ a.color-grey-blue:hover {
 .seller-fixed-menu li.menu-item-admin.active .menu-item-icon {
   background-image: url("../img/icons/fixed-menu/admin-active.svg");
 }
+.seller-fixed-menu li.menu-item-prodavcy .menu-item-icon {
+  background-image: url("../img/icons/fixed-menu/prodavcy.svg");
+}
+.seller-fixed-menu li.menu-item-prodavcy.active .menu-item-icon {
+  background-image: url("../img/icons/fixed-menu/prodavcy-active.svg");
+}
+.seller-fixed-menu li.menu-item-sdelki .menu-item-icon {
+  background-image: url("../img/icons/fixed-menu/sdelki.svg");
+}
+.seller-fixed-menu li.menu-item-sdelki.active .menu-item-icon {
+  background-image: url("../img/icons/fixed-menu/sdelki-active.svg");
+}
 
 .terminNavW {
   position: sticky;
@@ -17074,6 +17123,13 @@ a.color-grey-blue:hover {
 .terminNavW.header-fixed-hide {
   transition: transform 0.2s linear;
   transform: translateY(-110%);
+}
+.terminNavW--manager {
+  top: 85px;
+}
+.terminNavW--manager.header-fixed-hide {
+  transition: transform 0.2s linear;
+  transform: translateY(-150%);
 }
 .terminNav ul {
   column-gap: 2px;

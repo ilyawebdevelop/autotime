@@ -28,7 +28,8 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      @media(max-width: 360px){
+
+      @media(max-width: 360px) {
         min-width: 75px;
       }
 
@@ -39,8 +40,9 @@
         background-position: center;
         background-repeat: no-repeat;
       }
+
       .fz-12 {
-        @media(max-width: 360px){
+        @media(max-width: 360px) {
           font-size: 11px;
         }
       }
@@ -90,6 +92,30 @@
       &.active {
         .menu-item-icon {
           background-image: url('@img/icons/fixed-menu/admin-active.svg');
+        }
+      }
+    }
+
+    &.menu-item-prodavcy {
+      .menu-item-icon {
+        background-image: url('@img/icons/fixed-menu/prodavcy.svg');
+      }
+
+      &.active {
+        .menu-item-icon {
+          background-image: url('@img/icons/fixed-menu/prodavcy-active.svg');
+        }
+      }
+    }
+
+    &.menu-item-sdelki {
+      .menu-item-icon {
+        background-image: url('@img/icons/fixed-menu/sdelki.svg');
+      }
+
+      &.active {
+        .menu-item-icon {
+          background-image: url('@img/icons/fixed-menu/sdelki-active.svg');
         }
       }
     }

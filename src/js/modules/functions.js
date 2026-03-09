@@ -27,4 +27,5 @@ let tabsSection = document.querySelector('.tabs');
 
 	if(tabsSection) {
 		const tabs = new GraphTabs('popup');
+		const tabs_2 = new GraphTabs('popup_2');
 	}
