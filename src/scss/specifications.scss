@@ -126,6 +126,20 @@ section {
   }
 }
 
+.formText {
+  min-height: 95px;
+  border-radius: 15px;
+  border: 1px solid var(--light-grey-blue);
+  padding-top: 8px;
+  padding-right: 20px;
+  width: 100%;
+  color: var(--total-black);
+
+  @media(max-width: 1199px) {
+    padding-left: 20px;
+  }
+}
+
 .formInput {
   height: 50px;
   border-radius: 15px;
@@ -133,6 +147,8 @@ section {
   background-color: #ffffff;
   width: 100%;
   padding-left: 20px;
+  padding-right: 20px;
+  color: var(--total-black);
   font-size: 16px;
   color: var(--total-black);
   white-space: nowrap;
@@ -529,6 +545,13 @@ h6,
   background-color: var(--background);
 }
 
+a.bg--bg {
+
+  &:hover {
+    background-color: var(--light-blue);
+  }
+}
+
 .bg--light-blue {
   background-color: var(--light-blue);
 }
@@ -634,6 +657,10 @@ button.color-light-grey-blue {
 
 .mb-32 {
   margin-bottom: 32px;
+}
+
+.mt-10 {
+  margin-top: 10px;
 }
 
 .mt-32 {
@@ -774,6 +801,10 @@ a.color-grey-blue {
 
 .gap-30 {
   gap: 30px;
+}
+
+.rounded-8 {
+  border-radius: 8px;
 }
 
 .rounded-15 {
@@ -1010,4 +1041,100 @@ a.color-grey-blue {
 
 .lh-160 {
   line-height: 160%;
+}
+
+.accordion-button {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--total-black);
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  border-top: 1px solid var(--light-blue);
+}
+
+.accordion-button::after {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-image: url('@img/icons/select-arrow-grey-blue.svg');
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('@img/icons/select-arrow-grey-blue.svg');
+  background-position: center;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid var(--light-blue);
+}
+
+.accord-item-content {
+  overflow: hidden;
+  /* Установите плавный переход для max-height и padding, если нужно */
+  transition: max-height 0.2s ease-in-out, padding 0.2s ease-in-out, background-color .2s linear;
+  /* Скрытое состояние */
+  max-height: 0;
+  padding: 0 8px;
+  display: flex;
+  margin-top: 0;
+  position: relative;
+  top: 5px;
+  /* Добавляем горизонтальный padding, который не анимируется */
+}
+
+/* Класс, который добавляет JS, когда контент открыт */
+.accord-item-content.is-open {
+  /* Должно быть больше, чем максимальная возможная высота контента */
+  max-height: 500px;
+  padding: 8px 8px;
+  position: relative;
+  top: 5px;
+  /* Теперь добавляем вертикальный padding */
+}
+
+/* Класс, который останется для начального скрытия (на всякий случай) */
+.accord-item-hidden {
+  max-height: 0;
+}
+
+.accord-item-arrow {
+  display: none;
+  transition: transform .2s linear;
+}
+
+.accord-item-head {
+  cursor: pointer;
+
+}
+
+.accord-item {
+  &:has(.accord-item-content) {
+    .accord-item-arrow {
+      display: block;
+    }
+  }
+
+  &:has(.accord-item-content.is-open) {
+    .accord-item-arrow {
+      transform: rotate(180deg);
+    }
+  }
 }

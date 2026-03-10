@@ -408,19 +408,25 @@
     <ul class="d-flex justify-content-center seller-fixed-menu">
       <li class="menu-item-dashboard active">
         <a href="#">
-          <div class="menu-item menu-item-icon"></div>
+          <div class="menu-item menu-item-icon">
+            <img src="img/icons/fixed-menu/dashboard.svg" alt="icon">
+          </div>
           <span class="fz-12">Дашборд</span>
         </a>
       </li>
       <li class="menu-item menu-item-orders">
         <a href="#">
-          <div class="menu-item-icon"></div>
+          <div class="menu-item-icon">
+            <img src="img/icons/fixed-menu/orders.svg" alt="icon">
+          </div>
           <span class="fz-12">Заявки</span>
         </a>
       </li>
       <li class="menu-item menu-item-admin">
         <a href="#">
-          <div class="menu-item-icon"></div>
+          <div class="menu-item-icon">
+            <img src="img/icons/fixed-menu/admin.svg" alt="icon">
+          </div>
           <span class="fz-12">Менеджер</span>
         </a>
       </li>
@@ -2125,7 +2131,7 @@
             <div class="d-flex flex-column gap-1">
               <span class="fz-12 color-grey-blue text-uppercase">Агент</span>
               <span class="color-total-black">
-              Иванов Иван Иванович
+                Иванов Иван Иванович
               </span>
               <span class="fz-12 color-grey-blue">активен: 3 дня назад</span>
             </div>
@@ -3160,6 +3166,93 @@
       <button class="button button--light-blue text-uppercase w-100" type="button" data-fancybox-close>
         отменить
       </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-profile-edit -->
+<div class="modal rounded-0 p-0" id="manager-profile-edit">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Редактировать
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+      <div class="p-32-24">
+        <div class="photo-item position-relative mb-20 rounded-15 w-fit mx-auto">
+          <img src="img/admin/anketa/image-3.jpg" alt="image" class="anketa-image mb-3">
+          <input class="photo-item-input" id="input-file" type="file" hidden>
+          <label for="input-file" class="button button--transparent-grey text-uppercase w-100" style="display: none;">
+            <img src="img/icons/file.svg" alt="icon">
+            загрузить фото
+          </label>
+          <button class="photo-item-remove-image" type="button">
+            <img src="img/icons/file-remove.svg" alt="icon">
+          </button>
+        </div>
+        <div class="pb-20 mb-20 border-b-light-blue">
+          <div class="mb-3 form-floating">
+            <input id="register-fio" type="text" class="formInput form-control" placeholder="ФИО"
+              value="Мария Петровна Сидорова">
+            <label for="register-fio">ФИО</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="tel" class="formInput form-control" placeholder="+7 ___ ___ ____"
+              value="+7 (912) 345 67-89">
+            <label for="register-phone">Телефон</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="email" class="formInput form-control" placeholder="E-mail"
+              value="maria.sidorova@email.com">
+            <label for="register-phone">E-mail</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-chasy" type="text" class="formInput form-control" placeholder="Часы работы" value="Пн-Пт 09:00 — 18:00 
+Сб-Вс выходной">
+            <label for="register-chasy">Часы работы </label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="agent_about" type="text" class="formInput form-control" placeholder="Город" value="Иркутск">
+            <label for="agent_about">Город</label>
+          </div>
+        </div>
+        <div>
+          <div class="mb-20 fz-12 text-uppercase color-grey-blue">
+            мессенджеры
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-telegram" type="text" class="formInput form-control" placeholder="Telegram"
+              value="@maria.sidorova">
+            <label for="register-telegram">Telegram</label>
+          </div>
+          <div class="form-floating">
+            <input id="register-telegram" type="text" class="formInput form-control" placeholder="Макс"
+              value="+7 (912) 345 67-89">
+            <label for="register-telegram">Макс</label>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="border-t-light-blue p-32-24">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          сохранить
+        </button>
+        <button class="button button--light-blue text-uppercase w-100" type="button" data-fancybox-close>
+          отменить
+        </button>
+      </div>
+
     </form>
 
   </div>

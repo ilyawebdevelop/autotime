@@ -166,6 +166,18 @@ btnMenu?.addEventListener('click', function (e) {
   overlayToggle();
 });
 
+let menuItemBurger = document.querySelector('.menu-item-burger');
+let fixedMenuSubmenu = document.querySelector('.fixed-menu-submenu');
+let menuItemBurgerClose = document.querySelector('.fixed-menu-submenu-close');
+menuItemBurger?.addEventListener('click', function (e) {
+  e.preventDefault(); // Отменяет переход
+  fixedMenuSubmenu.classList.toggle('active');
+  menuItemBurger.classList.toggle('active');
+});
+menuItemBurgerClose?.addEventListener('click', function (e) {
+  fixedMenuSubmenu.classList.remove('active');
+  menuItemBurger.classList.remove('active');
+});
 
 let copyBtnArray = document.querySelectorAll('.copyBtn');
 copyBtnArray.forEach(el => {
@@ -225,10 +237,50 @@ window.addEventListener('scroll', () => {
 $(".js-range-slider").ionRangeSlider({
   min: 0,
   max: 20,
-  step: 0.5,   
-  from: 10,      
+  step: 0.5,
+  from: 10,
   onStart: function (data) {
     // console.log(data.input);
     // console.log(data.slider);
   }
+});
+
+
+const accordHeads = document.querySelectorAll('.accord-item-head');
+
+// Имя класса, который будет отвечать за открытое состояние
+const OPEN_CLASS = 'is-open';
+
+accordHeads.forEach(head => {
+  head.addEventListener('click', function () {
+
+    // 1. Находим родительский контейнер
+    const parentItem = this.closest('.accord-item');
+    if (!parentItem) return;
+
+    // 2. Находим контент, который нужно открыть/закрыть
+    const content = parentItem.querySelector('.accord-item-content');
+
+    if (!content) return;
+
+    // 3. Логика "Один открыт, остальные закрыты" (Аккордеон)
+
+    // Проверяем, открыт ли уже этот элемент
+    const currentlyOpen = content.classList.contains(OPEN_CLASS);
+
+    // Сначала закрываем все открытые элементы, чтобы избежать наложения анимаций
+    document.querySelectorAll('.accord-item-content.is-open').forEach(openContent => {
+      openContent.classList.remove(OPEN_CLASS);
+    });
+
+    // 4. Открываем/Закрываем текущий элемент
+    if (!currentlyOpen) {
+      // Если он был закрыт (или только что был закрыт в цикле выше), открываем его
+      content.classList.add(OPEN_CLASS);
+    }
+    // Если он уже был открыт и мы его закрыли в цикле выше, ничего не делаем.
+    // Если бы не было "один открыт, остальные закрыты", мы бы просто использовали:
+    // content.classList.toggle(OPEN_CLASS);
+
+  });
 });

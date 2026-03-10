@@ -9,6 +9,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 3;
 
     .container {
       @media(max-width: 575px) {
@@ -34,11 +35,18 @@
       }
 
       .menu-item-icon {
-        width: 40px;
-        height: 40px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        // background-size: contain;
+        // background-position: center;
+        // background-repeat: no-repeat;
+
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+          object-position: center;
+          position: relative;
+          z-index: 1;
+        }
       }
 
       .fz-12 {
@@ -48,77 +56,144 @@
       }
     }
 
-    &.menu-item-dashboard {
-      .menu-item-icon {
-        background-image: url('@img/icons/fixed-menu/dashboard.svg');
-      }
+    &.online {
 
-      &.active {
-        .menu-item-icon {
-          background-image: url('@img/icons/fixed-menu/dashboard-active.svg');
+      .menu-item-icon {
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: var(--green);
+          position: absolute;
+          right: 1px;
+          top: 2px;
         }
       }
+
+
     }
 
-    &.menu-item-orders {
+    &.active {
       .menu-item-icon {
-        background-image: url('@img/icons/fixed-menu/orders.svg');
-      }
+        position: relative;
 
-      &.active {
-        .menu-item-icon {
-          background-image: url('@img/icons/fixed-menu/orders-active.svg');
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: var(--yellow);
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
-    }
 
-    &.menu-item-sellers {
-      .menu-item-icon {
-        background-image: url('@img/icons/fixed-menu/sellers.svg');
-      }
-
-      &.active {
-        .menu-item-icon {
-          background-image: url('@img/icons/fixed-menu/sellers-active.svg');
-        }
-      }
-    }
-
-    &.menu-item-admin {
-      .menu-item-icon {
-        background-image: url('@img/icons/fixed-menu/admin.svg');
-      }
-
-      &.active {
-        .menu-item-icon {
-          background-image: url('@img/icons/fixed-menu/admin-active.svg');
-        }
-      }
-    }
-
-    &.menu-item-prodavcy {
-      .menu-item-icon {
-        background-image: url('@img/icons/fixed-menu/prodavcy.svg');
-      }
-
-      &.active {
-        .menu-item-icon {
-          background-image: url('@img/icons/fixed-menu/prodavcy-active.svg');
-        }
-      }
-    }
-
-    &.menu-item-sdelki {
-      .menu-item-icon {
-        background-image: url('@img/icons/fixed-menu/sdelki.svg');
-      }
-
-      &.active {
-        .menu-item-icon {
-          background-image: url('@img/icons/fixed-menu/sdelki-active.svg');
-        }
-      }
+      position: relative;
     }
   }
 
+}
+
+.fixed-menu-submenu {
+  position: absolute;
+  bottom: 40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+  display: none;
+
+  &.active {
+    display: flex;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+  }
+
+  &-list {
+    padding-top: 40px;
+    background-color: #fff;
+    padding-left: calc((100% / 4) / 2 - 20px);
+    border-radius: 60px 60px 0 0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  li {
+    a {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+
+      .menu-item-icon {
+        img {
+          position: relative;
+          z-index: 1;
+          width: 40px;
+          height: 40px;
+          flex-shrink: 0;
+          object-fit: contain;
+        }
+      }
+    }
+
+    &.online {
+
+      .menu-item-icon {
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: var(--green);
+          position: absolute;
+          right: 1px;
+          top: 2px;
+        }
+      }
+
+
+    }
+
+    &.active {
+      .menu-item-icon {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: var(--yellow);
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      position: relative;
+    }
+  }
+}
+
+.fixed-menu-submenu-close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 24px;
+  height: 24px;
 }
