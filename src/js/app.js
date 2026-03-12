@@ -284,3 +284,22 @@ accordHeads.forEach(head => {
 
   });
 });
+
+let pofileBtnW = document.querySelector('.pofileBtnW');
+let profileSubmenu = document.querySelector('.profile-submenu');
+
+pofileBtnW?.addEventListener('click', () => {
+  profileSubmenu.classList.toggle('active');
+});
+
+
+document.addEventListener('click', e => {
+  let target = e.target;
+  let its_profileSubmenu = target == profileSubmenu || profileSubmenu.contains(target);
+  let its_pofileBtnW = target == pofileBtnW || pofileBtnW.contains(target);
+
+  if (!its_profileSubmenu && !its_pofileBtnW) {
+    profileSubmenu.classList.remove('active');
+  }
+
+});

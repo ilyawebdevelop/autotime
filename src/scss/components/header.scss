@@ -94,3 +94,12 @@
     position: absolute;
   }
 }
+.header-title {
+  width: 100%;
+  border-bottom: 1px solid var(--light-blue);
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
