@@ -1,0 +1,1498 @@
+<!-- manager-filter -->
+<div class="modal rounded-60 p-40-32" id="manager-filter">
+
+  <h4 class="h4 text-center mb-32">
+    Фильтры
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Статус сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="manager-filter-1" type="checkbox" hidden checked>
+            <label class="align-items-center" for="manager-filter-1">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Новая
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="manager-filter-2" type="checkbox" hidden checked>
+            <label class="align-items-center" for="manager-filter-2">
+              <div class="rect"></div>
+              <div class="fz-14">
+                В работе
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="manager-filter-3" type="checkbox" hidden checked>
+            <label class="align-items-center" for="manager-filter-3">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Завершена
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="manager-filter-4" type="checkbox" hidden checked>
+            <label class="align-items-center" for="manager-filter-4">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Отклонена
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Агент/Продавец</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+
+      <div class="mb-32 form-floating">
+        <select id="manager-select-2" class="formSelect">
+          <option value="1" selected>Все</option>
+          <option value="2">автоэксперт</option>
+          <option value="3">Продавец</option>
+          <option value="4">блогер</option>
+          <option value="5">банк</option>
+        </select>
+
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-agents-filter -->
+<div class="modal rounded-60 p-40-32" id="manager-agents-filter">
+
+  <h4 class="h4 text-center mb-32">
+    Фильтры
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Статус сделки</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="manager-filter-agent-1" type="checkbox" hidden checked>
+            <label class="align-items-center" for="manager-filter-agent-1">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Активный
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="checkbox">
+            <input id="manager-filter-agent-2" type="checkbox" hidden checked>
+            <label class="align-items-center" for="manager-filter-agent-2">
+              <div class="rect"></div>
+              <div class="fz-14">
+                Заблокированный
+              </div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="h5 mb-0">Город</h5>
+        <button class="fz-14 color-light-grey-blue fw-normal" type="button">
+          Сбросить
+        </button>
+      </div>
+
+      <div class="mb-32 form-floating">
+        <select id="manager-select-2" class="formSelect">
+          <option value="1" selected>Все</option>
+          <option value="2">Иркутск</option>
+          <option value="3">Москва</option>
+          <option value="4">Санкт-Петербург</option>
+          <option value="5">Казань</option>
+        </select>
+
+      </div>
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-agents-sort -->
+<div class="modal rounded-60 p-40-32" id="manager-agents-sort">
+
+  <h4 class="h4 text-center mb-32">
+    Сортировка
+  </h4>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="mb-32">
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="manager-agents-sort-1" type="radio" name="manager-agents-sort" hidden checked>
+            <label class="align-items-start" for="manager-agents-sort-1">
+              <div class="rect"></div>
+              <img src="@img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала новые</span>
+              </div>
+
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="manager-agents-sort-2" type="radio" name="manager-agents-sort" hidden>
+            <label class="align-items-start" for="manager-agents-sort-2">
+              <div class="rect"></div>
+              <img src="@img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По дате создания
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала старые</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="manager-agents-sort-3" type="radio" name="manager-agents-sort" hidden>
+            <label class="align-items-start" for="manager-agents-sort-3">
+              <div class="rect"></div>
+              <img src="@img/icons/sort-down.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По проценту вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала больше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="radiobtn">
+            <input id="manager-agents-sort-4" type="radio" name="manager-agents-sort" hidden>
+            <label class="align-items-start" for="manager-agents-sort-4">
+              <div class="rect"></div>
+              <img src="@img/icons/sort-up.svg" alt="icon">
+              <div class="d-flex flex-column gap-1">
+                <div class="fz-14">
+                  По проценту вознаграждения
+                </div>
+                <span class="fz-12 color-grey-blue">Сначала меньше</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="button button--yellow text-uppercase w-100" type="button">
+        применить
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-sellers-decline -->
+<div class="modal rounded-0 p-0" id="manager-sellers-decline">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Редактировать
+    </h3>
+  </div>
+
+  <div class="modalContent">
+    <div class="p-10 bg--yellow fz-12 fw-bold text-uppercase color-white text-center">
+      Мой агент
+    </div>
+    <form action="#">
+
+      <div class="p-32-24">
+        <div class="bg--bg p-20 rounded-20 mb-20">
+          <div class="d-flex flex-column gap-10">
+            <div class="fz-12 text-uppercase color-grey-blue text-center">
+              Комментарий андеррайтера
+            </div>
+            <span class="text-center">Проверьте год рождения</span>
+            <button class="button button--h-25 button--red-light fw-normal px-12 pe-none fz-12 mx-auto">
+              Отклонён
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <div class="mb-3 form-floating">
+            <input id="auth-fio" type="text" class="formInput form-control" placeholder="ФИО*"
+              value="Костров Константин Константинович ">
+            <label for="auth-fio">ФИО<span>*</span></label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="tel" class="formInput form-control" placeholder="Телефон*">
+            <label for="register-phone">Телефон<span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="email" class="formInput form-control" placeholder="Email*">
+            <label for="register-phone">Email</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-city" type="text" class="formInput form-control" placeholder="Город" value="Иркутск">
+            <label for="register-city">Город <span>*</span></label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Дата рождения">
+            <label for="auth-date">Дата рождения <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="auth-adres" type="text" class="formInput form-control" placeholder="Адрес площадки авто"
+              value="г. Иркутск, ул. Автомобильная, 2">
+            <label for="auth-adres">Адрес площадки авто <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="auth-col-auto" type="text" class="formInput form-control"
+              placeholder="Количество продаваемых авто">
+            <label for="auth-col-auto">Количество продаваемых авто <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <select id="manager-new-agent-select-1" class="formSelect">
+              <option value="1" selected>Кредитование</option>
+              <option value="2">автоэксперт</option>
+              <option value="3">Продавец</option>
+              <option value="4">Блогер</option>
+              <option value="5">банк</option>
+            </select>
+            <label for="manager-new-agent-select-1">Сфера деятельности <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+          <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения агента</span>
+          <div class="slider js-range-slider">
+            <input type="text" class="js-range-slider">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="p-32-24 border-t-light-blue">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          сохранить изменения
+        </button>
+        <button class="button button--light-blue text-uppercase w-100 mx-auto mb-4" data-fancybox-close>
+          назад
+        </button>
+        <a href="#" class="color-red text-uppercase fw-medium text-center mx-auto d-block" data-fancybox
+          data-src="#delete-agent">удалить пользователя</a>
+      </div>
+
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-sellers-check -->
+<div class="modal rounded-0 p-0" id="manager-sellers-check">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Новый продавец
+    </h3>
+  </div>
+
+  <div class="modalContent">
+    <div class="p-10 bg--yellow fz-12 fw-bold text-uppercase color-white text-center">
+      Мой агент
+    </div>
+    <form action="#">
+
+      <div class="p-20">
+
+        <button class="button button--h-25 bg--light-blue fw-normal px-12 pe-none fz-12 mb-20 mx-auto">
+          На проверке
+        </button>
+
+        <div class="mb-5">
+          <div class="mb-3 form-floating">
+            <input id="auth-fio" type="text" class="formInput form-control" placeholder="ФИО*"
+              value="Костров Константин Константинович " disabled>
+            <label for="auth-fio">ФИО<span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="tel" class="formInput form-control" placeholder="Телефон*"
+              value="+7 (912) 345 67-89" disabled>
+            <label for="register-phone">Телефон<span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="email" class="formInput form-control" placeholder="Email*"
+              value="kostrov@mail.com" disabled>
+            <label for="register-phone">Email</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-city" type="text" class="formInput form-control" placeholder="Город" value="Иркутск"
+              disabled>
+            <label for="register-city">Город <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Дата рождения"
+              value="10.12.1977" disabled>
+            <label for="auth-date">Дата рождения <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="auth-adres" type="text" class="formInput form-control" placeholder="Адрес площадки авто"
+              value="г. Иркутск, ул. Автомобильная, 2" disabled>
+            <label for="auth-adres">Адрес площадки авто <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="auth-col-auto" type="text" class="formInput form-control"
+              placeholder="Количество продаваемых авто" value="800" disabled>
+            <label for="auth-col-auto">Количество продаваемых авто <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <select id="manager-new-agent-select-1" class="formSelect" disabled>
+              <option value="1" selected>Кредитование</option>
+              <option value="2">автоэксперт</option>
+              <option value="3">Продавец</option>
+              <option value="4">Блогер</option>
+              <option value="5">банк</option>
+            </select>
+            <label for="manager-new-agent-select-1">Сфера деятельности <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+          <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения агента</span>
+          <span class="h4 mb-0">20%</span>
+        </div>
+
+      </div>
+
+
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-agents-new-agent -->
+<div class="modal rounded-0 p-0" id="manager-agents-new-agent">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Новый агент
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+
+        <div class="mb-5">
+          <div class="mb-3 form-floating">
+            <input id="auth-fio" type="text" class="formInput form-control" placeholder="ФИО*"
+              value="Костров Константин Константинович ">
+            <label for="auth-fio">ФИО<span>*</span></label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="tel" class="formInput form-control" placeholder="Телефон*">
+            <label for="register-phone">Телефон<span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="email" class="formInput form-control" placeholder="Email*">
+            <label for="register-phone">Email</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-city" type="text" class="formInput form-control" placeholder="Город" value="Иркутск">
+            <label for="register-city">Город <span>*</span></label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Дата рождения">
+            <label for="auth-date">Дата рождения <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="auth-adres" type="text" class="formInput form-control" placeholder="Адрес площадки авто"
+              value="г. Иркутск, ул. Автомобильная, 2">
+            <label for="auth-adres">Адрес площадки авто <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="auth-col-auto" type="text" class="formInput form-control"
+              placeholder="Количество продаваемых авто">
+            <label for="auth-col-auto">Количество продаваемых авто <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <select id="manager-new-agent-select-1" class="formSelect">
+              <option value="1" selected>Кредитование</option>
+              <option value="2">автоэксперт</option>
+              <option value="3">Продавец</option>
+              <option value="4">Блогер</option>
+              <option value="5">банк</option>
+            </select>
+            <label for="manager-new-agent-select-1">Сфера деятельности <span>*</span></label>
+          </div>
+
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+          <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения продавца</span>
+          <div class="slider js-range-slider">
+            <input type="text" class="js-range-slider">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="p-32-24 border-t-light-blue">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          отправить
+        </button>
+        <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox-close>
+          отменить
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-sellers-new-seller -->
+<div class="modal rounded-0 p-0" id="manager-sellers-new-seller">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Новый продавец
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+
+        <div class="mb-5">
+          <div class="mb-3 form-floating">
+            <input id="auth-fio" type="text" class="formInput form-control" placeholder="ФИО*"
+              value="Костров Константин Константинович ">
+            <label for="auth-fio">ФИО<span>*</span></label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="tel" class="formInput form-control" placeholder="Телефон*">
+            <label for="register-phone">Телефон<span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="email" class="formInput form-control" placeholder="Email*">
+            <label for="register-phone">Email</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-city" type="text" class="formInput form-control" placeholder="Город" value="Иркутск">
+            <label for="register-city">Город <span>*</span></label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="auth-date" type="text" class="formInput form-control calendar" placeholder="Дата рождения">
+            <label for="auth-date">Дата рождения <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="auth-adres" type="text" class="formInput form-control" placeholder="Адрес площадки авто"
+              value="г. Иркутск, ул. Автомобильная, 2">
+            <label for="auth-adres">Адрес площадки авто <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="auth-col-auto" type="text" class="formInput form-control"
+              placeholder="Количество продаваемых авто">
+            <label for="auth-col-auto">Количество продаваемых авто <span>*</span></label>
+          </div>
+          <div class="mb-3 form-floating">
+            <select id="manager-new-agent-select-1" class="formSelect">
+              <option value="1" selected>Кредитование</option>
+              <option value="2">автоэксперт</option>
+              <option value="3">Продавец</option>
+              <option value="4">Блогер</option>
+              <option value="5">банк</option>
+            </select>
+            <label for="manager-new-agent-select-1">Сфера деятельности <span>*</span></label>
+          </div>
+
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+          <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения продавца</span>
+          <div class="slider js-range-slider">
+            <input type="text" class="js-range-slider">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="p-32-24 border-t-light-blue">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          отправить
+        </button>
+        <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox-close>
+          отменить
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-sellers-card -->
+<div class="modal rounded-0 p-0" id="manager-sellers-card">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Продавец
+    </h3>
+  </div>
+
+  <div class="modalContent">
+    <div class="p-10 bg--yellow fz-12 fw-bold text-uppercase color-white text-center">
+      Мой продавец
+    </div>
+    <form action="#">
+
+      <div class="p-32-24">
+
+        <div class="mb-20 pb-20 border-b-light-blue">
+          <div class="position-relative">
+            <img src="@img/admin/avatar/avatar-2.jpg" alt="image"
+              class="w-110 h-110 object-fit-cover rounded-circle mx-auto mb-3">
+            <img class="anketa-card-award" src="@img/icons/awards/icon-1.png" alt="icon">
+          </div>
+
+          <div class="color-total-black fz-20 mb-1 text-center">
+            Сергеев Алексей Викторович
+          </div>
+          <a href="tel:+79123456789"
+            class="d-flex align-items-center gap-10 justify-content-center color-grey-blue mb-1">
+            <img src="@img/icons/phone-grey-blue.svg" alt="icon">
+            +7 (912) 345 67-89
+          </a>
+          <div class="fz-12 text-center color-grey-blue mb-3">
+            активен: 3 дня назад
+          </div>
+          <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12 mx-auto">
+            Активен
+          </button>
+        </div>
+
+        <div class="mb-20">
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">email</span>
+            <a class="color-link fz-14" href="mailto:sergeev@mail.ru">sergeev@mail.ru</a>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">Город</span>
+            <div class="fz-14">г. Иркутск</div>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">дата рождения</span>
+            <div class="fz-14">10.12.1977</div>
+          </div>
+        </div>
+
+        <div class="bg--bg p-20 rounded-20 mb-20">
+          <div class="d-flex gap-2 justify-content-between align-items-center mb-10">
+            <span class="fw-medium color-total-black">Процент вознаграждения</span>
+            <button class="button-edit" type="button" data-fancybox data-src="#manager-agents-card-edit-percent">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#edit"></use>
+              </svg>
+            </button>
+          </div>
+          <span class="fw-medium">20%</span>
+        </div>
+
+        <div class="bg--bg p-20 rounded-20 mb-20">
+          <div class="mb-20 d-flex gap-2 justify-content-between align-items-center">
+            <span class="fw-medium color-total-black">Работает на площадке</span>
+            <button class="button-edit" type="button" data-fancybox data-src="#manager-agents-card-edit-address">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#edit"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="d-flex flex-column gap-2 mb-20">
+            <span class="fz-12 color-grey-blue text-uppercase">Адрес площадки авто</span>
+            <span class="fz-14">г. Иркутск, ул. Автомобильная, 2</span>
+          </div>
+
+          <div class="d-flex flex-column gap-2 mb-20">
+            <span class="fz-12 color-grey-blue text-uppercase">Количество продаваемых авто</span>
+            <span class="fz-14">800</span>
+          </div>
+
+          <div class="d-flex flex-column gap-2">
+            <span class="fz-12 color-grey-blue text-uppercase">Сфера деятельности</span>
+            <span class="fz-14">Кредитование</span>
+          </div>
+
+        </div>
+
+        <div class="mb-20 rounded-40 bg--white px-4 pt-3 pb-4 shadow-card">
+          <div class="mb-3 d-flex align-items-center justify-content-between">
+            <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12">
+              Активен
+            </button>
+            <div class="fz-12 color-grey-blue">
+              г. Иркутск
+            </div>
+          </div>
+          <div class="d-flex gap-2 align-items-start mb-3 justify-content-between">
+            <div class="d-flex flex-column gap-1">
+              <span class="fz-12 color-grey-blue text-uppercase">Агент</span>
+              <span class="color-total-black">
+                Иванов Иван Иванович
+              </span>
+              <span class="fz-12 color-grey-blue">активен: 3 дня назад</span>
+            </div>
+            <span class="color-total-black h5 mb-0 text-nowrap">20%</span>
+          </div>
+
+          <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox
+            data-src="#manager-sellers-card">
+            Подробнее
+          </button>
+        </div>
+
+        <div
+          class="d-flex align-items-center gap-3 justify-content-between justify-content-sm-center py-20 flex-wrap border-t-light-blue border-b-light-blue">
+          <div class="d-flex align-items-center gap-10">
+            <img src="@img/icons/heart.svg" alt="icon">
+            <a href="#" class="color-link text-uppercase fw-medium">сделки продавца</a>
+          </div>
+          <a href="#" class="button-round bg--light-blue width-50 d-flex align-items-center justify-content-center">
+            <img src="@img/icons/link-seller.svg" alt="icon">
+          </a>
+        </div>
+
+        <div class="py-20 border-b-light-blue d-flex align-items-center flex-wrap gap-2 justify-content-between">
+          <span class="fz-12 text-uppercase color-grey-blue">Дата регистрации в сервисе</span>
+          <span class="fz-14">01.02.2026</span>
+        </div>
+
+        <div class="py-20 border-b-light-blue">
+          <div class="mb-2">
+            <span class="fz-12 text-uppercase color-grey-blue">паспортные данные</span>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Серия:</span>
+              <span class="fz-14">1234</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Номер:</span>
+              <span class="fz-14">56789</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Кем выдан: </span>
+              <span class="fz-14">УФМС России по г. Москве</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Когда выдан: </span>
+              <span class="fz-14">10.01.2012</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Код подразделения: </span>
+              <span class="fz-14">770-001</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-20 border-b-light-blue">
+          <div class="d-flex flex-column gap-2">
+            <span class="fz-12 text-uppercase color-grey-blue">СНИЛС</span>
+            <span class="fz-14">123-456-789 00</span>
+          </div>
+        </div>
+
+        <div class="py-20">
+          <div class="d-flex flex-column gap-2">
+            <span class="fz-12 text-uppercase color-grey-blue">Платежные реквизиты</span>
+            <div class="d-flex flex-column fz-14">
+              <span>Номер счета: 40817810099999999999</span>
+              <span>Банк: ПАО "Сбербанк России"</span>
+              <span>БИК: 044525225</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-sellers-card-check -->
+<div class="modal rounded-0 p-0" id="manager-sellers-card-check">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Продавец
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+
+        <div class="bg--bg p-20 rounded-20 d-flex flex-column align-items-center gap-20 mb-20">
+          <span class="text-center color-red lh-160">Данные были изменены пользователем, необходима проверка!</span>
+          <button class="button button--yellow text-uppercase w-100 mb-12" type="button" data-fancybox
+            data-src="#manager-sellers-card-check-info">
+            проверить
+          </button>
+        </div>
+
+        <div class="mb-20 pb-20 border-b-light-blue">
+          <div class="position-relative">
+            <img src="@img/admin/avatar/avatar-2.jpg" alt="image"
+              class="w-110 h-110 object-fit-cover rounded-circle mx-auto mb-3">
+            <img class="anketa-card-award" src="@img/icons/awards/icon-1.png" alt="icon">
+          </div>
+
+          <div class="color-total-black fz-20 mb-1 text-center">
+            Сергеев Алексей Викторович
+          </div>
+          <a href="tel:+79123456789"
+            class="d-flex align-items-center gap-10 justify-content-center color-grey-blue mb-1">
+            <img src="@img/icons/phone-grey-blue.svg" alt="icon">
+            +7 (912) 345 67-89
+          </a>
+          <div class="fz-12 text-center color-grey-blue mb-3">
+            активен: 3 дня назад
+          </div>
+          <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12 mx-auto">
+            Активен
+          </button>
+        </div>
+
+        <div class="mb-20">
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">email</span>
+            <a class="color-link fz-14" href="mailto:sergeev@mail.ru">sergeev@mail.ru</a>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">Город</span>
+            <div class="fz-14">г. Иркутск</div>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">дата рождения</span>
+            <div class="fz-14">10.12.1977</div>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">Процент вознаграждения</span>
+            <div class="fw-medium">20%</div>
+          </div>
+        </div>
+
+        <div class="bg--bg p-20 rounded-20 mb-20">
+          <div class="mb-20 d-flex gap-2 justify-content-between align-items-center">
+            <span class="fw-medium color-total-black">Работает на площадке</span>
+            <button class="button-edit" type="button" data-fancybox data-src="#manager-agents-card-edit-address">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#edit"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="d-flex flex-column gap-2 mb-20">
+            <span class="fz-12 color-grey-blue text-uppercase">Адрес площадки авто</span>
+            <span class="fz-14">г. Иркутск, ул. Автомобильная, 2</span>
+          </div>
+
+          <div class="d-flex flex-column gap-2 mb-20">
+            <span class="fz-12 color-grey-blue text-uppercase">Количество продаваемых авто</span>
+            <span class="fz-14">800</span>
+          </div>
+
+          <div class="d-flex flex-column gap-2">
+            <span class="fz-12 color-grey-blue text-uppercase">Сфера деятельности</span>
+            <span class="fz-14">Кредитование</span>
+          </div>
+
+        </div>
+
+        <div class="mb-20 rounded-40 bg--white px-4 pt-3 pb-4 shadow-card">
+          <div class="mb-3 d-flex align-items-center justify-content-between">
+            <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12">
+              Активен
+            </button>
+            <div class="fz-12 color-grey-blue">
+              г. Иркутск
+            </div>
+          </div>
+          <div class="d-flex gap-2 align-items-start mb-3 justify-content-between">
+            <div class="d-flex flex-column gap-1">
+              <span class="fz-12 color-grey-blue text-uppercase">Агент</span>
+              <span class="color-total-black">
+                Сергеев Алексей Викторович
+              </span>
+              <span class="fz-12 color-grey-blue">активен: 3 дня назад</span>
+            </div>
+            <span class="color-total-black h5 mb-0 text-nowrap">20%</span>
+          </div>
+
+          <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox
+            data-src="#manager-sellers-card">
+            Подробнее
+          </button>
+        </div>
+
+        <div
+          class="d-flex align-items-center gap-3 justify-content-between justify-content-sm-center py-20 flex-wrap border-t-light-blue border-b-light-blue">
+          <div class="d-flex align-items-center gap-10">
+            <img src="@img/icons/heart.svg" alt="icon">
+            <a href="#" class="color-link text-uppercase fw-medium">сделки продавца</a>
+          </div>
+          <a href="#" class="button-round bg--light-blue width-50 d-flex align-items-center justify-content-center">
+            <img src="@img/icons/link-seller.svg" alt="icon">
+          </a>
+        </div>
+
+        <div class="py-20 border-b-light-blue d-flex align-items-center flex-wrap gap-2 justify-content-between">
+          <span class="fz-12 text-uppercase color-grey-blue">Дата регистрации в сервисе</span>
+          <span class="fz-14">01.02.2026</span>
+        </div>
+
+        <div class="py-20 border-b-light-blue">
+          <div class="mb-2">
+            <span class="fz-12 text-uppercase color-grey-blue">паспортные данные</span>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Серия:</span>
+              <span class="fz-14">1234</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Номер:</span>
+              <span class="fz-14">56789</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Кем выдан: </span>
+              <span class="fz-14">УФМС России по г. Москве</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Когда выдан: </span>
+              <span class="fz-14">10.01.2012</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Код подразделения: </span>
+              <span class="fz-14">770-001</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-20 border-b-light-blue">
+          <div class="d-flex flex-column gap-2">
+            <span class="fz-12 text-uppercase color-grey-blue">СНИЛС</span>
+            <span class="fz-14">123-456-789 00</span>
+          </div>
+        </div>
+
+        <div class="py-20">
+          <div class="d-flex flex-column gap-2">
+            <span class="fz-12 text-uppercase color-grey-blue">Платежные реквизиты</span>
+            <div class="d-flex flex-column fz-14">
+              <span>Номер счета: 40817810099999999999</span>
+              <span>Банк: ПАО "Сбербанк России"</span>
+              <span>БИК: 044525225</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-sellers-card-check-info -->
+<div class="modal rounded-0 p-0" id="manager-sellers-card-check-info">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Проверить данные
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+        <div class="border-b-light-blue">
+
+          <div class="mb-20">
+            <div class="text-center mb-20 h5">
+              Было
+            </div>
+            <div class="mb-2">
+              <span class="fz-12 text-uppercase color-grey-blue">паспортные данные</span>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Серия:</span>
+                <span class="fz-14">1234</span>
+              </div>
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Номер:</span>
+                <span class="fz-14">56789</span>
+              </div>
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Кем выдан: </span>
+                <span class="fz-14">УФМС России по г. Москве</span>
+              </div>
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Когда выдан: </span>
+                <span class="fz-14">10.01.2012</span>
+              </div>
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Код подразделения: </span>
+                <span class="fz-14">770-001</span>
+              </div>
+            </div>
+          </div>
+          <div class="mb-20">
+            <div class="text-center mb-20 h5">
+              Стало
+            </div>
+            <div class="mb-2">
+              <span class="fz-12 text-uppercase color-grey-blue">паспортные данные</span>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Серия:</span>
+                <span class="fz-14">5678</span>
+              </div>
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Номер:</span>
+                <span class="fz-14">901234</span>
+              </div>
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Кем выдан: </span>
+                <span class="fz-14">УФМС России по г. Москве</span>
+              </div>
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Когда выдан: </span>
+                <span class="fz-14">10.01.2026</span>
+              </div>
+              <div class="d-flex gap-1">
+                <span class="fz-14 color-grey-blue">Код подразделения: </span>
+                <span class="fz-14">000-001</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pt-20">
+          <div class="mb-20">
+            <div class="text-center mb-20 h5">
+              Было
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <span class="fz-12 text-uppercase color-grey-blue">Платежные реквизиты</span>
+              <div class="d-flex flex-column fz-14">
+                <span>Номер счета: 40817810099999999999</span>
+                <span>Банк: ПАО "Сбербанк России"</span>
+                <span>БИК: 044525225</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-center mb-20 h5">
+              Стало
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <span class="fz-12 text-uppercase color-grey-blue">Платежные реквизиты</span>
+              <div class="d-flex flex-column fz-14">
+                <span>Номер счета: 40817810099999999999</span>
+                <span>Банк: ПАО "ВТБ России"</span>
+                <span>БИК: 044525225</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="p-32-24 border-t-light-blue">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          подтвердить
+        </button>
+        <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox-close>
+          отклонить
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-agents-card -->
+<div class="modal rounded-0 p-0" id="manager-agents-card">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Агент
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+        <div class="mb-20">
+          <div class="position-relative">
+            <img src="@img/admin/anketa/image-1.jpg" alt="image"
+              class="w-110 h-110 object-fit-cover rounded-circle mx-auto mb-3">
+          </div>
+
+          <div class="color-total-black fz-20 mb-1 text-center">
+            Сергеев Алексей Викторович
+          </div>
+          <a href="tel:+79123456789"
+            class="d-flex align-items-center gap-10 justify-content-center color-grey-blue mb-1">
+            <img src="@img/icons/phone-grey-blue.svg" alt="icon">
+            +7 (912) 345 67-89
+          </a>
+          <div class="fz-12 text-center color-grey-blue mb-3">
+            активен: 3 дня назад
+          </div>
+          <button class="button button--h-25 button--green-light fw-normal px-12 pe-none fz-12 mx-auto">
+            Активен
+          </button>
+        </div>
+
+        <div class="mb-20">
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">email</span>
+            <a class="color-link fz-14" href="mailto:sergeev@mail.ru">sergeev@mail.ru</a>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">Город</span>
+            <div class="fz-14">г. Иркутск</div>
+          </div>
+          <div class="mb-20 d-flex align-items-center justify-content-between flex-wrap gap-10">
+            <span class="color-grey-blue text-uppercase fz-12">дата рождения</span>
+            <div class="fz-14">10.12.1977</div>
+          </div>
+        </div>
+
+        <div class="bg--bg p-20 rounded-20 mb-20">
+          <div class="mb-20 d-flex gap-2 justify-content-between align-items-center">
+            <span class="fw-medium color-total-black">Работает на площадке</span>
+            <button class="button-edit" type="button" data-fancybox data-src="#manager-agents-card-edit-address">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#edit"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="d-flex flex-column gap-2 mb-20">
+            <span class="fz-12 color-grey-blue text-uppercase">Адрес площадки авто</span>
+            <span class="fz-14">г. Иркутск, ул. Автомобильная, 2</span>
+          </div>
+
+          <div class="d-flex flex-column gap-2 mb-20">
+            <span class="fz-12 color-grey-blue text-uppercase">Количество продаваемых авто</span>
+            <span class="fz-14">800</span>
+          </div>
+
+          <div class="d-flex flex-column gap-2">
+            <span class="fz-12 color-grey-blue text-uppercase">Сфера деятельности</span>
+            <span class="fz-14">Кредитование</span>
+          </div>
+
+        </div>
+
+        <div class="bg--bg p-20 rounded-20 mb-20">
+          <div class="d-flex gap-2 justify-content-between align-items-center mb-10">
+            <span class="fw-medium color-total-black">Процент вознаграждения</span>
+            <button class="button-edit" type="button" data-fancybox data-src="#manager-agents-card-edit-percent">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#edit"></use>
+              </svg>
+            </button>
+          </div>
+          <span class="fw-medium">20%</span>
+        </div>
+
+        <div
+          class="d-flex align-items-center gap-3 justify-content-between justify-content-sm-center py-20 flex-wrap border-t-light-blue">
+          <div class="d-flex align-items-center gap-10">
+            <img src="@img/icons/fixed-menu/prodavcy.svg" alt="icon">
+            <a href="#" class="color-link text-uppercase fw-medium">продавцы агента</a>
+          </div>
+          <a href="#" class="button-round bg--light-blue width-50 d-flex align-items-center justify-content-center">
+            <img src="@img/icons/link-seller.svg" alt="icon">
+          </a>
+        </div>
+
+        <div
+          class="d-flex align-items-center gap-3 justify-content-between justify-content-sm-center py-20 flex-wrap border-t-light-blue border-b-light-blue">
+          <div class="d-flex align-items-center gap-10">
+            <img src="@img/icons/heart.svg" alt="icon">
+            <a href="#" class="color-link text-uppercase fw-medium">сделки агента</a>
+          </div>
+          <a href="#" class="button-round bg--light-blue width-50 d-flex align-items-center justify-content-center">
+            <img src="@img/icons/link-seller.svg" alt="icon">
+          </a>
+        </div>
+
+        <div class="py-20 border-b-light-blue d-flex align-items-center flex-wrap gap-2 justify-content-between">
+          <span class="fz-12 text-uppercase color-grey-blue">Дата регистрации в сервисе</span>
+          <span class="fz-14">01.02.2026</span>
+        </div>
+
+        <div class="py-20 border-b-light-blue">
+          <div class="mb-2">
+            <span class="fz-12 text-uppercase color-grey-blue">паспортные данные</span>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Серия:</span>
+              <span class="fz-14">1234</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Номер:</span>
+              <span class="fz-14">56789</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Кем выдан: </span>
+              <span class="fz-14">УФМС России по г. Москве</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Когда выдан: </span>
+              <span class="fz-14">10.01.2012</span>
+            </div>
+            <div class="d-flex gap-1">
+              <span class="fz-14 color-grey-blue">Код подразделения: </span>
+              <span class="fz-14">770-001</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-20 border-b-light-blue">
+          <div class="d-flex flex-column gap-2">
+            <span class="fz-12 text-uppercase color-grey-blue">СНИЛС</span>
+            <span class="fz-14">123-456-789 00</span>
+          </div>
+        </div>
+
+        <div class="py-20">
+          <div class="d-flex flex-column gap-2">
+            <span class="fz-12 text-uppercase color-grey-blue">Платежные реквизиты</span>
+            <div class="d-flex flex-column fz-14">
+              <span>Номер счета: 40817810099999999999</span>
+              <span>Банк: ПАО "Сбербанк России"</span>
+              <span>БИК: 044525225</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-agents-card-edit-address -->
+<div class="modal rounded-0 p-0" id="manager-agents-card-edit-address">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Редактировать
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+        <div class="mb-3 form-floating">
+          <input id="auth-adres" type="text" class="formInput form-control" placeholder="Адрес площадки авто"
+            value="г. Иркутск, ул. Автомобильная, 2">
+          <label for="auth-adres">Адрес площадки авто </label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input id="auth-col-auto" type="text" class="formInput form-control" placeholder="Количество продаваемых авто"
+            value="800">
+          <label for="auth-col-auto">Количество продаваемых авто</label>
+        </div>
+        <div class="form-floating">
+          <select id="manager-new-agent-select-1" class="formSelect">
+            <option value="1" selected>Кредитование</option>
+            <option value="2">автоэксперт</option>
+            <option value="3">Продавец</option>
+            <option value="4">Блогер</option>
+            <option value="5">банк</option>
+          </select>
+          <label for="manager-new-agent-select-1">Сфера деятельности </label>
+        </div>
+
+      </div>
+
+      <div class="p-32-24 border-t-light-blue">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          сохранить
+        </button>
+        <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox-close>
+          отменить
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-agents-card-edit-percent -->
+<div class="modal rounded-0 p-0" id="manager-agents-card-edit-percent">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Редактировать
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="p-32-24">
+
+        <div class="d-flex flex-column gap-3">
+          <span class="fw-medium text-center">Процент вознаграждения</span>
+          <div class="slider js-range-slider">
+            <input type="text" class="js-range-slider">
+          </div>
+        </div>
+
+      </div>
+      <div class="p-32-24 border-t-light-blue">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          сохранить
+        </button>
+        <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox-close>
+          отменить
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- manager-profile-edit -->
+<div class="modal rounded-0 p-0" id="manager-profile-edit">
+
+  <div class="d-flex align-items-center gap-30 p-20 border-b-light-blue justify-content-center position-relative">
+    <button class="modalPrevLink" data-fancybox-close>
+      <img src="@img/icons/arrow-left.svg" alt="icon">
+    </button>
+    <h3 class="h3 text-center mb-0">
+      Редактировать
+    </h3>
+  </div>
+
+  <div class="modalContent">
+
+    <form action="#">
+      <div class="p-32-24">
+        <div class="photo-item position-relative mb-20 rounded-15 w-fit mx-auto">
+          <img src="@img/admin/anketa/image-3.jpg" alt="image" class="anketa-image mb-3">
+          <input class="photo-item-input" id="input-file" type="file" hidden>
+          <label for="input-file" class="button button--transparent-grey text-uppercase w-100" style="display: none;">
+            <img src="@img/icons/file.svg" alt="icon">
+            загрузить фото
+          </label>
+          <button class="photo-item-remove-image" type="button">
+            <img src="@img/icons/file-remove.svg" alt="icon">
+          </button>
+        </div>
+        <div class="pb-20 mb-20 border-b-light-blue">
+          <div class="mb-3 form-floating">
+            <input id="register-fio" type="text" class="formInput form-control" placeholder="ФИО"
+              value="Мария Петровна Сидорова">
+            <label for="register-fio">ФИО</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="tel" class="formInput form-control" placeholder="+7 ___ ___ ____"
+              value="+7 (912) 345 67-89">
+            <label for="register-phone">Телефон</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-phone" type="email" class="formInput form-control" placeholder="E-mail"
+              value="maria.sidorova@email.com">
+            <label for="register-phone">E-mail</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-chasy" type="text" class="formInput form-control" placeholder="Часы работы" value="Пн-Пт 09:00 — 18:00 
+Сб-Вс выходной">
+            <label for="register-chasy">Часы работы </label>
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input id="agent_about" type="text" class="formInput form-control" placeholder="Город" value="Иркутск">
+            <label for="agent_about">Город</label>
+          </div>
+        </div>
+        <div>
+          <div class="mb-20 fz-12 text-uppercase color-grey-blue">
+            мессенджеры
+          </div>
+          <div class="mb-3 form-floating">
+            <input id="register-telegram" type="text" class="formInput form-control" placeholder="Telegram"
+              value="@maria.sidorova">
+            <label for="register-telegram">Telegram</label>
+          </div>
+          <div class="form-floating">
+            <input id="register-telegram" type="text" class="formInput form-control" placeholder="Макс"
+              value="+7 (912) 345 67-89">
+            <label for="register-telegram">Макс</label>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="border-t-light-blue p-32-24">
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          сохранить
+        </button>
+        <button class="button button--light-blue text-uppercase w-100" type="button" data-fancybox-close>
+          отменить
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>

@@ -51,13 +51,8 @@ table {
 }
 
 section {
-  padding-top: 90px;
-  padding-bottom: 90px;
-
-  @media(max-width: 991px) {
-    padding-bottom: 32px;
-    padding-top: 32px;
-  }
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .sect {
@@ -197,6 +192,12 @@ a.color-black {
   color: #fff;
 }
 
+a.color-white {
+  &:hover {
+    color: var(--yellow);
+  }
+}
+
 .sectHead {
   margin-bottom: 30px;
 
@@ -305,20 +306,14 @@ h6,
 
 h1,
 .h1 {
-  font-size: 36px;
-
-  @media(max-width: 1199px) {
-    font-size: 24px;
-  }
+  font-size: 26px;
+  line-height: 130%;
 }
 
 h2,
 .h2 {
-  font-size: 32px;
-
-  @media(max-width: 1199px) {
-    font-size: 20px;
-  }
+  font-size: 40px;
+  line-height: 130%;
 }
 
 h3,
@@ -432,6 +427,14 @@ h6,
       padding-left: 45px;
     }
   }
+}
+
+.form-floating>.form-control.success {
+  background-image: url('@img/icons/success.svg');
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  padding-right: 50px;
 }
 
 .form-floating>.form-control:focus {
@@ -655,8 +658,16 @@ button.color-light-grey-blue {
   margin-bottom: 20px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mb-32 {
   margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mt-10 {
@@ -679,6 +690,10 @@ button.color-light-grey-blue {
 
 .pt-20 {
   padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
 }
 
 .pt-32 {
@@ -847,6 +862,14 @@ a.color-grey-blue {
   height: 40px;
 }
 
+.w-44 {
+  width: 44px;
+}
+
+.h-44 {
+  height: 44px;
+}
+
 .w-110 {
   width: 110px;
 }
@@ -881,6 +904,10 @@ a.color-grey-blue {
   @media(max-width: 369px) {
     padding: 25px;
   }
+}
+
+.p-40 {
+  padding: 40px;
 }
 
 .anketa-image {
@@ -936,6 +963,10 @@ a.color-grey-blue {
 
 .border-t-light-blue {
   border-top: 1px solid var(--light-blue);
+}
+
+.border-light-grey-blue {
+  border: 1px solid var(--light-grey-blue);
 }
 
 .border-grey-blue {
@@ -1043,6 +1074,10 @@ a.color-grey-blue {
   line-height: 160%;
 }
 
+.ls-002 {
+  letter-spacing: 0.02em;
+}
+
 .accordion-button {
   padding-left: 0;
   padding-right: 0;
@@ -1135,6 +1170,30 @@ a.color-grey-blue {
   &:has(.accord-item-content.is-open) {
     .accord-item-arrow {
       transform: rotate(180deg);
+    }
+  }
+}
+
+.contacts-card {
+  box-shadow: -4px 4px 20px 0 #f0f2f3;
+
+  @media(max-width: 575px) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+.develop {
+  .color-white {
+    text-underline-offset: 3px;
+    transition: text-decoration-color .2s linear;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
+
+  &:hover {
+    .color-white {
+       text-decoration-color: #fff;
     }
   }
 }

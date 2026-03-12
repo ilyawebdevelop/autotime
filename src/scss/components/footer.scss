@@ -1,4 +1,12 @@
 // Footer
 .footer {
-
+  background-color: var(--total-black);
+  border-radius: 60px 60px 0 0;
+  padding: 40px 32px;
+  .container {
+    @media(max-width: 575px){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }

@@ -1,0 +1,14 @@
+.intro {
+  &Img {
+    margin-left: -20px;
+    margin-right: -20px;
+    img {
+      border-radius: 60px;
+
+      @media(max-width: 575px) {
+        width: 100%;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,45 @@
+#accordionFaq {
+  .accordion-button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    padding-left: 32px;
+    padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &::after {
+      background-image: url('@img/icons/select-arrow.svg');
+      background-size: 11px;
+    }
+  }
+
+  .accordion-body {
+    padding-left: 32px;
+    padding-right: 65px;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .accordion-item {
+    border-top: none;
+    overflow: hidden;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    box-shadow: -4px 4px 20px 0 #f0f2f3;
+
+    @media(max-width: 575px) {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+
+  .accordion-item:first-of-type {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .accordion-item:last-of-type {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+}

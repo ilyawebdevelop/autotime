@@ -5,24 +5,26 @@
 })
 
 <body>
-	
-	<div class="wrapper">
+
+	<div class="wrapper bg--bg">
 		@@include('html/header.html',{})
-		<main class="main">		
-			
+		<main class="main">
+			@@include('html/main/intro.html',{})
+			@@include('html/main/how.html',{})
+			@@include('html/main/adv.html',{})
+			@@include('html/main/stat.html',{})
+			@@include('html/main/about.html',{})
+			@@include('html/main/faq.html',{})
+			@@include('html/main/contacts.html',{})
 		</main>
 		@@include('html/footer.html',{})
 		@@include('html/modal.html',{})
 	</div>
-	
+
 	<script src="js/app.min.js"></script>
 
 
-	
+
 </body>
 
 </html>
-
-
-
-

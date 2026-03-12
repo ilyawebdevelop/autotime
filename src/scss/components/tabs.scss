@@ -24,3 +24,18 @@
   }
 }
 
+.tabs-green {
+  .tabs__nav-btn {
+    color: var(--grey-blue);
+    font-weight: 500;
+  }
+
+  .tabs__nav-btn--active {
+    background-color: var(--green);
+    color: #fff;
+    &.tabs__nav-btn-active-red {
+      background-color: var(--error);
+    }
+  }
+  
+}

@@ -1,0 +1,14 @@
+.mapW {
+  width: fit-content;
+}
+.mapText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 20px 0;
+  padding: 10px 15px;
+  background-color: var(--yellow);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}

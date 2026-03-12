@@ -109,6 +109,13 @@
     background-color: var(--red-light);
     color: var(--error);
   }
+  &--red {
+    background-color: var(--error);
+    color: #fff;
+    &:hover {
+      background-color: var(--red-light);
+    }
+  }
 
   svg {
     width: 16px;
