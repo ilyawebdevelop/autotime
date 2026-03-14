@@ -15890,6 +15890,7 @@ section {
   padding-right: 20px;
   width: 100%;
   color: var(--total-black);
+  padding-left: 20px;
 }
 @media (max-width: 1199px) {
   .formText {
@@ -16498,6 +16499,9 @@ a.color-grey-blue:hover {
 .gap-20 {
   gap: 20px;
 }
+.gap-20.gap-row-10 {
+  row-gap: 10px;
+}
 
 .gap-30 {
   gap: 30px;
@@ -16529,6 +16533,10 @@ a.color-grey-blue:hover {
 
 .rounded-40 {
   border-radius: 40px;
+}
+
+.rounded-48 {
+  border-radius: 48px;
 }
 
 .rounded-60 {
@@ -16571,6 +16579,14 @@ a.color-grey-blue:hover {
   height: 110px;
 }
 
+.w-120 {
+  width: 120px;
+}
+
+.h-120 {
+  height: 120px;
+}
+
 .border-light-grey-blue {
   border: 1px solid var(--light-grey-blue);
 }
@@ -16579,8 +16595,16 @@ a.color-grey-blue:hover {
   padding: 10px;
 }
 
+.p-5-10 {
+  padding: 5px 10px;
+}
+
 .p-10-20 {
   padding: 10px 20px;
+}
+
+.p-15-10 {
+  padding: 15px 10px;
 }
 
 .p-16-12 {
@@ -16669,6 +16693,15 @@ a.color-grey-blue:hover {
 .px-12 {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.pt-40 {
+  padding-top: 40px;
 }
 
 .air-datepicker-global-container {
@@ -16931,6 +16964,40 @@ a.color-grey-blue:hover {
   animation: shows 0.2s;
 }
 
+.flex-0-100 {
+  flex: 0 100px;
+}
+
+.flex-0-110 {
+  flex: 0 110px;
+}
+
+.flex-0-140 {
+  flex: 0 140px;
+}
+
+.flex-0-145 {
+  flex: 0 0 145px;
+}
+
+.flex-0-160 {
+  flex: 0 160px;
+}
+
+.flex-0-200 {
+  flex: 0 200px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .flex-sm-none-fill {
+    flex: none !important;
+  }
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -17008,6 +17075,9 @@ a.color-grey-blue:hover {
 .button--transparent-grey svg.stroke-transparent {
   stroke: transparent;
 }
+.button--transparent-light-grey-blue {
+  border: 1px solid var(--light-grey-blue);
+}
 .button--green-light {
   background-color: var(--green-light);
   color: var(--green);
@@ -17042,6 +17112,12 @@ a.color-grey-blue:hover {
 }
 .button--h-25 {
   height: 25px;
+}
+.button--h-32 {
+  height: 32px;
+}
+.button--h-36 {
+  height: 36px;
 }
 .button:disabled {
   opacity: 0.33;
@@ -17208,9 +17284,22 @@ a.color-grey-blue:hover {
 .modal.p-40-32 {
   padding: 40px 32px;
 }
+.modal-w-640 {
+  width: 640px;
+}
+.modal-w-480 {
+  width: 480px;
+}
+.modal-w-375 {
+  width: 375px;
+}
 
 .p-32-24 {
   padding: 32px 24px;
+}
+
+.p-32-40 {
+  padding: 32px 40px;
 }
 
 .p-27-32 {
@@ -17251,6 +17340,19 @@ a.color-grey-blue:hover {
 .modalPrevLink {
   position: absolute;
   left: 20px;
+}
+
+.f-button-w-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.f-button.is-close-btn {
+  color: var(--grey-blue);
+}
+
+.f-button.is-close-btn:hover {
+  background-color: transparent;
 }
 
 .range-admin {
@@ -17642,6 +17744,35 @@ a.color-grey-blue:hover {
 }
 .tabs-green .tabs__nav-btn--active.tabs__nav-btn-active-red {
   background-color: var(--error);
+}
+
+.tabs-admin .tabs__nav-btn {
+  color: var(--grey-blue);
+  font-weight: 500;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+.tabs-admin .tabs__nav-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--yellow);
+  opacity: 0;
+  border-radius: 10px 10px 0 0;
+}
+.tabs-admin .tabs__nav-btn:hover {
+  color: var(--main-color);
+}
+.tabs-admin .tabs__nav-btn--active {
+  color: var(--main-color);
+  background-color: transparent;
+}
+.tabs-admin .tabs__nav-btn--active::after {
+  opacity: 1;
 }
 
 .header {

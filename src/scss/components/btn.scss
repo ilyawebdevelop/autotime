@@ -92,7 +92,10 @@
       &.stroke-transparent {
         stroke: transparent;
       }
-    }
+    }   
+  }
+  &--transparent-light-grey-blue {
+    border: 1px solid var(--light-grey-blue);
   }
 
   &--green-light {
@@ -136,7 +139,12 @@
   &--h-25 {
     height: 25px;
   }
-
+  &--h-32 {
+    height: 32px;
+  }
+  &--h-36 {
+    height: 36px;
+  }
   &:disabled {
     opacity: 0.33;
     pointer-events: none;

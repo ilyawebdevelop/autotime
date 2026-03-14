@@ -129,6 +129,7 @@ section {
   padding-right: 20px;
   width: 100%;
   color: var(--total-black);
+  padding-left: 20px;
 
   @media(max-width: 1199px) {
     padding-left: 20px;
@@ -814,6 +815,10 @@ a.color-grey-blue {
 
 .gap-20 {
   gap: 20px;
+
+  &.gap-row-10 {
+    row-gap: 10px;
+  }
 }
 
 .gap-30 {
@@ -846,6 +851,10 @@ a.color-grey-blue {
 
 .rounded-40 {
   border-radius: 40px;
+}
+
+.rounded-48 {
+  border-radius: 48px;
 }
 
 .rounded-60 {
@@ -888,6 +897,14 @@ a.color-grey-blue {
   height: 110px;
 }
 
+.w-120 {
+  width: 120px;
+}
+
+.h-120 {
+  height: 120px;
+}
+
 .border-light-grey-blue {
   border: 1px solid var(--light-grey-blue);
 }
@@ -896,8 +913,16 @@ a.color-grey-blue {
   padding: 10px;
 }
 
+.p-5-10 {
+  padding: 5px 10px;
+}
+
 .p-10-20 {
   padding: 10px 20px;
+}
+
+.p-15-10 {
+  padding: 15px 10px;
 }
 
 .p-16-12 {
@@ -986,6 +1011,15 @@ a.color-grey-blue {
 .px-12 {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.pt-40 {
+  padding-top: 40px;
 }
 
 .air-datepicker-global-container {
@@ -1278,5 +1312,39 @@ a.color-grey-blue {
     display: block;
     -webkit-animation: shows 0.2s;
     animation: shows 0.2s;
+  }
+}
+
+.flex-0-100 {
+  flex: 0 100px;
+}
+
+.flex-0-110 {
+  flex: 0 110px;
+}
+
+.flex-0-140 {
+  flex: 0 140px;
+}
+
+.flex-0-145 {
+  flex: 0 0 145px;
+}
+
+.flex-0-160 {
+  flex: 0 160px;
+}
+
+.flex-0-200 {
+  flex: 0 200px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.flex-sm-none-fill {
+  @media(min-width: 576px) {
+    flex: none !important;
   }
 }
