@@ -288,6 +288,10 @@ accordHeads.forEach(head => {
 let pofileBtnW = document.querySelector('.pofileBtnW');
 let profileSubmenu = document.querySelector('.profile-submenu');
 
+let formInputSelectArray = document.querySelectorAll('.formInput--select');
+
+
+
 pofileBtnW?.addEventListener('click', () => {
   profileSubmenu.classList.toggle('active');
 });
@@ -298,8 +302,79 @@ document.addEventListener('click', e => {
   let its_profileSubmenu = target == profileSubmenu || profileSubmenu.contains(target);
   let its_pofileBtnW = target == pofileBtnW || pofileBtnW.contains(target);
 
+  formInputSelectArray.forEach(input => {
+    let fieldHidden = input.closest('.selectW').querySelector('.fieldHidden');
+
+
+
+    let its_input = target == input || input.contains(target);
+    let its_fieldHidden = target == fieldHidden || fieldHidden.contains(target);
+
+    if (!its_input && !its_fieldHidden) {
+      fieldHidden.classList.remove('active');
+    }
+
+    if (its_input) {
+      fieldHidden.classList.toggle('active');
+
+    }
+
+  });
+
   if (!its_profileSubmenu && !its_pofileBtnW) {
     profileSubmenu.classList.remove('active');
   }
 
+});
+
+let fieldHiddenInputs = document.querySelectorAll('.fieldHidden input');
+fieldHiddenInputs.forEach(input => {
+  const statusElement = input.closest('.selectW').querySelector('.formInput--select');
+  let resetBtn = input.closest('.selectW').querySelector('.reset-values');
+
+  input.addEventListener('change', function () {
+    // 'this.checked' возвращает true, если элемент выбран, и false, если снят
+    const isChecked = this.checked;
+
+    if (isChecked) {
+      statusElement.value = `${this.value}`;
+    }
+  });
+
+  resetBtn.addEventListener('click', () => {
+    statusElement.value = '';
+    input.checked = false;
+  });
+
+});
+
+
+const dropWithDataParent = document.querySelectorAll('[data-parent]');
+const dropWithDataChild = document.querySelectorAll('[data-child]');
+
+if (dropWithDataParent.length > 0) {
+  // console.log(`Найдено элементов с атрибутом data-parent: ${dropWithDataParent.length}`);
+
+  // Пример работы с найденными элементами:
+  dropWithDataParent.forEach((element, index) => {
+    const parentValue = element.getAttribute('data-parent');
+    let btn = element.querySelector('.btn-dropdown');
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+      dropWithDataChild.forEach(child => {
+        if (child.getAttribute('data-child') == parentValue) {
+          child.classList.toggle('active');
+        }
+      });
+    });
+  });
+}
+
+
+let searchActionBtn = document.querySelector('.searchActionBtn');
+let searchHidden = document.querySelector('.searchHidden');
+
+searchActionBtn.addEventListener('click', () => {
+  searchActionBtn.classList.toggle('active');
+  searchHidden.classList.toggle('active');
 });

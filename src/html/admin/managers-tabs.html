@@ -1,0 +1,1022 @@
+<section class="sect w-100 pt-20">
+  <div class="container-fluid">
+
+    <div class="tabs tabs-admin" data-tabs="popup">
+      <ul class="tabs__nav gap-20 w-100 border-b-light-blue mb-30">
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Профиль</button></li>
+
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Агенты</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Сделки</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Статистика</button></li>
+      </ul>
+      <div class="tabs__content">
+        <div class="tabs__panel">
+          <div class="row">
+
+            <div class="col-lg-6">
+
+              <div class="p-40-60 bg--white rounded-60">
+
+                <div class="mb-32">
+                  <div class="position-relative mb-4">
+                    <img src="@img/admin/avatar/avatar.jpg" alt="image"
+                      class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
+                  </div>
+
+                  <div class="mb-4">
+                    <div class="h3 color-total-black mb-10 text-center">
+                      Мария Петровна Сидорова
+                    </div>
+                    <a href="tel:+79123456789"
+                      class="d-flex align-items-center gap-10 justify-content-center color-grey-blue mb-10">
+                      <img src="@img/icons/phone-grey-blue.svg" alt="icon">
+                      +7 (912) 345 67-89
+                    </a>
+                  </div>
+
+                  <button
+                    class="button button--h-36 button--transparent-light-grey-blue fw-normal px-20 pe-none mx-auto">
+                    Менеджер
+                  </button>
+                </div>
+
+                <!-- Навигация (меню вкладок) -->
+                <div class="tabs-green">
+                  <ul class="nav tabs__nav p-1 border-light-grey-blue rounded-30 mb-4 nav-tabs mx-auto" id="myTab"
+                    role="tablist">
+                    <li class="nav-item tabs__nav-item w-50" role="presentation">
+                      <button class="nav-link tabs__nav-btn w-100 rounded-20 h-40 fz-13 text-uppercase active min-w-160"
+                        id="home-tab" data-bs-toggle="tab" data-bs-target="#home-pane" type="button"
+                        role="tab">Активен</button>
+                    </li>
+                    <li class="nav-item tabs__nav-item w-50" role="presentation">
+                      <button
+                        class="nav-link tabs__nav-btn w-100 rounded-20 h-40 fz-13 text-uppercase tabs__nav-btn-active-red min-w-160"
+                        id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-pane" type="button"
+                        role="tab">заблокирован</button>
+                    </li>
+                  </ul>
+
+                  <!-- Контент вкладок -->
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-pane" role="tabpanel">
+
+                      <div class="border-b-light-blue pb-20 d-flex flex-column gap-10 mb-20">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-10">
+                          <span class="color-grey-blue text-uppercase fz-12">email</span>
+                          <a class="color-link fz-14" href="mailto:sergeev@mail.ru">maria.sidorova@email.com</a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-10">
+                          <span class="color-grey-blue text-uppercase fz-12">Город</span>
+                          <div class="fz-14">г. Иркутск</div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex gap-2 justify-content-between flex-wrap border-b-light-blue mb-20 pb-20">
+                        <div class="d-flex flex-column">
+                          <div class="mb-10 color-grey-blue fz-12 text-uppercase">
+                            связанный аккаунт
+                          </div>
+                          <img src="@img/icons/bitrix.svg" alt="icon" style="width: 110px;">
+                        </div>
+
+                        <div class="d-flex flex-column align-items-end gap-1">
+                          <div class="d-flex align-items-center gap-1">
+                            <span class="fz-12 color-grey-blue">ID:</span>
+                            <span class="fz-12 color-grey-blue" id="copy-link-11">1234567890</span>
+                            <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-11"
+                              data-bs-toggle="tooltip" title="Скопировано">
+                              <img src="@img/icons/copy.svg" alt="icon">
+                            </button>
+                          </div>
+                          <span class="fz-14">Сидорова Мария </span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between align-items-center gap-3">
+                        <div class="color-grey-blue fz-12 text-uppercase">
+                          мессенджеры
+                        </div>
+                        <div class="socials">
+                          <ul class="d-flex gap-3">
+                            <li>
+                              <a href="#" target="_blank" rel="nofollow">
+                                <img src="@img/admin/socials/tg.svg" alt="icon">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" target="_blank" rel="nofollow">
+                                <img src="@img/admin/socials/max.svg" alt="icon">
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="profile-pane" role="tabpanel">
+
+                      <div class="bg--white p-40-32">
+                        <div class="fw-medium fz-20 mb-4 text-center">
+                          Заблокировать
+                        </div>
+                        <div class="color-grey text-center mb-2 mx-auto" style="max-width: 335px;">
+                          Вы действительно хотите заблокировать пользователя?
+                        </div>
+                        <div class="fz-20 color-total-black text-center mb-2">
+                          Иванов Иван Иванович
+                        </div>
+                        <div class="fz-12 color-grey-blue text-uppercase mb-32 text-center">
+                          Агент
+                        </div>
+                        <div class="d-flex flex-column gap-12">
+                          <button class="button button--red text-uppercase w-100 mb-12" type="button">
+                            заблокировать
+                          </button>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+              <div class="p-40-60 bg--white rounded-60 mb-20">
+
+                <div class="d-flex align-items-center gap-3 justify-content-between border-b-light-blue pb-3 mb-3">
+                  <div class="fz-12 text-uppercase">
+                    Руководитель
+                  </div>
+                  <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+                    Активен
+                  </button>
+                </div>
+
+                <div class="d-flex align-items-center gap-20">
+                  <div class="position-relative">
+                    <img src="@img/admin/avatar/image-4.jpg" alt="image"
+                      class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <a href="#" class="color-link mb-10 fw-medium">
+                      Смирнов Артемий Валерьевич
+                    </a>
+                    <a href="tel:+79123456789"
+                      class="d-flex align-items-center gap-10 justify-content-start mb-10 fz-14">
+                      <img src="@img/icons/phone-grey-blue.svg" alt="icon">
+                      +7 (912) 345 67-89
+                    </a>
+                    <div class="d-flex align-items-baseline gap-10 mb-10">
+                      <span class="color-grey-blue text-uppercase fz-12">email:</span>
+                      <a class="color-link fz-14" href="mailto:sergeev@mail.ru">smirnov@mail.ru</a>
+                    </div>
+                    <div class="d-flex align-items-baseline gap-10 mb-10">
+                      <span class="color-grey-blue text-uppercase fz-12">Город:</span>
+                      <div class="fz-14">
+                        Иркутск
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-baseline gap-10">
+                      <span class="color-grey-blue text-uppercase fz-12">битрикс24 ID:</span>
+                      <div class="d-flex align-items-center gap-1">
+                        <span class="fz-14" id="copy-link-2">1234567890</span>
+                        <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-2" data-bs-toggle="tooltip"
+                          title="Скопировано">
+                          <img src="@img/icons/copy.svg" alt="icon">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="tabs__panel">
+          <div class="bg--white rounded-40 p-10-20">
+            <div class="border-b-light-blue d-flex align-items-center">
+              <div class="p-15-10 flex-0-44">
+                <span class="color-grey-blue fw-medium fz-14"></span>
+              </div>
+              <div class="p-15-10 d-flex align-items-center gap-10 flex-grow-1">
+                <span class="color-grey-blue fw-medium fz-14">ФИО</span>
+              </div>
+              <div class="p-15-10 flex-0-130">
+                <span class="color-grey-blue fw-medium fz-14">Статус</span>
+              </div>
+              <div class="p-15-10 d-flex align-items-center gap-10 flex-0-140">
+                <span class="color-grey-blue fw-medium fz-14">Активность</span>
+                <img src="@img/icons/sort.svg" alt="icon">
+              </div>
+              <div class="p-15-10 flex-0-160">
+                <span class="color-grey-blue fw-medium fz-14">Город</span>
+              </div>
+              <div class="p-15-10 flex-0-100">
+                <span class="color-grey-blue fw-medium fz-14">Процент</span>
+              </div>
+              <div class="p-15-10 flex-0-110">
+                <span class="color-grey-blue fw-medium fz-14">Подробнее</span>
+              </div>
+            </div>
+
+            <div class="border-b-light-blue d-flex align-items-center" data-parent="drop-1">
+
+              <button class="btn-dropdown" type="button">
+                <img src="@img/icons/nav-arrow-down.svg" alt="icon">
+              </button>
+
+              <div class="p-5-10 flex-grow-1">
+                <div class="d-flex flex-column">
+                  <div class="fz-12 color-grey-blue text-uppercase">
+                    Агент
+                  </div>
+                  <div class="fz-14">
+                    Александр Сергеевич Петровский
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-5-10 flex-0-130">
+                <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+                  Активен
+                </button>
+              </div>
+
+              <div class="p-5-10 flex-0-140">
+                <span class="fz-14">
+                  3 дня назад
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-160">
+                <span class="fz-14">
+                  Иркутск
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-100">
+                <span class="fz-14">
+                  3%
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-110">
+                <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+                  data-src="#underwriter-archive">
+                  открыть
+                </button>
+              </div>
+            </div>
+
+            <div class="border-b-light-blue d-flex align-items-center" data-child="drop-1">
+              <button class="btn-dropdown opacity-0 visibility-hidden pe-none" type="button">
+                <img src="@img/icons/nav-arrow-down.svg" alt="icon">
+              </button>
+              <div class="p-5-10 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <button class="btn-dropdown pe-none" type="button">
+                    <img class="transform-none" src="@img/icons/dropdow-child-arrow.svg" alt="icon">
+                  </button>
+                  <div class="d-flex flex-column">
+                    <div class="fz-12 color-grey-blue text-uppercase">
+                      Продавец
+                    </div>
+                    <div class="fz-14">
+                      Александр Сергеевич Ковалев
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="p-5-10 flex-0-130">
+                <button class="button button--h-25 bg--light-blue color-grey-blue fw-normal fz-12 px-12 pe-none">
+                  Заблокирован
+                </button>
+              </div>
+
+              <div class="p-5-10 flex-0-140">
+                <span class="fz-14">
+                  10.02.2026
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-160">
+                <span class="fz-14">
+                  Иркутск
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-100">
+                <span class="fz-14">
+                  20%
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-110">
+                <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+                  data-src="#underwriter-archive">
+                  открыть
+                </button>
+              </div>
+            </div>
+
+            <div class="border-b-light-blue d-flex align-items-center" data-child="drop-1">
+              <button class="btn-dropdown opacity-0 visibility-hidden pe-none" type="button">
+                <img src="@img/icons/nav-arrow-down.svg" alt="icon">
+              </button>
+              <div class="p-5-10 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <button class="btn-dropdown pe-none" type="button">
+                    <img class="transform-none" src="@img/icons/dropdow-child-arrow.svg" alt="icon">
+                  </button>
+                  <div class="d-flex flex-column">
+                    <div class="fz-12 color-grey-blue text-uppercase">
+                      Продавец
+                    </div>
+                    <div class="fz-14">
+                      Сергеев Алексей Викторович
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="p-5-10 flex-0-130">
+                <button class="button button--h-25 bg--light-blue color-grey-blue fw-normal fz-12 px-12 pe-none">
+                  Заблокирован
+                </button>
+              </div>
+
+              <div class="p-5-10 flex-0-140">
+                <span class="fz-14">
+                  10.02.2026
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-160">
+                <span class="fz-14">
+                  Иркутск
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-100">
+                <span class="fz-14">
+                  20%
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-110">
+                <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+                  data-src="#underwriter-archive">
+                  открыть
+                </button>
+              </div>
+            </div>
+
+            <div class="border-b-light-blue d-flex align-items-center" data-parent="drop-2">
+
+              <button class="btn-dropdown" type="button">
+                <img src="@img/icons/nav-arrow-down.svg" alt="icon">
+              </button>
+
+              <div class="p-5-10 flex-grow-1">
+                <div class="d-flex flex-column">
+                  <div class="fz-12 color-grey-blue text-uppercase">
+                    Агент
+                  </div>
+                  <div class="fz-14">
+                    Александр Сергеевич Петровский
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-5-10 flex-0-130">
+                <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+                  Активен
+                </button>
+              </div>
+
+              <div class="p-5-10 flex-0-140">
+                <span class="fz-14">
+                  3 дня назад
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-160">
+                <span class="fz-14">
+                  Иркутск
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-100">
+                <span class="fz-14">
+                  20%
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-110">
+                <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+                  data-src="#underwriter-archive">
+                  открыть
+                </button>
+              </div>
+            </div>
+
+            <div class="border-b-light-blue d-flex align-items-center" data-child="drop-2">
+              <button class="btn-dropdown opacity-0 visibility-hidden pe-none" type="button">
+                <img src="@img/icons/nav-arrow-down.svg" alt="icon">
+              </button>
+              <div class="p-5-10 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <button class="btn-dropdown pe-none" type="button">
+                    <img class="transform-none" src="@img/icons/dropdow-child-arrow.svg" alt="icon">
+                  </button>
+                  <div class="d-flex flex-column">
+                    <div class="fz-12 color-grey-blue text-uppercase">
+                      Продавец
+                    </div>
+                    <div class="fz-14">
+                      Сергеев Алексей Викторович
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="p-5-10 flex-0-130">
+                <button class="button button--h-25 bg--light-blue color-grey-blue fw-normal fz-12 px-12 pe-none">
+                  Заблокирован
+                </button>
+              </div>
+
+              <div class="p-5-10 flex-0-140">
+                <span class="fz-14">
+                  10.02.2026
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-160">
+                <span class="fz-14">
+                  Иркутск
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-100">
+                <span class="fz-14">
+                  20%
+                </span>
+              </div>
+              <div class="p-5-10 flex-0-110">
+                <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+                  data-src="#underwriter-archive">
+                  открыть
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="tabs__panel">
+          <div class="mb-30 d-flex gap-2">
+            <div class="form-floating w-100">
+              <input type="tel" class="formInput formInput--search rounded-25 form-control bg-white"
+                placeholder="Поиск по моим заявкам">
+              <label for="copy-link">Поиск</label>
+              <button class="remove-text" type="button">
+                <img src="@img/icons/remove.svg" alt="remove-text">
+              </button>
+            </div>
+            <button class="button button--light-blue d-flex justify-content-center align-items-center" data-fancybox
+              data-src="#dir-filter">
+              <svg class="w-24" style="fill: var(--black); stroke: transparent;">
+                <use xlink:href="img/icons/icons.svg#filter"></use>
+              </svg>
+              <span class="text-uppercase">фильтр</span>
+            </button>
+            <button class="button-round width-50 bg--light-blue d-flex justify-content-center align-items-center"
+              data-fancybox data-src="#dir-sort">
+              <svg class="w-24">
+                <use xlink:href="img/icons/icons.svg#sort"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="bg--white rounded-20 p-3 mb-10">
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <div class="d-flex align-items-center gap-10 flex-wrap">
+                <div class="d-flex align-items-center gap-1 fz-12">
+                  <span>ID:</span>
+                  <span id="copy-link-1">1234567890</span>
+                  <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+                    title="Скопировано">
+                    <img src="@img/icons/copy.svg" alt="icon">
+                  </button>
+                </div>
+                <span class="fz-12">06.02.2026</span>
+                <span class="fz-12">г. Иркутск</span>
+                <button class="button button--h-25 bg--yellow-light fw-normal px-12 fz-12 pe-none mx-auto">
+                  Подаем заявку в банки
+                </button>
+              </div>
+              <div class="d-flex gap-10 flex-wrap">
+                <span class="fz-14">Mercedes-Benz</span>
+                <span class="fz-14">Maybach S-Класс</span>
+                <span class="fz-14">2023 г.</span>
+                <span class="fz-14 fw-medium color-total-black">2 400 000₽</span>
+              </div>
+            </div>
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <span>Костров Константин Константинович</span>
+              <span class="fz-14">+7 (912) 345 67-89</span>
+            </div>
+            <div class="fz-12">
+              <div class="d-flex justify-content-between gap-3 flex-wrap mb-2">
+                <div class="d-flex align-items-baseline gap-10">
+                  <span class="text-uppercase color-grey-blue">Агент:</span>
+                  <a class="color-link fz-14">Иванов Иван Иванович</a>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+                  <span class="h6 text-nowrap color-total-black mb-0">360 000₽</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+                <div class="d-flex align-items-center gap-10">
+                  <div class="d-flex align-items-start gap-2">
+                    <img class="flex-shrink-0" src="@img/icons/long-arrow-down-right.svg" alt="icon">
+                    <span class="text-uppercase color-grey-blue">Продавец:</span>
+                  </div>
+                  <a class="color-link fz-14">Сергеев Алексей Викторович</a>
+                </div>
+
+                <div class="d-flex align-items-center gap-1">
+                  <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+                  <span class="h6 text-nowrap color-total-black mb-0">120 000₽</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="bg--white rounded-20 p-3 mb-10">
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <div class="d-flex align-items-center gap-10 flex-wrap">
+                <div class="d-flex align-items-center gap-1 fz-12">
+                  <span>ID:</span>
+                  <span id="copy-link-1">1234567890</span>
+                  <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+                    title="Скопировано">
+                    <img src="@img/icons/copy.svg" alt="icon">
+                  </button>
+                </div>
+                <span class="fz-12">06.02.2026</span>
+                <span class="fz-12">г. Иркутск</span>
+                <button class="button button--h-25 button--green-light fw-normal px-12 pe-none mx-auto fz-12">
+                  Новая
+                </button>
+              </div>
+            </div>
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <span>Костров Константин Константинович</span>
+              <span class="fz-14">+7 (912) 345 67-89</span>
+            </div>
+            <div class="fz-12">
+              <div class="d-flex justify-content-between gap-3 flex-wrap mb-2">
+                <div class="d-flex align-items-baseline gap-10">
+                  <span class="text-uppercase color-grey-blue">Агент:</span>
+                  <a class="color-link fz-14">Иванов Иван Иванович</a>
+                </div>
+
+              </div>
+              <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+                <div class="d-flex align-items-center gap-10">
+                  <div class="d-flex align-items-start gap-2">
+                    <img class="flex-shrink-0" src="@img/icons/long-arrow-down-right.svg" alt="icon">
+                    <span class="text-uppercase color-grey-blue">Продавец:</span>
+                  </div>
+                  <a class="color-link fz-14">Сергеев Алексей Викторович</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="bg--white rounded-20 p-3 mb-10">
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <div class="d-flex align-items-center gap-10 flex-wrap">
+                <div class="d-flex align-items-center gap-1 fz-12">
+                  <span>ID:</span>
+                  <span id="copy-link-1">1234567890</span>
+                  <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+                    title="Скопировано">
+                    <img src="@img/icons/copy.svg" alt="icon">
+                  </button>
+                </div>
+                <span class="fz-12">06.02.2026</span>
+                <span class="fz-12">г. Иркутск</span>
+                <button class="button button--h-25 bg--light-blue fw-normal px-12 fz-12 pe-none mx-auto">
+                  Завершена
+                </button>
+              </div>
+              <div class="d-flex gap-10 flex-wrap">
+                <span class="fz-14">Mercedes-Benz</span>
+                <span class="fz-14">Maybach S-Класс</span>
+                <span class="fz-14">2023 г.</span>
+                <span class="fz-14 fw-medium color-total-black">2 400 000₽</span>
+              </div>
+            </div>
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <span>Костров Константин Константинович</span>
+              <span class="fz-14">+7 (912) 345 67-89</span>
+            </div>
+            <div class="fz-12">
+              <div class="d-flex justify-content-between gap-3 flex-wrap mb-2">
+                <div class="d-flex align-items-baseline gap-10">
+                  <span class="text-uppercase color-grey-blue">Агент:</span>
+                  <a class="color-link fz-14">Иванов Иван Иванович</a>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+                  <span class="h6 text-nowrap color-total-black mb-0">360 000₽</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+                <div class="d-flex align-items-center gap-10">
+                  <div class="d-flex align-items-start gap-2">
+                    <img class="flex-shrink-0" src="@img/icons/long-arrow-down-right.svg" alt="icon">
+                    <span class="text-uppercase color-grey-blue">Продавец:</span>
+                  </div>
+                  <a class="color-link fz-14">Сергеев Алексей Викторович</a>
+                </div>
+
+                <div class="d-flex align-items-center gap-1">
+                  <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+                  <span class="h6 text-nowrap color-total-black mb-0">120 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg--white rounded-20 p-3 mb-10">
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <div class="d-flex align-items-center gap-10 flex-wrap">
+                <div class="d-flex align-items-center gap-1 fz-12">
+                  <span>ID:</span>
+                  <span id="copy-link-1">1234567890</span>
+                  <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+                    title="Скопировано">
+                    <img src="@img/icons/copy.svg" alt="icon">
+                  </button>
+                </div>
+                <span class="fz-12">06.02.2026</span>
+                <span class="fz-12">г. Иркутск</span>
+                <button class="button button--h-25 bg--light-red color-red fw-normal px-12 fz-12 pe-none mx-auto">
+                  Не устроили условия
+                </button>
+              </div>
+              <div class="d-flex gap-10 flex-wrap">
+                <span class="fz-14">Haval</span>
+                <span class="fz-14">Chitu</span>
+                <span class="fz-14">2021 г.</span>
+                <span class="fz-14 fw-medium color-total-black">2 400 000₽</span>
+              </div>
+            </div>
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <span>Костров Константин Константинович</span>
+              <span class="fz-14">+7 (912) 345 67-89</span>
+            </div>
+            <div class="fz-12">
+              <div class="d-flex justify-content-between gap-3 flex-wrap">
+                <div class="d-flex align-items-baseline gap-10">
+                  <span class="text-uppercase color-grey-blue">Агент:</span>
+                  <a class="color-link fz-14">Иванов Иван Иванович</a>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+                  <span class="h6 text-nowrap color-total-black mb-0">480 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg--white rounded-20 p-3 mb-10">
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <div class="d-flex align-items-center gap-10 flex-wrap">
+                <div class="d-flex align-items-center gap-1 fz-12">
+                  <span>ID:</span>
+                  <span id="copy-link-1">1234567890</span>
+                  <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+                    title="Скопировано">
+                    <img src="@img/icons/copy.svg" alt="icon">
+                  </button>
+                </div>
+                <span class="fz-12">06.02.2026</span>
+                <span class="fz-12">г. Иркутск</span>
+                <button class="button button--h-25 button--green-light fw-normal px-12 pe-none mx-auto fz-12">
+                  Новая
+                </button>
+              </div>
+            </div>
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <span>Костров Константин Константинович</span>
+              <span class="fz-14">+7 (912) 345 67-89</span>
+            </div>
+            <div class="fz-12">
+              <div class="d-flex justify-content-between gap-3 flex-wrap mb-2">
+                <div class="d-flex align-items-baseline gap-10">
+                  <span class="text-uppercase color-grey-blue">Агент:</span>
+                  <a class="color-link fz-14">Иванов Иван Иванович</a>
+                </div>
+
+              </div>
+              <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+                <div class="d-flex align-items-center gap-10">
+                  <div class="d-flex align-items-start gap-2">
+                    <img class="flex-shrink-0" src="@img/icons/long-arrow-down-right.svg" alt="icon">
+                    <span class="text-uppercase color-grey-blue">Продавец:</span>
+                  </div>
+                  <a class="color-link fz-14">Сергеев Алексей Викторович</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="bg--white rounded-20 p-3 mb-10">
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <div class="d-flex align-items-center gap-10 flex-wrap">
+                <div class="d-flex align-items-center gap-1 fz-12">
+                  <span>ID:</span>
+                  <span id="copy-link-1">1234567890</span>
+                  <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+                    title="Скопировано">
+                    <img src="@img/icons/copy.svg" alt="icon">
+                  </button>
+                </div>
+                <span class="fz-12">06.02.2026</span>
+                <span class="fz-12">г. Иркутск</span>
+                <button class="button button--h-25 bg--light-blue fw-normal px-12 fz-12 pe-none mx-auto">
+                  Завершена
+                </button>
+              </div>
+              <div class="d-flex gap-10 flex-wrap">
+                <span class="fz-14">Mercedes-Benz</span>
+                <span class="fz-14">Maybach S-Класс</span>
+                <span class="fz-14">2023 г.</span>
+                <span class="fz-14 fw-medium color-total-black">2 400 000₽</span>
+              </div>
+            </div>
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <span>Костров Константин Константинович</span>
+              <span class="fz-14">+7 (912) 345 67-89</span>
+            </div>
+            <div class="fz-12">
+              <div class="d-flex justify-content-between gap-3 flex-wrap mb-2">
+                <div class="d-flex align-items-baseline gap-10">
+                  <span class="text-uppercase color-grey-blue">Агент:</span>
+                  <a class="color-link fz-14">Иванов Иван Иванович</a>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+                  <span class="h6 text-nowrap color-total-black mb-0">360 000₽</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+                <div class="d-flex align-items-center gap-10">
+                  <div class="d-flex align-items-start gap-2">
+                    <img class="flex-shrink-0" src="@img/icons/long-arrow-down-right.svg" alt="icon">
+                    <span class="text-uppercase color-grey-blue">Продавец:</span>
+                  </div>
+                  <a class="color-link fz-14">Сергеев Алексей Викторович</a>
+                </div>
+
+                <div class="d-flex align-items-center gap-1">
+                  <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+                  <span class="h6 text-nowrap color-total-black mb-0">120 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg--white rounded-20 p-3 mb-10">
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <div class="d-flex align-items-center gap-10 flex-wrap">
+                <div class="d-flex align-items-center gap-1 fz-12">
+                  <span>ID:</span>
+                  <span id="copy-link-1">1234567890</span>
+                  <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-1" data-bs-toggle="tooltip"
+                    title="Скопировано">
+                    <img src="@img/icons/copy.svg" alt="icon">
+                  </button>
+                </div>
+                <span class="fz-12">06.02.2026</span>
+                <span class="fz-12">г. Иркутск</span>
+                <button class="button button--h-25 bg--light-red color-red fw-normal px-12 fz-12 pe-none mx-auto">
+                  Не устроили условия
+                </button>
+              </div>
+              <div class="d-flex gap-10 flex-wrap">
+                <span class="fz-14">Haval</span>
+                <span class="fz-14">Chitu</span>
+                <span class="fz-14">2021 г.</span>
+                <span class="fz-14 fw-medium color-total-black">2 400 000₽</span>
+              </div>
+            </div>
+            <div
+              class="border-b-light-blue d-flex align-items-center gap-3 justify-content-between flex-wrap pb-10 mb-10">
+              <span>Костров Константин Константинович</span>
+              <span class="fz-14">+7 (912) 345 67-89</span>
+            </div>
+            <div class="fz-12">
+              <div class="d-flex justify-content-between gap-3 flex-wrap">
+                <div class="d-flex align-items-baseline gap-10">
+                  <span class="text-uppercase color-grey-blue">Агент:</span>
+                  <a class="color-link fz-14">Иванов Иван Иванович</a>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <img src="@img/icons/percent.svg" alt="icon" class="percent-icon">
+                  <span class="h6 text-nowrap color-total-black mb-0">480 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="tabs__panel">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="bg--white rounded-60 p-32-48 mb-20">
+                <div class="mb-4">
+                  <h4 class="text-center mb-0">Агенты и продавцы </h4>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-4">
+
+                  <div class="d-flex gap-1 flex-column w-100">
+                    <div class="color-grey-blue fz-12 text-uppercase">
+                      всего
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="fz-20 fw-medium color-total-black">1 234</span>
+                      <span class="color-green fw-medium fz-14">+25%</span>
+                    </div>
+                  </div>
+                  <div class="chart chart--donut"
+                    style="background: conic-gradient(#0062FF 55%, var(--green) 0 79%, #0062FF 0);">
+
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-blue"></span>
+                      <span class="fz-12 color-grey-blue w-130">Активные</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">900</span>
+                      <span class="color-green fw-medium fz-14 text-end">+3%</span>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color bg--green"></span>
+                      <span class="fz-12 color-grey-blue w-130">Неактивные</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">324</span>
+                      <span class="color-red fw-medium fz-14 text-end">-15%</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="bg--white rounded-60 p-32-48 mb-20">
+                <h4 class="text-center mb-4">Сумма вознаграждения со&nbsp;сделки</h4>
+
+                <div class="range-admin mb-4">
+                  <div class="progressBar">
+                    <div class="thumb chart-color-yellow" style="left:0%;"></div>
+                    <div class="thumb chart-color-red" style="left: 30%;"></div>
+                    <div class="thumb bg--green" style="left: 100%;"></div>
+                  </div>
+
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-yellow"></span>
+                      <span class="fz-12 color-grey-blue">Минимальная </span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">20 000₽</span>
+                      <span class="h6 mb-0 color-green w-40 text-end">+3%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-red"></span>
+                      <span class="fz-12 color-grey-blue">Средняя </span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">220 000₽</span>
+                      <span class="h6 mb-0 color-green w-40 text-end">+3%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color bg--green"></span>
+                      <span class="fz-12 color-grey-blue">Максимальная</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">1 240 000₽</span>
+                      <span class="h6 mb-0 color-green w-40 text-end">+3%</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="bg--white rounded-60 p-32-48 mb-20">
+                <div class="mb-4">
+                  <h4 class="text-center mb-1">Партнерские сделки</h4>
+                  <span class="fz-14 color-grey-blue text-center d-block">агентов и продавцов</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-2 mb-4">
+
+                  <div class="d-flex gap-1 flex-column w-100">
+                    <div class="color-grey-blue fz-12 text-uppercase">
+                      всего заявок
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="fz-20 fw-medium color-total-black">2 280</span>
+                      <span class="color-green fw-medium fz-14">+25%</span>
+                    </div>
+                  </div>
+                  <div class="chart chart--donut"
+                    style="background: conic-gradient(var(--light-blue) 51%, #fe5c73 0 61%, var(--green) 0 77%, #ffc542 0);">
+
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color bg--green"></span>
+                      <span class="fz-12 color-grey-blue w-170">Новых</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">120</span>
+                      <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-yellow"></span>
+                      <span class="fz-12 color-grey-blue w-170">В работе</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">220</span>
+                      <span class="color-green fw-medium fz-14 w-40 text-end">+5%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-red"></span>
+                      <span class="fz-12 color-grey-blue w-170">Отклонённых</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">60</span>
+                      <span class="color-red fw-medium fz-14 w-40 text-end">-15%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color bg--light-blue"></span>
+                      <span class="fz-12 color-grey-blue w-170">Завершённых</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">480</span>
+                      <span class="color-green fw-medium fz-14 w-40 text-end">+10%</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

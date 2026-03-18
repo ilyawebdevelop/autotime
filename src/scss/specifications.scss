@@ -96,6 +96,7 @@ section {
   background-color: #ffffff;
   width: 100%;
   padding-left: 16px;
+  padding-right: 40px;
   font-size: 16px;
   color: var(--total-black);
   -webkit-appearance: none;
@@ -104,6 +105,7 @@ section {
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 13px;
+  cursor: pointer;
 
   &:hover {
     border-color: var(--grey-blue);
@@ -118,6 +120,10 @@ section {
     pointer-events: none;
     color: var(--grey);
     opacity: .8;
+  }
+
+  &--h-32 {
+    height: 32px;
   }
 }
 
@@ -171,6 +177,20 @@ section {
     opacity: .8;
   }
 
+  &--h-32 {
+    height: 32px;
+  }
+
+  &--select {
+    background-image: url('@img/icons/select-arrow-blue.svg');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 13px;
+    padding-right: 40px;
+    cursor: pointer;
+    padding-left: 16px;
+  }
 }
 
 
@@ -197,6 +217,10 @@ a.color-white {
   &:hover {
     color: var(--yellow);
   }
+}
+
+.color-middlegrey {
+  color: var(--middlegrey);
 }
 
 .sectHead {
@@ -708,6 +732,9 @@ button.color-light-grey-blue {
 }
 
 
+.pb-10 {
+  padding-bottom: 10px;
+}
 
 .pb-20 {
   padding-bottom: 20px;
@@ -753,6 +780,28 @@ a.color-grey-blue {
     background-color: #fff;
   }
 
+  &--select-round {
+    label {
+      padding-left: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 40px;
+      border-bottom: 1px solid var(--light-blue);
+    }
+
+    input {
+      &:checked {
+        &+label {
+          background-image: url('@img/icons/circle-check.svg');
+          background-repeat: no-repeat;
+          background-position: right 5px center;
+          background-size: 20px;
+          background-color: var(--background);
+        }
+      }
+    }
+  }
+
   input {
     &:checked {
       &+label {
@@ -769,7 +818,9 @@ a.color-grey-blue {
   label {
     display: flex;
     column-gap: 12px;
+    cursor: pointer;
   }
+
 }
 
 .radiobtn {
@@ -909,6 +960,10 @@ a.color-grey-blue {
   border: 1px solid var(--light-grey-blue);
 }
 
+.border-light-blue {
+  border: 1px solid var(--light-blue);
+}
+
 .p-10 {
   padding: 10px;
 }
@@ -941,8 +996,16 @@ a.color-grey-blue {
   }
 }
 
+.p-32-48 {
+  padding: 32px 48px;
+}
+
 .p-40 {
   padding: 40px;
+}
+
+.p-40-60 {
+  padding: 40px 60px;
 }
 
 .anketa-image {
@@ -1246,7 +1309,9 @@ a.color-grey-blue {
   width: 250px;
   flex-shrink: 0;
   border-right: 1px solid var(--light-blue);
-  height: calc(100vh - 80px);
+  height: 100vh;
+  position: sticky;
+  top: 0;
   overflow-y: auto;
 }
 
@@ -1315,12 +1380,20 @@ a.color-grey-blue {
   }
 }
 
+.flex-0-44 {
+  flex: 0 44px;
+}
+
 .flex-0-100 {
   flex: 0 100px;
 }
 
 .flex-0-110 {
   flex: 0 110px;
+}
+
+.flex-0-130 {
+  flex: 0 130px;
 }
 
 .flex-0-140 {
@@ -1339,6 +1412,10 @@ a.color-grey-blue {
   flex: 0 200px;
 }
 
+.flex-0-300 {
+  flex: 0 300px;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -1346,5 +1423,62 @@ a.color-grey-blue {
 .flex-sm-none-fill {
   @media(min-width: 576px) {
     flex: none !important;
+  }
+}
+
+.transform-none {
+  transform: none !important;
+}
+
+[data-child] {
+  display: none !important;
+
+  &.active {
+    display: flex !important;
+  }
+}
+
+.select-hidden-checkboxes {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 10px);
+  z-index: 2;
+  // display: none;
+}
+
+.max-w-160 {
+  max-width: 160px;
+}
+
+.max-w-300 {
+  max-width: 300px;
+}
+
+.fieldHidden {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  &.w-180 {
+    width: 180px;
+  }
+
+  &.w-250 {
+    width: 250px;
+  }
+
+  &.w-300 {
+    width: 300px;
+  }
+}
+
+.searchHidden {
+  display: none;
+
+  &.active {
+    display: block;
   }
 }

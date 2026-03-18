@@ -92,8 +92,9 @@
       &.stroke-transparent {
         stroke: transparent;
       }
-    }   
+    }
   }
+
   &--transparent-light-grey-blue {
     border: 1px solid var(--light-grey-blue);
   }
@@ -112,9 +113,11 @@
     background-color: var(--red-light);
     color: var(--error);
   }
+
   &--red {
     background-color: var(--error);
     color: #fff;
+
     &:hover {
       background-color: var(--red-light);
     }
@@ -139,12 +142,15 @@
   &--h-25 {
     height: 25px;
   }
+
   &--h-32 {
     height: 32px;
   }
+
   &--h-36 {
     height: 36px;
   }
+
   &:disabled {
     opacity: 0.33;
     pointer-events: none;
@@ -153,6 +159,18 @@
   &.px-12 {
     padding-left: 12px;
     padding-right: 12px;
+  }
+  &.px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &.pl-10 {
+    padding-left: 10px;
+  }
+
+  &.pr-15 {
+    padding-right: 15px;
   }
 }
 
@@ -181,6 +199,7 @@
       height: 24px;
     }
   }
+
   &:disabled {
     opacity: .3;
   }
@@ -270,6 +289,39 @@
       border-radius: 50%;
       top: 12px;
       right: 8px;
+    }
+  }
+}
+
+.btn-dropdown {
+  width: 44px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  &:hover {
+    opacity: .85;
+  }
+  img {
+    transform: rotate(-90deg);
+    transition: transform .2s linear;
+  }
+  &.active {
+    img {
+      transform: none;
+    }
+  }
+}
+.searchActionBtn {
+  &.active {
+    background-color: var(--black);
+    color: #fff;
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+    background-image: url('@img/icons/select-arrow-white.svg');
+    img {
+     opacity: 0;
     }
   }
 }

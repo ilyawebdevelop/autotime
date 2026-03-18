@@ -1,0 +1,651 @@
+<section class="sect w-100 pt-20 content-writer">
+  <div class="container-fluid">
+
+    <div class="searchActionW">
+      <div class="d-flex justify-content-between gap-4 flex-wrap align-items-center mb-20">
+        <div class="d-flex gap-2">
+          <button class="button button--yellow fz-13 text-uppercase button--h-32 pl-10 pr-15 searchActionBtn">
+            <img src="@img/icons/search-black.svg" alt="image">
+            поиск
+          </button>
+
+          <div class="selectW position-relative flex-0-160">
+
+            <input type="text" class="formInput formInput--select max-w-160 formInput--h-32 fz-14" placeholder="Статус"
+              readonly>
+
+            <div class="select-hidden-checkboxes fieldHidden w-180 flex-column p-3 rounded-20 bg--white">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="h5 mb-0">Статус</h5>
+                <button class="fz-14 color-light-grey-blue fw-normal reset-values" type="button">
+                  Сбросить
+                </button>
+              </div>
+              <div class="mb-3">
+                <div class="checkbox">
+                  <input id="status_order-filter-1" type="radio" name="status_order" value="Активен" hidden>
+                  <label class="align-items-center" for="status_order-filter-1">
+                    <div class="rect"></div>
+                    <div class="fz-14">
+                      Активен
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="checkbox">
+                  <input id="status_order-filter-2" type="radio" name="status_order" value="Заблокирован" hidden>
+                  <label class="align-items-center" for="status_order-filter-2">
+                    <div class="rect"></div>
+                    <div class="fz-14">
+                      Заблокирован
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="selectW position-relative flex-0-160">
+
+            <input type="text" class="formInput formInput--select max-w-160 formInput--h-32 fz-14" placeholder="Город"
+              readonly>
+
+            <div class="select-hidden-checkboxes fieldHidden w-250 flex-column p-3 rounded-20 bg--white">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="h5 mb-0">Город</h5>
+                <button class="fz-14 color-light-grey-blue fw-normal reset-values" type="button">
+                  Сбросить
+                </button>
+              </div>
+              <div class="mb-3">
+                <div class="checkbox">
+                  <input id="city-filter-1" type="radio" name="city" value="Санкт-Петербург" hidden>
+                  <label class="align-items-center" for="city-filter-1">
+                    <div class="rect"></div>
+                    <div class="fz-14">
+                      Санкт-Петербург
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="checkbox">
+                  <input id="city-filter-2" type="radio" name="city" value="Иркутск" hidden>
+                  <label class="align-items-center" for="city-filter-2">
+                    <div class="rect"></div>
+                    <div class="fz-14">
+                      Иркутск
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <button class="button button--light-blue fz-13 text-uppercase button--h-32 px-12">
+            применить
+          </button>
+        </div>
+        <div class="d-flex">
+          <a class="fz-13 text-uppercase color-grey-blue fw-medium d-flex gap-2 align-items-center px-4" href="#">
+            <img src="@img/icons/table-gray.svg" alt="icon">
+            .xlsx
+          </a>
+          <a class="fz-13 text-uppercase color-grey-blue fw-medium d-flex gap-2 align-items-center px-4" href="#"
+            data-fancybox data-src="#underwriter-filter">
+            <img src="@img/icons/set-gray-blue.svg" alt="icon">
+            настройки
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mb-20 pb-1 form-floating searchHidden">
+        <input type="search" class="formInput formInput--search rounded-25 form-control bg-white"
+          placeholder="Поиск по моим заявкам">
+        <label>Поиск</label>
+        <button class="remove-text" type="button">
+          <img src="@img/icons/remove.svg" alt="remove-text">
+        </button>
+      </div>
+    </div>
+
+    <div class="bg--white rounded-40 p-10-20">
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-15-10 flex-grow-1">
+          <span class="color-grey-blue fw-medium fz-14">ФИО</span>
+        </div>
+        <div class="p-15-10 d-flex align-items-center gap-10 flex-0-140">
+          <span class="color-grey-blue fw-medium fz-14">Дата регистрации</span>
+          <img src="@img/icons/sort.svg" alt="icon">
+        </div>
+        <div class="p-15-10 flex-0-130">
+          <span class="color-grey-blue fw-medium fz-14">Статус</span>
+        </div>
+        <div class="p-15-10 flex-0-160">
+          <span class="color-grey-blue fw-medium fz-14">Город</span>
+        </div>
+        <div class="p-15-10 flex-0-160">
+          <span class="color-grey-blue fw-medium fz-14">Телефон</span>
+        </div>
+        <div class="p-15-10 flex-0-140">
+          <span class="color-grey-blue fw-medium fz-14">Дата последней активности</span>
+        </div>
+        <div class="p-15-10 flex-0-160">
+          <span class="color-grey-blue fw-medium fz-14">Менеджер</span>
+        </div>
+        <div class="p-15-10 flex-0-100">
+          <span class="color-grey-blue fw-medium fz-14">Процент</span>
+        </div>
+        <div class="p-15-10 flex-0-110">
+          <span class="color-grey-blue fw-medium fz-14">Подробнее</span>
+        </div>
+      </div>
+
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-5-10 flex-grow-1">
+          <div class="d-flex flex-column">
+            <div class="fz-14">
+              Александр Сергеевич Петровский
+            </div>
+          </div>
+        </div>
+        <div class="p-5-10 d-flex flex-column flex-0-140">
+          <span class="fz-14">11:53</span>
+        </div>
+
+        <div class="p-5-10 flex-0-130">
+          <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+            Активен
+          </button>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Санкт-Петербург
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            +7 (912) 345 67-89
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-140">
+          <span class="fz-14">
+            14:53
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Мария Петровна Сидорова
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-100">
+          <span class="fz-14">
+            20%
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-110">
+          <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+            data-src="#underwriter-archive">
+            открыть
+          </button>
+        </div>
+      </div>
+
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-5-10 flex-grow-1">
+          <div class="d-flex align-items-center">
+
+            <div class="d-flex flex-column">
+              <div class="fz-14">
+                Иванов Иван Иванович
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="p-5-10 d-flex flex-column flex-0-140">
+          <span class="fz-14">11:53</span>
+        </div>
+
+        <div class="p-5-10 flex-0-130">
+          <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+            Активен
+          </button>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Иркутск
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            +7 (912) 345 67-89
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-140">
+          <span class="fz-14">
+            14:53
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Мария Петровна Сидорова
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-100">
+          <span class="fz-14">
+            20%
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-110">
+          <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+            data-src="#underwriter-archive">
+            открыть
+          </button>
+        </div>
+      </div>
+
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-5-10 flex-grow-1">
+          <div class="d-flex flex-column">
+
+            <div class="fz-14">
+              Александр Сергеевич Петровский
+            </div>
+          </div>
+        </div>
+        <div class="p-5-10 d-flex flex-column flex-0-140">
+          <span class="fz-14">11:53</span>
+        </div>
+
+        <div class="p-5-10 flex-0-130">
+          <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+            Активен
+          </button>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Иркутск
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            +7 (912) 345 67-89
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-140">
+          <span class="fz-14">
+            14:53
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Мария Петровна Сидорова
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-100">
+          <span class="fz-14">
+            20%
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-110">
+          <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+            data-src="#underwriter-archive">
+            открыть
+          </button>
+        </div>
+      </div>
+
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-5-10 flex-grow-1">
+          <div class="d-flex align-items-center">
+
+            <div class="d-flex flex-column">
+
+              <div class="fz-14">
+                Иванов Иван Иванович
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="p-5-10 d-flex flex-column flex-0-140">
+          <span class="fz-14">10 Фев, 11:53</span>
+        </div>
+
+        <div class="p-5-10 flex-0-130">
+          <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+            Активен
+          </button>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Иркутск
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            +7 (912) 345 67-89
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-140">
+          <span class="fz-14">
+            10 Фев, 14:53
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Мария Петровна Сидорова
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-100">
+          <span class="fz-14">
+            3%
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-110">
+          <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+            data-src="#underwriter-archive">
+            открыть
+          </button>
+        </div>
+      </div>
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-5-10 flex-grow-1">
+          <div class="d-flex align-items-center">
+
+            <div class="d-flex flex-column">
+
+              <div class="fz-14">
+                Иванов Иван Иванович
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="p-5-10 d-flex flex-column flex-0-140">
+          <span class="fz-14">10 Фев, 11:53</span>
+        </div>
+
+        <div class="p-5-10 flex-0-130">
+          <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+            Активен
+          </button>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Иркутск
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            +7 (912) 345 67-89
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-140">
+          <span class="fz-14">
+            10 Фев, 14:53
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Мария Петровна Сидорова
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-100">
+          <span class="fz-14">
+            3%
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-110">
+          <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+            data-src="#underwriter-archive">
+            открыть
+          </button>
+        </div>
+      </div>
+
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-5-10 flex-grow-1">
+          <div class="d-flex align-items-center">
+            <div class="d-flex flex-column">
+
+              <div class="fz-14">
+                Иванов Иван Иванович
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="p-5-10 d-flex flex-column flex-0-140">
+          <span class="fz-14">10 Фев, 11:53</span>
+        </div>
+
+        <div class="p-5-10 flex-0-130">
+          <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+            Активен
+          </button>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Санкт-Петербург
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            +7 (912) 345 67-89
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-140">
+          <span class="fz-14">
+            10 Фев, 14:53
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Мария Петровна Сидорова
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-100">
+          <span class="fz-14">
+            20%
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-110">
+          <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+            data-src="#underwriter-archive">
+            открыть
+          </button>
+        </div>
+      </div>
+
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-5-10 flex-grow-1">
+          <div class="d-flex align-items-center">
+            <div class="d-flex flex-column">
+
+              <div class="fz-14">
+                Александр Сергеевич Петровский
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="p-5-10 d-flex flex-column flex-0-140">
+          <span class="fz-14">10 Фев, 11:53</span>
+        </div>
+
+        <div class="p-5-10 flex-0-130">
+          <button class="button button--h-25 bg--light-blue color-grey-blue fw-normal fz-12 px-12 pe-none">
+            Заблокирован
+          </button>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Санкт-Петербург
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            +7 (912) 345 67-89
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-140">
+          <span class="fz-14">
+            10 Фев, 14:53
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Мария Петровна Сидорова
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-100">
+          <span class="fz-14">
+            20%
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-110">
+          <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+            data-src="#underwriter-archive">
+            открыть
+          </button>
+        </div>
+      </div>
+
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-5-10 flex-grow-1">
+          <div class="d-flex flex-column">
+
+            <div class="fz-14">
+              Александр Сергеевич Петровский
+            </div>
+          </div>
+        </div>
+        <div class="p-5-10 d-flex flex-column flex-0-140">
+          <span class="fz-14">11:53</span>
+        </div>
+
+        <div class="p-5-10 flex-0-130">
+          <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+            Активен
+          </button>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Санкт-Петербург
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            +7 (912) 345 67-89
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-140">
+          <span class="fz-14">
+            14:53
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Мария Петровна Сидорова
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-100">
+          <span class="fz-14">
+            20%
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-110">
+          <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+            data-src="#underwriter-archive">
+            открыть
+          </button>
+        </div>
+      </div>
+
+      <div class="border-b-light-blue d-flex align-items-center">
+
+        <div class="p-5-10 flex-grow-1">
+          <div class="d-flex align-items-center">
+
+            <div class="d-flex flex-column">
+
+              <div class="fz-14">
+                Иванов Иван Иванович
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="p-5-10 d-flex flex-column flex-0-140">
+          <span class="fz-14">11:53</span>
+        </div>
+
+        <div class="p-5-10 flex-0-130">
+          <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+            Активен
+          </button>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Иркутск
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            +7 (912) 345 67-89
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-140">
+          <span class="fz-14">
+            14:53
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-160">
+          <span class="fz-14">
+            Мария Петровна Сидорова
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-100">
+          <span class="fz-14">
+            20%
+          </span>
+        </div>
+        <div class="p-5-10 flex-0-110">
+          <button class="button button--light-blue button--h-32 text-uppercase fz-13 px-12" data-fancybox
+            data-src="#underwriter-archive">
+            открыть
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="d-flex align-items-center justify-content-between mt-5">
+      <button class="navArrow">
+        <img src="@img/icons/arrow-prev.svg" alt="icon">
+      </button>
+      <span class="color-grey-blue fz-14">2-20 of 195 items</span>
+      <button class="navArrow">
+        <img src="@img/icons/arrow-next.svg" alt="icon">
+      </button>
+    </div>
+
+  </div>
+</section>

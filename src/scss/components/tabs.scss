@@ -12,6 +12,9 @@
         background-color: var(--total-black);
         color: #fff;
       }
+      &.min-w-150 {
+        min-width: 150px;
+      }
     }
   }
 
@@ -28,14 +31,34 @@
   .tabs__nav-btn {
     color: var(--grey-blue);
     font-weight: 500;
+
+    &:hover {
+      box-shadow: none;
+      border-color: transparent;
+    }
+    &:focus {
+      color: #fff;
+    }
+
+    &.h-40 {
+      height: 40px;
+    }
+
+    &.rounded-20 {
+      border-radius: 20px;
+    }
+    &.min-w-160 {
+      min-width: 160px;
+    }
   }
 
-  .tabs__nav-btn--active {
-    background-color: var(--green);
-    color: #fff;
+  .tabs__nav-btn--active,
+  .tabs__nav-btn.active {
+    background-color: var(--green)!important;
+    color: #fff!important;
 
     &.tabs__nav-btn-active-red {
-      background-color: var(--error);
+      background-color: var(--error)!important;
     }
   }
 

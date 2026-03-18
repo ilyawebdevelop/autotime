@@ -1,0 +1,457 @@
+<section class="sect w-100 pt-20">
+  <div class="container-fluid">
+
+    <div class="tabs tabs-admin" data-tabs="popup">
+      <ul class="tabs__nav gap-20 w-100 border-b-light-blue mb-30">
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Профиль</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Статистика</button></li>
+      </ul>
+      <div class="tabs__content">
+        <div class="tabs__panel">
+          <div class="row">
+
+            <div class="col-lg-6">
+
+              <div class="p-40-60 bg--white rounded-60">
+
+                <div class="pb-20 mb-20">
+                  <div class="position-relative mb-4">
+                    <img src="@img/admin/avatar/avatar-2.jpg" alt="image"
+                      class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
+                    <img class="anketa-card-award" src="@img/icons/awards/icon-1.png" alt="icon">
+                  </div>
+
+                  <div class="mb-4">
+                    <div class="h3 color-total-black mb-10 text-center">
+                      Сергеев Алексей Викторович
+                    </div>
+                    <a href="tel:+79123456789"
+                      class="d-flex align-items-center gap-10 justify-content-center color-grey-blue mb-10">
+                      <img src="@img/icons/phone-grey-blue.svg" alt="icon">
+                      +7 (912) 345 67-89
+                    </a>
+                    <span class="fz-12 color-grey-blue text-center d-block">активен: 3 дня назад</span>
+                  </div>
+
+                  <button
+                    class="button button--h-36 button--transparent-light-grey-blue fw-normal px-20 pe-none mx-auto">
+                    Продавец
+                  </button>
+                </div>
+
+                <!-- Навигация (меню вкладок) -->
+                <div class="tabs-green">
+                  <ul class="nav tabs__nav p-1 border-light-grey-blue rounded-30 mb-4 nav-tabs mx-auto" id="myTab"
+                    role="tablist">
+                    <li class="nav-item tabs__nav-item w-50" role="presentation">
+                      <button class="nav-link tabs__nav-btn w-100 rounded-20 h-40 fz-13 text-uppercase active min-w-160"
+                        id="home-tab" data-bs-toggle="tab" data-bs-target="#home-pane" type="button"
+                        role="tab">Активен</button>
+                    </li>
+                    <li class="nav-item tabs__nav-item w-50" role="presentation">
+                      <button
+                        class="nav-link tabs__nav-btn w-100 rounded-20 h-40 fz-13 text-uppercase tabs__nav-btn-active-red min-w-160"
+                        id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-pane" type="button"
+                        role="tab">заблокирован</button>
+                    </li>
+
+                  </ul>
+
+                  <!-- Контент вкладок -->
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-pane" role="tabpanel">
+
+                      <div class="border-b-light-blue pb-20 d-flex flex-column gap-10 mb-20">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-10">
+                          <span class="color-grey-blue text-uppercase fz-12">email</span>
+                          <a class="color-link fz-14" href="mailto:sergeev@mail.ru">sergeev@mail.ru</a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-10">
+                          <span class="color-grey-blue text-uppercase fz-12">Город</span>
+                          <div class="fz-14">г. Иркутск</div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-10">
+                          <span class="color-grey-blue text-uppercase fz-12">дата рождения</span>
+                          <div class="fz-14">10.12.1977</div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column gap-10 w-100 border-b-light-blue pb-20 mb-20">
+                        <div
+                          class="d-flex align-items-center justify-content-between flex-wrap gap-10 w-100 flex-column flex-sm-row">
+                          <span class="color-grey-blue text-uppercase fz-12 ls-002">Сфера деятельности:</span>
+                          <div class="fz-14 text-center text-sm-end" style="max-width: 300px;">Кредитование</div>
+                        </div>
+                      </div>
+                      <div
+                        class="pb-20 mb-20 border-b-light-blue d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                        <span class="fz-12 text-uppercase color-grey-blue">Дата регистрации в сервисе</span>
+                        <span class="fz-14">01.02.2026</span>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between border-b-light-blue pb-20 mb-20 gap-3">
+                        <span class="color-grey-blue text-center text-uppercase fz-12">Процент вознаграждения
+                          агента</span>
+                        <span class="fw-medium mb-0">3%</span>
+                      </div>
+                      <div class="pb-20 border-b-light-blue">
+                        <div class="mb-2">
+                          <span class="fz-12 text-uppercase color-grey-blue">паспортные данные</span>
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                          <div class="d-flex gap-1">
+                            <span class="fz-14 color-grey-blue">Серия:</span>
+                            <span class="fz-14">1234</span>
+                          </div>
+                          <div class="d-flex gap-1">
+                            <span class="fz-14 color-grey-blue">Номер:</span>
+                            <span class="fz-14">56789</span>
+                          </div>
+                          <div class="d-flex gap-1">
+                            <span class="fz-14 color-grey-blue">Кем выдан: </span>
+                            <span class="fz-14">УФМС России по г. Москве</span>
+                          </div>
+                          <div class="d-flex gap-1">
+                            <span class="fz-14 color-grey-blue">Когда выдан: </span>
+                            <span class="fz-14">10.01.2012</span>
+                          </div>
+                          <div class="d-flex gap-1">
+                            <span class="fz-14 color-grey-blue">Код подразделения: </span>
+                            <span class="fz-14">770-001</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="py-20 border-b-light-blue">
+                        <div class="d-flex flex-column gap-2">
+                          <span class="fz-12 text-uppercase color-grey-blue">СНИЛС</span>
+                          <span class="fz-14">123-456-789 00</span>
+                        </div>
+                      </div>
+
+                      <div class="py-20">
+                        <div class="d-flex flex-column gap-2">
+                          <span class="fz-12 text-uppercase color-grey-blue">Платежные реквизиты</span>
+                          <div class="d-flex flex-column fz-14">
+                            <span>Номер счета: 40817810099999999999</span>
+                            <span>Банк: ПАО "Сбербанк России"</span>
+                            <span>БИК: 044525225</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-pane" role="tabpanel">
+
+                      <div class="bg--white p-40-32">
+                        <div class="fw-medium fz-20 mb-4 text-center">
+                          Заблокировать
+                        </div>
+                        <div class="color-grey text-center mb-2 mx-auto" style="max-width: 335px;">
+                          Вы действительно хотите заблокировать пользователя?
+                        </div>
+                        <div class="fz-20 color-total-black text-center mb-2">
+                          Иванов Иван Иванович
+                        </div>
+                        <div class="fz-12 color-grey-blue text-uppercase mb-32 text-center">
+                          Агент
+                        </div>
+                        <div class="d-flex flex-column gap-12">
+                          <button class="button button--red text-uppercase w-100 mb-12" type="button">
+                            заблокировать
+                          </button>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+              <div class="p-40-60 bg--white rounded-60 mb-20">
+
+                <div class="d-flex align-items-center gap-3 justify-content-between border-b-light-blue pb-3 mb-3">
+                  <div class="fz-12 text-uppercase">
+                    Агент
+                  </div>
+                  <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+                    Активен
+                  </button>
+                </div>
+
+                <div class="d-flex align-items-start gap-20">
+                  <div class="position-relative">
+                    <img src="@img/admin/avatar/image-6.jpg" alt="image"
+                      class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <a href="#" class="color-link mb-10 fw-medium">
+                      Иванов Иван Иванович
+                    </a>
+                    <a href="tel:+79123456789"
+                      class="d-flex align-items-center gap-10 justify-content-start mb-10 fz-14">
+                      <img src="@img/icons/phone-grey-blue.svg" alt="icon">
+                      +7 (912) 345 67-89
+                    </a>
+                    <div class="d-flex align-items-baseline gap-10 mb-10">
+                      <span class="color-grey-blue text-uppercase fz-12">email:</span>
+                      <a class="color-link fz-14" href="mailto:sergeev@mail.ru">ivanov@mail.ru</a>
+                    </div>
+                    <div class="d-flex align-items-baseline gap-10 mb-10">
+                      <span class="color-grey-blue text-uppercase fz-12">Город:</span>
+                      <div class="fz-14">
+                        Иркутск
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="p-40-60 bg--white rounded-60 mb-20">
+
+                <div class="d-flex align-items-center gap-3 justify-content-between border-b-light-blue pb-3 mb-3">
+                  <div class="fz-12 text-uppercase">
+                    Менеджер
+                  </div>
+                  <button class="button button--h-25 bg--green-light color-green fw-normal fz-12 px-12 pe-none">
+                    Активен
+                  </button>
+                </div>
+
+                <div class="d-flex align-items-start gap-20">
+                  <div class="position-relative">
+                    <img src="@img/admin/avatar/avatar.jpg" alt="image"
+                      class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <a href="#" class="color-link mb-10 fw-medium">
+                      Мария Петровна Сидорова
+                    </a>
+                    <a href="tel:+79123456789"
+                      class="d-flex align-items-center gap-10 justify-content-start mb-10 fz-14">
+                      <img src="@img/icons/phone-grey-blue.svg" alt="icon">
+                      +7 (912) 345 67-89
+                    </a>
+                    <div class="d-flex align-items-baseline gap-10 mb-10">
+                      <span class="color-grey-blue text-uppercase fz-12">email:</span>
+                      <a class="color-link fz-14" href="mailto:sergeev@mail.ru">maria.sidorova@email.com</a>
+                    </div>
+                    <div class="d-flex align-items-baseline gap-10 mb-10">
+                      <span class="color-grey-blue text-uppercase fz-12">Город:</span>
+                      <div class="fz-14">
+                        Иркутск
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-baseline gap-10 mb-10">
+                      <span class="color-grey-blue text-uppercase fz-12">битрикс24 ID:</span>
+                      <div class="d-flex align-items-center gap-1">
+                        <span class="fz-14" id="copy-link-2">1234567890</span>
+                        <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-2" data-bs-toggle="tooltip"
+                          title="Скопировано">
+                          <img src="@img/icons/copy.svg" alt="icon">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-10">
+                      <div class="color-grey-blue fz-12 text-uppercase">
+                        мессенджеры
+                      </div>
+                      <div class="socials">
+                        <ul class="d-flex gap-3">
+                          <li>
+                            <a href="#" target="_blank" rel="nofollow">
+                              <img style="width: 20px;" src="@img/admin/socials/tg.svg" alt="icon">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" rel="nofollow">
+                              <img style="width: 20px;" src="@img/admin/socials/max.svg" alt="icon">
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="tabs__panel">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="bg--white rounded-60 p-32-48 mb-20">
+                <h4 class="text-center mb-4">Вознаграждение</h4>
+                <div class="d-flex align-items-center gap-2 mb-4">
+
+                  <div class="d-flex gap-1 flex-column w-100">
+                    <div class="color-grey-blue fz-12 text-uppercase">
+                      Общая сумма вознаграждения
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="fz-20 fw-medium color-total-black">1 220 870₽</span>
+                      <span class="color-green fw-medium fz-14">+25%</span>
+                    </div>
+                  </div>
+                  <div class="chart chart--donut"
+                    style="background: conic-gradient(#0062FF 55%, var(--green) 0 79%, #0062FF 0);">
+
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-blue"></span>
+                      <span class="fz-12 color-grey-blue w-130">Планируемая сумма</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">220 000₽</span>
+                      <span class="color-green fw-medium fz-14 text-end">+3%</span>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color bg--green"></span>
+                      <span class="fz-12 color-grey-blue w-130">Ожидается к выплате</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">320 000₽</span>
+                      <span class="color-green fw-medium fz-14 text-end">+3%</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="bg--white rounded-60 p-32-48 mb-20">
+                <h4 class="text-center mb-4">Сумма вознаграждения со&nbsp;сделки</h4>
+
+                <div class="range-admin mb-4">
+                  <div class="progressBar">
+                    <div class="thumb chart-color-yellow" style="left:0%;"></div>
+                    <div class="thumb chart-color-red" style="left: 30%;"></div>
+                    <div class="thumb bg--green" style="left: 100%;"></div>
+                  </div>
+
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-yellow"></span>
+                      <span class="fz-12 color-grey-blue">Минимальная </span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">20 000₽</span>
+                      <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-red"></span>
+                      <span class="fz-12 color-grey-blue">Средняя </span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">220 000₽</span>
+                      <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color bg--green"></span>
+                      <span class="fz-12 color-grey-blue">Максимальная</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">1 240 000₽</span>
+                      <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="bg--white rounded-60 p-32-48 mb-20">
+                <h4 class="text-center mb-4">Заявки</h4>
+                <div class="d-flex align-items-center gap-2 mb-4">
+
+                  <div class="d-flex gap-1 flex-column w-100">
+                    <div class="color-grey-blue fz-12 text-uppercase">
+                      всего заявок
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="fz-20 fw-medium color-total-black">228</span>
+                      <span class="color-green fw-medium fz-14">+25%</span>
+                    </div>
+                  </div>
+                  <div class="chart chart--donut"
+                    style="background: conic-gradient(var(--light-blue) 51%, #fe5c73 0 61%, var(--green) 0 77%, #ffc542 0);">
+
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color bg--green"></span>
+                      <span class="fz-12 color-grey-blue w-170">Новых</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">12</span>
+                      <span class="color-green fw-medium fz-14 w-40 text-end">+3%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-yellow"></span>
+                      <span class="fz-12 color-grey-blue w-170">В работе</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">22</span>
+                      <span class="color-green fw-medium fz-14 w-40 text-end">+5%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color chart-color-red"></span>
+                      <span class="fz-12 color-grey-blue w-170">Отклонённых</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">6</span>
+                      <span class="color-red fw-medium fz-14 w-40 text-end">-15%</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 flex-wrap justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <span class="chart-color bg--light-blue"></span>
+                      <span class="fz-12 color-grey-blue w-170">Завершённых</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <span class="fz-14 fw-medium color-total-black">48</span>
+                      <span class="color-green fw-medium fz-14 w-40 text-end">+10%</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
