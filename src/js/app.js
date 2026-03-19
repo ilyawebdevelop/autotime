@@ -245,6 +245,16 @@ $(".js-range-slider").ionRangeSlider({
   }
 });
 
+$(".js-range-slider-finance").ionRangeSlider({
+  min: 0,
+  max: 100,
+  step: 0.5,
+  from: 20,
+  onStart: function (data) {
+    // console.log(data.input);
+    // console.log(data.slider);
+  }
+});
 
 const accordHeads = document.querySelectorAll('.accord-item-head');
 
@@ -374,7 +384,7 @@ if (dropWithDataParent.length > 0) {
 let searchActionBtn = document.querySelector('.searchActionBtn');
 let searchHidden = document.querySelector('.searchHidden');
 
-searchActionBtn.addEventListener('click', () => {
+searchActionBtn?.addEventListener('click', () => {
   searchActionBtn.classList.toggle('active');
   searchHidden.classList.toggle('active');
 });

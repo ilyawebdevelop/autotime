@@ -5510,6 +5510,54 @@
   </div>
 </div>
 
+<!-- admin-finance-percent -->
+<div class="modal modal-w-480 rounded-60 p-32-60" id="admin-finance-percent">
+
+  <div class="mb-32">
+    <h4 class="h4 text-center mb-10">
+      Максимальный лимит для назначения агентам
+    </h4>
+    <div class="color-grey-blue fz-14 text-center">
+      в процентах от суммы сделки
+    </div>
+  </div>
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+
+    <form action="#">
+
+      <div class="d-flex flex-column gap-3 mb-32">
+        <div class="slider js-range-slider-finance">
+          <input type="text" class="js-range-slider">
+        </div>
+      </div>
+
+      <div class="mb-32 form-floating mx-auto" style="max-width: 200px;">
+        <input id="register-fio" type="text" class="formInput form-control" placeholder="Максимальный лимит , %"
+          value="20">
+        <label for="register-fio">Максимальный лимит , %</label>
+      </div>
+
+      <div class="d-flex gap-10">
+        <button class="button button--light-blue text-uppercase w-100 mx-auto" data-fancybox-close>
+          отменить
+        </button>
+        <button class="button button--yellow text-uppercase w-100 mb-12" type="button">
+          сохранить
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
 	</div>
 
 	<script src="js/app.min.js"></script>

@@ -106,6 +106,7 @@ section {
   background-position: right 20px center;
   background-size: 13px;
   cursor: pointer;
+  transition: color .2s linear, border-color .2s linear;
 
   &:hover {
     border-color: var(--grey-blue);
@@ -190,6 +191,11 @@ section {
     padding-right: 40px;
     cursor: pointer;
     padding-left: 16px;
+  }
+
+  &.error {
+    border-color: var(--error);
+    border-width: 2px;
   }
 }
 
@@ -641,6 +647,10 @@ a.bg--bg {
 a.color-red {
   &:hover {
     color: var(--main-color);
+
+    svg {
+      stroke: var(--main-color) !important;
+    }
   }
 }
 
@@ -675,6 +685,10 @@ button.color-light-grey-blue {
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 .mb-12 {
@@ -736,6 +750,10 @@ button.color-light-grey-blue {
   padding-bottom: 10px;
 }
 
+.pb-15 {
+  padding-bottom: 15px;
+}
+
 .pb-20 {
   padding-bottom: 20px;
 }
@@ -758,6 +776,10 @@ button.color-light-grey-blue {
 a.color-grey-blue {
   &:hover {
     color: var(--main-color);
+
+    svg {
+      fill: var(--main-color) !important;
+    }
   }
 }
 
@@ -914,6 +936,10 @@ a.color-grey-blue {
 
 .w-24 {
   width: 24px;
+}
+
+.h-24 {
+  height: 24px;
 }
 
 .w-40 {
@@ -1384,6 +1410,10 @@ a.color-grey-blue {
   flex: 0 44px;
 }
 
+.flex-0-80 {
+  flex: 0 80px;
+}
+
 .flex-0-100 {
   flex: 0 100px;
 }
@@ -1408,6 +1438,10 @@ a.color-grey-blue {
   flex: 0 160px;
 }
 
+.flex-0-180 {
+  flex: 0 180px;
+}
+
 .flex-0-200 {
   flex: 0 200px;
 }
@@ -1418,6 +1452,10 @@ a.color-grey-blue {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
 }
 
 .flex-sm-none-fill {

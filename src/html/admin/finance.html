@@ -1,0 +1,90 @@
+<section class="sect w-100 pt-20 content-writer">
+  <div class="container-fluid">
+
+    <div class="d-flex flex-wrap gap-3 mb-4 pb-3 justify-content-between">
+      <div class="terminNavW position-static" id="terminNavW">
+        @@include('../nav/termin-nav-mb-0.html',{})
+      </div>
+      <div class="d-flex gap-2">
+        <div class="form-floating">
+          <select id="admin-select-1" class="formSelect">
+            <option value="1" selected>Менеджер</option>
+            <option value="2">Иркутск</option>
+            <option value="3">Москва</option>
+            <option value="4">Санкт-Петербург</option>
+            <option value="5">Казань</option>
+          </select>
+        </div>
+        <div class="form-floating">
+          <select id="admin-select-1" class="formSelect">
+            <option value="1" selected>Руководитель</option>
+            <option value="2">Иркутск</option>
+            <option value="3">Москва</option>
+            <option value="4">Санкт-Петербург</option>
+            <option value="5">Казань</option>
+          </select>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 mb-20">
+        <div class="bg--white rounded-60 p-40">
+          <h4 class="mb-4 text-center color-total-black">
+            Оборот по сделкам
+          </h4>
+          <div class="h2 color-total-black text-center mb-0">
+            1 112 400 000₽
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-20">
+        <div class="bg--white rounded-60 p-40">
+          <h4 class="mb-4 text-center color-total-black">
+            Начислено вознаграждений
+          </h4>
+          <div class="h2 color-total-black text-center mb-0">
+            222 400 000₽
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-20">
+        <div class="bg--white rounded-60 p-40">
+          <h4 class="mb-4 text-center color-total-black">
+            Сумма к выводу
+          </h4>
+          <div class="h2 color-total-black text-center mb-4">
+            111 200 000₽
+          </div>
+          <span class="mb-2 text-uppercase color-grey-blue d-flex text-center justify-content-center">Выплачено</span>
+          <div class="h4 mb-0 text-center">
+            111 200 000₽
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-20">
+        <div class="bg--white rounded-60 p-40">
+          <h4 class="mb-4 text-center color-total-black mx-auto" style="max-width: 300px;">
+            Максимальный процент вознаграждения агенту
+          </h4>
+          <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+            <div class="h2 color-total-black text-center mb-0">
+              20%
+            </div>
+            <button class="button-round width-50 bg--light-blue d-flex justify-content-center align-items-center"
+              data-fancybox data-src="#admin-finance-percent">
+              <svg class="w-24">
+                <use xlink:href="img/icons/icons.svg#edit"></use>
+              </svg>
+            </button>
+          </div>
+          <span class="text-uppercase color-grey-blue d-flex text-center justify-content-center">от суммы сделки</span>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

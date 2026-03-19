@@ -15870,6 +15870,7 @@ section {
   background-position: right 20px center;
   background-size: 13px;
   cursor: pointer;
+  transition: color 0.2s linear, border-color 0.2s linear;
 }
 .formSelect:hover {
   border-color: var(--grey-blue);
@@ -15948,6 +15949,10 @@ section {
   padding-right: 40px;
   cursor: pointer;
   padding-left: 16px;
+}
+.formInput.error {
+  border-color: var(--error);
+  border-width: 2px;
 }
 
 a.underline {
@@ -16352,6 +16357,9 @@ a.bg--bg:hover {
 a.color-red:hover {
   color: var(--main-color);
 }
+a.color-red:hover svg {
+  stroke: var(--main-color) !important;
+}
 
 .color-link {
   color: var(--link);
@@ -16380,6 +16388,10 @@ button.color-light-grey-blue:hover {
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 .mb-12 {
@@ -16440,6 +16452,10 @@ button.color-light-grey-blue:hover {
   padding-bottom: 10px;
 }
 
+.pb-15 {
+  padding-bottom: 15px;
+}
+
 .pb-20 {
   padding-bottom: 20px;
 }
@@ -16459,6 +16475,9 @@ button.color-light-grey-blue:hover {
 
 a.color-grey-blue:hover {
   color: var(--main-color);
+}
+a.color-grey-blue:hover svg {
+  fill: var(--main-color) !important;
 }
 
 .color-green {
@@ -16588,6 +16607,10 @@ a.color-grey-blue:hover {
 
 .w-24 {
   width: 24px;
+}
+
+.h-24 {
+  height: 24px;
 }
 
 .w-40 {
@@ -17025,6 +17048,10 @@ a.color-grey-blue:hover {
   flex: 0 44px;
 }
 
+.flex-0-80 {
+  flex: 0 80px;
+}
+
 .flex-0-100 {
   flex: 0 100px;
 }
@@ -17049,6 +17076,10 @@ a.color-grey-blue:hover {
   flex: 0 160px;
 }
 
+.flex-0-180 {
+  flex: 0 180px;
+}
+
 .flex-0-200 {
   flex: 0 200px;
 }
@@ -17059,6 +17090,10 @@ a.color-grey-blue:hover {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
 }
 
 @media (min-width: 576px) {
@@ -17255,6 +17290,9 @@ a.color-grey-blue:hover {
 }
 .button.pr-15 {
   padding-right: 15px;
+}
+.button.min-w-200 {
+  min-width: 200px;
 }
 
 .button-round {
@@ -17459,6 +17497,10 @@ a.color-grey-blue:hover {
 
 .p-32-40 {
   padding: 32px 40px;
+}
+
+.p-32-60 {
+  padding: 32px 60px;
 }
 
 .p-27-32 {
