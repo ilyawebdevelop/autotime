@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Autotime — Страницы</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+	<style media="screen">
+		body {
+			background: #fff;
+			padding: 0 0 50px;
+			font-family: sans-serif;
+			font-size: 16px;
+			color: #000;
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		ul,
+		ol {
+			margin: 0 0 15px;
+		}
+
+		h3 {
+			font-size: 18px;
+		}
+
+		.container {
+			max-width: 1170px;
+			padding: 0 15px;
+			margin: 0 auto;
+		}
+
+		.title {
+			padding: 16px 0 1px;
+			margin-bottom: 40px;
+			background: #fd0;
+			border-bottom: 1px solid #eaeaea;
+		}
+
+		.boxes {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -15px -40px;
+		}
+
+		.box {
+			flex: 1 0 0;
+			min-width: 30%;
+			padding: 0 15px 40px;
+		}
+
+		.box ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.box ul li {
+			margin-bottom: 15px;
+		}
+
+		.box ul li:last-child {
+			margin-bottom: 0;
+		}
+
+		.box ul a {
+			display: inline-block;
+			text-decoration: underline;
+			color: #000;
+		}
+
+		.box ul a:hover {
+			text-decoration: none;
+		}
+
+		.box ul a:visited {
+			color: #681DA8;
+		}
+
+		@media only screen and (max-width : 767px) {
+			.box {
+				min-width: 50%;
+			}
+		}
+
+		@media only screen and (max-width : 575px) {
+			.box {
+				min-width: 100%;
+			}
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<div class="title">
+		<div class="container">
+			<h2>Autotime</h2>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="boxes">
+
+			<div class="box">
+				<ul>
+					<li><a href="dist/index.html">Главная</a></li>
+					<br>
+					<li><a href="dist/register.html">Регистрация</a></li>
+					<li><a href="dist/register-filled.html">Регистрация заполнено</a></li>
+					<li><a href="dist/register-success.html">Регистрация успешно</a></li>
+					<br>
+					<li><a href="dist/authorize-admin.html">Авторизация сотрудника</a></li>
+					<li><a href="dist/authorize-agent.html">Авторизация агента</a></li>
+					<li><a href="dist/authorize-agent-filled.html">Авторизация агента заполнено</a></li>
+					<li><a href="dist/authorize-agent-code.html">Авторизация агента код</a></li>
+					<li><a href="dist/authorize-agent-code-error.html">Авторизация агента код ошибка</a></li>
+					<li><a href="dist/authorize-agent-code-success.html">Авторизация агента код успех</a></li>
+					<br>
+					<li><a href="dist/first-auth-hello.html">Первичный вход Добро Пожаловать</a></li>
+					<li><a href="dist/first-auth-anketa.html">Первичный вход Анкета</a></li>
+					<li><a href="dist/first-auth-anketa-filled.html">Первичный вход Анкета заполнена</a></li>
+					<li><a href="dist/first-auth-slider.html">Первичный вход Сдайдер</a></li>
+					<br>
+					<li><a href="dist/seller-dashboard.html">Продавец Дашборд</a></li>
+					<li><a href="dist/seller-orders.html">Продавец Сделки</a></li>
+					<li><a href="dist/seller-order.html">Продавец Обратная связь</a></li>
+					<li><a href="dist/seller-spravka.html">Продавец Справка</a></li>
+					<li><a href="dist/seller-spravka-page.html">Продавец Справка внутренняя</a></li>
+					<li><a href="dist/seller-profile.html">Продавец Профиль</a></li>
+					<br>
+					<li><a href="dist/agent-dashboard.html">Агент Дашборд</a></li>
+					<li><a href="dist/agent-orders.html">Агент заявки</a></li>
+					<li><a href="dist/agent-sellers.html">Агент продавцы</a></li>
+					<li><a href="dist/agent-order.html">Агент Обратная связь</a></li>
+					<li><a href="dist/agent-spravka.html">Агент Справка</a></li>
+					<li><a href="dist/agent-spravka-page.html">Агент Справка внутренняя</a></li>
+					<li><a href="dist/agent-profile.html">Агент Профиль</a></li>
+					<li><a href="dist/agent-profile-agree.html">Агент Запрос на изменение данных профиля</a></li>
+					<br>
+					<li><a href="dist/manager-dashboard.html">Менеджер Дашборд</a></li>
+					<li><a href="dist/manager-orders.html">Менеджер Сделки</a></li>
+					<li><a href="dist/manager-agents.html">Менеджер Агенты</a></li>
+					<li><a href="dist/manager-sellers.html">Менеджер Продавцы</a></li>
+					<li><a href="dist/manager-profile.html">Менеджер Профиль</a></li>
+					<br>
+					<li><a href="dist/dir-dashboard.html">Руководитель Дашборд</a></li>
+					<li><a href="dist/dir-orders.html">Руководитель Сделки</a></li>
+					<li><a href="dist/dir-pays.html">Руководитель Выплаты</a></li>
+					<li><a href="dist/dir-managers.html">Руководитель Сотрудники</a></li>
+					<li><a href="dist/dir-agents.html">Руководитель Агенты</a></li>
+					<li><a href="dist/dir-sellers.html">Руководитель Продавцы</a></li>
+					<li><a href="dist/dir-profile.html">Руководитель Профиль</a></li>
+					<br>
+					<li><a href="dist/underwriter-dashboard.html">Андеррайтер Дашборд</a></li>
+					<li><a href="dist/underwriter-agents.html">Андеррайтер Агенты</a></li>
+					<li><a href="dist/underwriter-agent-profile.html">Андеррайтер Агенты Профиль</a></li>
+					<li><a href="dist/underwriter-seller-profile.html">Андеррайтер Продавцы Профиль</a></li>
+					<li><a href="dist/underwriter-profile.html">Андеррайтер Профиль</a></li>
+					<li><a href="dist/underwriter-profile-edit.html">Андеррайтер Профиль редактировать</a></li>
+					<br>
+					<li><a href="dist/admin-dashboard.html">Администратор Дашборд</a></li>
+					<li><a href="dist/admin-managers.html">Администратор Менеджеры и руководители</a></li>
+					<li><a href="dist/admin-dir-tabs.html">Администратор Руководитель Табы</a></li>
+					<li><a href="dist/admin-managers-tabs.html">Администратор Менеджеры Табы</a></li>
+					<li><a href="dist/admin-agents.html">Администратор Агенты</a></li>
+					<li><a href="dist/admin-agents-tabs.html">Администратор Агенты Табы</a></li>
+					<li><a href="dist/admin-sellers.html">Администратор Продавцы</a></li>
+					<li><a href="dist/admin-sellers-tabs.html">Администратор Продавцы Табы</a></li>
+					<li><a href="dist/admin-orders.html">Администратор Сделки</a></li>
+					<li><a href="dist/admin-orders-sm.html">Администратор Сделки сокращ-е поля</a></li>
+					<li><a href="dist/admin-orders-card.html">Администратор Карточка</a></li>
+					<li><a href="dist/admin-finance.html">Администратор Финансы</a></li>
+					<li><a href="dist/admin-profile.html">Администратор Профиль</a></li>
+					<li><a href="dist/admin-profile-edit.html">Администратор Профиль редактировать</a></li>
+					<li><a href="dist/admin-change-password.html">Администратор Сменить пароль</a></li>
+					<li><a href="dist/admin-change-password-error.html">Администратор Сменить пароль ошибка</a></li>
+					<li><a href="dist/admin-edit-password.html">Администратор Новый пароль</a></li>
+
+				</ul>
+			</div>
+			<div class="box">
+				<!-- <h3>Личный кабинет</h3> -->
+				<ul>
+					<!-- <li><a href="reg.html">Регистрация</a></li>
+					<li><a href="auth.html">Авторизация</a></li>
+					<li><a href="lc-main.html">ЛК Главная</a></li>
+					<li><a href="lc-orders.html">ЛК Текущие заказы</a></li>
+					<li><a href="lc-history.html">ЛК История заказов</a></li>
+					<li><a href="lc-data.html">ЛК Личные данные</a></li>
+					<li><a href="lc-password.html">ЛК Сменить пароль</a></li> -->
+					<!-- <br>
+					<li><a href="popups.html">Модальные окна</a></li> -->
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>
