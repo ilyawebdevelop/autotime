@@ -17261,12 +17261,12 @@ a.color-grey-blue:hover svg {
   display: block;
 }
 
-.flex-grow-1 {
+.flex-grow-1:not(.tabs__nav-item) {
   width: min-content;
   min-width: 200px;
 }
 @media (max-width: 1199px) {
-  .flex-grow-1 {
+  .flex-grow-1:not(.tabs__nav-item) {
     flex-shrink: 0;
   }
 }
