@@ -223,6 +223,9 @@
   position: absolute;
   right: 20px;
   top: 13px;
+  @media(max-width: 575px){
+    right: 10px;
+  }
 }
 
 .photo-item-remove-image {

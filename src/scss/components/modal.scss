@@ -80,6 +80,7 @@
 .modalPrevLink {
   position: absolute;
   left: 20px;
+  flex-shrink: 0;
   &-sm-relative {
     @media(max-width: 575px){
       position: relative;

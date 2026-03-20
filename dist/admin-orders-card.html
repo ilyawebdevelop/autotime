@@ -21,11 +21,12 @@
 		<header class="header-writer bg--white d-flex">
   <div class="sidebar-logo">
     <a href="#" class="header-writer-logo">
-      <img src="img/admin/logo/logo.svg" alt="logo">
+      <img class="d-none d-xl-block" src="img/admin/logo/logo.svg" alt="logo">
+      <img class="d-block d-xl-none" src="img/favicon.png" alt="logo">
     </a>
   </div>
   <div class="header-title">
-    <div class="d-flex align-items-center justify-content-between gap-4 w-100">
+    <div class="d-flex align-items-center justify-content-between gap-2 gap-sm-4 w-100 flex-wrap">
 
       <div class="d-flex align-items-center gap-10">
         <a href="#" class="prev-link">
@@ -37,7 +38,7 @@
           </div>
           <div class="d-flex align-items-center gap-10">
             <span class="fz-20 color-total-black">ID:</span>
-            <span class="h4 mb-0 color-total-black" id="copy-link-11">1234567890</span>
+            <span class="h4 mb-0 color-total-black header-copy-text" id="copy-link-11">1234567890</span>
             <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-11" data-bs-toggle="tooltip"
               title="Скопировано">
               <img src="img/icons/copy-header.svg" alt="icon">
@@ -149,8 +150,8 @@
   <div class="container-fluid">
 
     <div class="row">
-      <div class="col-lg-6">
-        <div class="bg--white rounded-60 p-40-60">
+      <div class="col-lg-6 mb-20">
+        <div class="bg--white rounded-60 rounded-xl-32 p-40-60">
 
           <h3 class="mb-3 text-center">
             Данные по сделке
@@ -169,7 +170,7 @@
           </div>
 
           <div class="border-b-light-blue mb-15">
-            <div class="d-flex align-items-center justify-content-between gap-10 mb-15 text-end">
+            <div class="d-flex align-items-center justify-content-between gap-10 mb-15 text-end flex-wrap flex-sm-nowrap">
               <span class="color-grey-blue fz-12 text-uppercase text-nowrap">сумма сделки:</span>
               <span class="h4 mb-0">2 400 000₽</span>
             </div>
@@ -181,19 +182,19 @@
                 <span>2023 г.</span>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between gap-10 mb-15 text-end">
+            <div class="d-flex align-items-center justify-content-between gap-10 mb-15 text-end flex-wrap flex-sm-nowrap">
               <span class="color-grey-blue fz-12 text-uppercase text-nowrap">Город:</span>
               <div class="fz-14">
                 г. Иркутск
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between gap-10 mb-15 text-end">
+            <div class="d-flex align-items-center justify-content-between gap-10 mb-15 text-end flex-wrap flex-sm-nowrap">
               <span class="color-grey-blue fz-12 text-uppercase text-nowrap">Клиент:</span>
               <div class="fz-14">
                 Костров Константин Константинович
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between gap-10 mb-15 text-end">
+            <div class="d-flex align-items-center justify-content-between gap-10 mb-15 text-end flex-wrap flex-sm-nowrap">
               <span class="color-grey-blue fz-12 text-uppercase text-nowrap">телефон:</span>
               <div class="fz-14">
                 +7 (912) 345 67-89
@@ -208,7 +209,7 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="p-40-60 bg--white rounded-60 mb-20">
+        <div class="p-40-60 bg--white rounded-60 rounded-xl-32 mb-20">
 
           <div class="d-flex align-items-center gap-3 justify-content-between border-b-light-blue pb-3 mb-3">
             <div class="fz-12 text-uppercase">
@@ -219,7 +220,7 @@
             </button>
           </div>
 
-          <div class="d-flex align-items-start gap-20">
+          <div class="d-flex align-items-start gap-20 flex-column flex-sm-row">
             <div class="position-relative">
               <img src="img/admin/avatar/image-4.jpg" alt="image"
                 class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
@@ -232,17 +233,17 @@
                 <img src="img/icons/phone-grey-blue.svg" alt="icon">
                 +7 (912) 345 67-89
               </a>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">email:</span>
                 <a class="color-link fz-14" href="mailto:smirnov@mail.ru">smirnov@mail.ru</a>
               </div>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">Город:</span>
                 <div class="fz-14">
                   Иркутск
                 </div>
               </div>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">битрикс24 ID:</span>
                 <div class="d-flex align-items-center gap-1">
                   <span class="fz-14" id="copy-link-22">1234567890</span>
@@ -256,7 +257,7 @@
           </div>
 
         </div>
-        <div class="p-40-60 bg--white rounded-60 mb-20">
+        <div class="p-40-60 bg--white rounded-60 rounded-xl-32 mb-20">
 
           <div class="d-flex align-items-center gap-3 justify-content-between border-b-light-blue pb-3 mb-3">
             <div class="fz-12 text-uppercase">
@@ -267,7 +268,7 @@
             </button>
           </div>
 
-          <div class="d-flex align-items-start gap-20">
+          <div class="d-flex align-items-start gap-20 flex-column flex-sm-row">
             <div class="position-relative">
               <img src="img/admin/avatar/avatar.jpg" alt="image"
                 class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
@@ -280,17 +281,17 @@
                 <img src="img/icons/phone-grey-blue.svg" alt="icon">
                 +7 (912) 345 67-89
               </a>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">email:</span>
                 <a class="color-link fz-14" href="mailto:sergeev@mail.ru">maria.sidorova@email.com</a>
               </div>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">Город:</span>
                 <div class="fz-14">
                   Иркутск
                 </div>
               </div>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">битрикс24 ID:</span>
                 <div class="d-flex align-items-center gap-1">
                   <span class="fz-14" id="copy-link-2">1234567890</span>
@@ -326,7 +327,7 @@
 
 
         </div>
-        <div class="p-40-60 bg--white rounded-60 mb-20">
+        <div class="p-40-60 bg--white rounded-60 rounded-xl-32 mb-20">
 
           <div class="d-flex align-items-center gap-3 justify-content-between border-b-light-blue pb-3 mb-3">
             <div class="fz-12 text-uppercase">
@@ -337,7 +338,7 @@
             </button>
           </div>
 
-          <div class="d-flex align-items-start gap-20 border-b-light-blue mb-15 pb-15">
+          <div class="d-flex align-items-start gap-20 flex-column flex-sm-row border-b-light-blue mb-15 pb-15">
             <div class="position-relative">
               <img src="img/admin/avatar/image-6.jpg" alt="image"
                 class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
@@ -350,11 +351,11 @@
                 <img src="img/icons/phone-grey-blue.svg" alt="icon">
                 +7 (912) 345 67-89
               </a>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">email:</span>
                 <a class="color-link fz-14" href="mailto:sergeev@mail.ru">ivanov@mail.ru</a>
               </div>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">Город:</span>
                 <div class="fz-14">
                   Иркутск
@@ -378,7 +379,7 @@
           </div>
 
         </div>
-        <div class="p-40-60 bg--white rounded-60 mb-20">
+        <div class="p-40-60 bg--white rounded-60 rounded-xl-32 mb-20">
 
           <div class="d-flex align-items-center gap-3 justify-content-between border-b-light-blue pb-3 mb-3">
             <div class="fz-12 text-uppercase">
@@ -389,7 +390,7 @@
             </button>
           </div>
 
-          <div class="d-flex align-items-start gap-20 border-b-light-blue mb-15 pb-15">
+          <div class="d-flex align-items-start gap-20 flex-column flex-sm-row border-b-light-blue mb-15 pb-15">
             <div class="position-relative">
               <img src="img/admin/avatar/avatar-2.jpg" alt="image"
                 class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
@@ -402,11 +403,11 @@
                 <img src="img/icons/phone-grey-blue.svg" alt="icon">
                 +7 (912) 345 67-89
               </a>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">email:</span>
                 <a class="color-link fz-14" href="mailto:sergeev@mail.ru">sergeev@mail.ru</a>
               </div>
-              <div class="d-flex align-items-baseline gap-10 mb-10">
+              <div class="d-flex align-items-baseline gap-10 mb-10 flex-wrap">
                 <span class="color-grey-blue text-uppercase fz-12">Город:</span>
                 <div class="fz-14">
                   Иркутск

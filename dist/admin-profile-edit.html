@@ -21,14 +21,15 @@
 		<header class="header-writer bg--white d-flex">
   <div class="sidebar-logo">
     <a href="#" class="header-writer-logo">
-      <img src="img/admin/logo/logo.svg" alt="logo">
+      <img class="d-none d-xl-block" src="img/admin/logo/logo.svg" alt="logo">
+      <img class="d-block d-xl-none" src="img/favicon.png" alt="logo">
     </a>
   </div>
   <div class="header-title">
-    <div class="d-flex align-items-center justify-content-between gap-4 w-100">
+    <div class="d-flex align-items-center justify-content-between gap-4 w-100 flex-wrap">
       <div class="h3 mb-0">Мой профиль</div>
 
-      <div class="d-flex gap-4 align-items-center">
+      <div class="d-flex gap-4 align-items-center flex-wrap">
 
         <div class="form-floating">
           <input type="search" class="formInput formInput--search rounded-25 form-control bg-white"
@@ -144,10 +145,10 @@
     <div class="row">
       <div class="col-lg-3"></div>
       <div class="col-lg-6">
-        <div class="bg--white p-32 rounded-60">
+        <div class="bg--white p-32 rounded-60 rounded-xl-32">
           <div
             class="d-flex align-items-center gap-30 pb-20 mb-32 border-b-light-blue justify-content-center position-relative">
-            <a href="#" class="modalPrevLink">
+            <a href="#" class="modalPrevLink modalPrevLink-sm-relative">
               <img src="img/icons/arrow-left.svg" alt="icon">
             </a>
             <h3 class="h3 text-center mb-0">
@@ -186,7 +187,7 @@
             </div>
 
 
-            <div class="d-flex justify-content-between align-items-center gap-4">
+            <div class="d-flex justify-content-between align-items-center gap-4 flex-column flex-sm-row">
               <a href="#" class="fw-medium text-uppercase color-grey-blue">отменить</a>
               <button class="button button--yellow text-uppercase px-30" type="button">
                 сохранить

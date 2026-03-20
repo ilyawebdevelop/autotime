@@ -1,11 +1,12 @@
 <header class="header-writer bg--white d-flex">
   <div class="sidebar-logo">
     <a href="#" class="header-writer-logo">
-      <img src="@img/admin/logo/logo.svg" alt="logo">
+      <img class="d-none d-xl-block" src="@img/admin/logo/logo.svg" alt="logo">
+      <img class="d-block d-xl-none" src="@img/favicon.png" alt="logo">
     </a>
   </div>
   <div class="header-title">
-    <div class="d-flex align-items-center justify-content-between gap-4 w-100">
+    <div class="d-flex align-items-center justify-content-between gap-2 gap-sm-4 w-100 flex-wrap">
 
       <div class="d-flex align-items-center gap-10">
         <a href="#" class="prev-link">
@@ -17,7 +18,7 @@
           </div>
           <div class="d-flex align-items-center gap-10">
             <span class="fz-20 color-total-black">ID:</span>
-            <span class="h4 mb-0 color-total-black" id="copy-link-11">1234567890</span>
+            <span class="h4 mb-0 color-total-black header-copy-text" id="copy-link-11">1234567890</span>
             <button class="copyBtn tooltipEl" data-clipboard-target="#copy-link-11" data-bs-toggle="tooltip"
               title="Скопировано">
               <img src="@img/icons/copy-header.svg" alt="icon">

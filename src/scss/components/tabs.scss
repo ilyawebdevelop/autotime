@@ -139,3 +139,10 @@
     }
   }
 }
+.round-tabs--sm-column {
+  .tabs__nav {
+    @media(max-width: 575px){
+      flex-direction: column;
+    }
+  }
+}

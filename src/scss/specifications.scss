@@ -352,6 +352,12 @@ h2,
 .h2 {
   font-size: 40px;
   line-height: 130%;
+
+  &.h2-lg-h4 {
+    @media(max-width: 991px) {
+      font-size: 20px;
+    }
+  }
 }
 
 h3,
@@ -901,8 +907,9 @@ a.color-grey-blue {
 
 .gap-30 {
   gap: 30px;
+
   &.gap-sm-10 {
-    @media(max-width: 575px){
+    @media(max-width: 575px) {
       gap: 10px;
     }
   }
@@ -1058,6 +1065,11 @@ a.color-grey-blue {
   @media(max-width: 369px) {
     padding: 25px;
   }
+  &.p-sm-20 {
+    @media(max-width: 575px){
+      padding: 20px;
+    }
+  }
 }
 
 .p-32-48 {
@@ -1072,6 +1084,12 @@ a.color-grey-blue {
 
 .p-40 {
   padding: 40px;
+
+  &.p-xl-20 {
+    @media(max-width: 1199px) {
+      padding: 20px;
+    }
+  }
 }
 
 .p-40-60 {
@@ -1617,5 +1635,11 @@ a.color-grey-blue {
 
   @media(max-width: 1199px) {
     flex-shrink: 0;
+  }
+}
+
+.header-copy-text {
+  @media(max-width: 575px) {
+    font-size: 15px;
   }
 }

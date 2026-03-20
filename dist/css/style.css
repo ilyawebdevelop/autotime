@@ -16088,6 +16088,12 @@ h2,
   font-size: 40px;
   line-height: 130%;
 }
+@media (max-width: 991px) {
+  h2.h2-lg-h4,
+.h2.h2-lg-h4 {
+    font-size: 20px;
+  }
+}
 
 h3,
 .h3 {
@@ -16729,6 +16735,11 @@ a.color-grey-blue:hover svg {
     padding: 25px;
   }
 }
+@media (max-width: 575px) {
+  .p-32.p-sm-20 {
+    padding: 20px;
+  }
+}
 
 .p-32-48 {
   padding: 32px 48px;
@@ -16741,6 +16752,11 @@ a.color-grey-blue:hover svg {
 
 .p-40 {
   padding: 40px;
+}
+@media (max-width: 1199px) {
+  .p-40.p-xl-20 {
+    padding: 20px;
+  }
 }
 
 .p-40-60 {
@@ -17255,6 +17271,12 @@ a.color-grey-blue:hover svg {
   }
 }
 
+@media (max-width: 575px) {
+  .header-copy-text {
+    font-size: 15px;
+  }
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -17435,6 +17457,11 @@ a.color-grey-blue:hover svg {
   position: absolute;
   right: 20px;
   top: 13px;
+}
+@media (max-width: 575px) {
+  .togglePasswordBtn {
+    right: 10px;
+  }
 }
 
 .photo-item-remove-image {
@@ -17648,6 +17675,7 @@ a.color-grey-blue:hover svg {
 .modalPrevLink {
   position: absolute;
   left: 20px;
+  flex-shrink: 0;
 }
 @media (max-width: 575px) {
   .modalPrevLink-sm-relative {
@@ -18198,6 +18226,12 @@ a.color-grey-blue:hover svg {
 @media (max-width: 1199px) {
   .tabs-admin h3, .tabs-admin .h3 {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .round-tabs--sm-column .tabs__nav {
+    flex-direction: column;
   }
 }
 
