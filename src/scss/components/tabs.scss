@@ -51,6 +51,19 @@
       min-width: 160px;
     }
   }
+  .tabs__nav-item.w-50 {
+    width: calc(50% - 5px)!important;
+    @media(max-width: 420px){
+      width: 100%!important;
+    }
+  }
+  .tabs__nav {
+    @media(max-width: 420px){
+      flex-direction: column;
+      min-width: unset!important;
+      width: 100%;
+    }
+  }
 
   .tabs__nav-btn--active,
   .tabs__nav-btn.active {
@@ -66,6 +79,19 @@
 
 
 .tabs-admin {
+  .tabs__nav {
+    @media(max-width: 991px){
+      gap: 10px;
+    }
+    @media(max-width: 575px){
+      overflow-x: auto;
+      min-width: calc(100% + 30px);
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
   .tabs__nav-btn {
     color: var(--grey-blue);
     font-weight: 500;
@@ -73,6 +99,12 @@
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
+    white-space: nowrap;
+    @media(max-width: 1199px){
+      font-size: 14px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 
     &::after {
       content: '';
@@ -83,6 +115,9 @@
       background-color: var(--yellow);
       opacity: 0;
       border-radius: 10px 10px 0 0;
+      @media(max-width: 1199px){
+        height: 3px;
+      }
     }
 
     &:hover {
@@ -96,6 +131,11 @@
       &::after {
         opacity: 1;
       }
+    }
+  }
+  h3,.h3 {
+    @media(max-width: 1199px){
+      font-size: 18px;
     }
   }
 }

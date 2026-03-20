@@ -80,6 +80,12 @@
 .modalPrevLink {
   position: absolute;
   left: 20px;
+  &-sm-relative {
+    @media(max-width: 575px){
+      position: relative;
+      left: 0;
+    }
+  }
 }
 
 .f-button-w-24 {

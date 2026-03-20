@@ -67,6 +67,7 @@
 }
 
 .sidebar-menu {
+
   ul {
     display: flex;
     flex-direction: column;
@@ -74,13 +75,23 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
+    @media(max-width: 1199px) {
+      padding-top: 10px;
+      row-gap: 5px;
+    }
+
     li {
       .sidebar-menu-icon {
         width: 40px;
         height: 40px;
         transition: background .2s linear;
         position: relative;
-        z-index: 1; 
+        z-index: 1;
+
+        @media(max-width: 1199px) {
+          width: 30px;
+          height: 30px;
+        }
       }
 
       &.sidebar-item-managers {
@@ -146,11 +157,21 @@
         padding-bottom: 5px;
         position: relative;
 
+        @media(max-width: 1199px) {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
         svg {
           fill: transparent;
           stroke: var(--grey-blue);
           width: 40px;
           height: 40px;
+
+          @media(max-width: 1199px) {
+            width: 30px;
+            height: 30px;
+          }
         }
 
         @media(max-width: 375px) {
@@ -172,6 +193,10 @@
           color: var(--grey-blue);
           font-weight: 500;
           transition: color .2s linear;
+
+          @media(max-width: 1199px) {
+            display: none;
+          }
         }
       }
 
@@ -186,6 +211,10 @@
             width: 10px;
             height: 100%;
             background-color: var(--yellow);
+
+            @media(max-width: 1199px) {
+              width: 4px;
+            }
           }
 
           &::after {
@@ -196,6 +225,10 @@
             background-color: var(--yellow);
             position: absolute;
             left: 44px;
+
+            @media(max-width: 1199px) {
+              left: 15px;
+            }
           }
 
           svg {

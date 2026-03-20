@@ -94,6 +94,7 @@
     position: absolute;
   }
 }
+
 .header-title {
   width: 100%;
   border-bottom: 1px solid var(--light-blue);
@@ -102,4 +103,18 @@
   align-items: center;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media(max-width: 1199px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h3,
+  .h3 {
+    @media(max-width: 991px) {
+      font-size: 17px;
+    }
+  }
 }

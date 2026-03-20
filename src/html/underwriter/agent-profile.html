@@ -1,19 +1,23 @@
 <section class="sect w-100 pt-20">
-  <div class="container-fluid">
 
-    <div class="tabs tabs-admin" data-tabs="popup">
+
+  <div class="tabs tabs-admin" data-tabs="popup">
+    <div class="container-fluid">
       <ul class="tabs__nav gap-20 w-100 border-b-light-blue mb-30">
         <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Профиль</button></li>
         <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Продавцы агента</button></li>
         <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Статистика</button></li>
       </ul>
-      <div class="tabs__content">
-        <div class="tabs__panel">
+    </div>
+
+    <div class="tabs__content">
+      <div class="tabs__panel">
+        <div class="container-fluid">
           <div class="row">
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-20">
 
-              <div class="p-40-60 bg--white rounded-60">
+              <div class="p-40-60 bg--white rounded-60 rounded-xl-32">
 
                 <div class="pb-20 mb-20">
                   <div class="position-relative mb-4">
@@ -181,7 +185,7 @@
 
             </div>
             <div class="col-lg-6">
-              <div class="p-40-60 bg--white rounded-60 mb-20">
+              <div class="p-40-60 bg--white rounded-60 rounded-xl-32 mb-20">
 
                 <div class="d-flex align-items-center gap-3 justify-content-between border-b-light-blue pb-3 mb-3">
                   <div class="fz-12 text-uppercase">
@@ -192,7 +196,7 @@
                   </button>
                 </div>
 
-                <div class="d-flex align-items-center gap-20">
+                <div class="d-flex align-items-center gap-20 flex-column flex-sm-row">
                   <div class="position-relative">
                     <img src="@img/admin/avatar/image-6.jpg" alt="image"
                       class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
@@ -220,7 +224,7 @@
                 </div>
 
               </div>
-              <div class="p-40-60 bg--white rounded-60">
+              <div class="p-40-60 bg--white rounded-60 rounded-xl-32">
 
                 <div class="d-flex align-items-center gap-3 justify-content-between border-b-light-blue pb-3 mb-3">
                   <div class="fz-12 text-uppercase">
@@ -231,7 +235,7 @@
                   </button>
                 </div>
 
-                <div class="d-flex align-items-center gap-20">
+                <div class="d-flex align-items-center gap-20 flex-column flex-sm-row">
                   <div class="position-relative">
                     <img src="@img/admin/avatar/avatar.jpg" alt="image"
                       class="w-120 h-120 object-fit-cover rounded-48 mx-auto border-light-blue">
@@ -265,10 +269,13 @@
             </div>
 
           </div>
-
         </div>
-        <div class="tabs__panel">
-          <div class="bg--white rounded-40 p-10-20">
+
+
+      </div>
+      <div class="tabs__panel">
+        <div class="container-fluid">
+          <div class="bg--white rounded-40 rounded-xl-35 p-10-20 overflow-x-auto">
             <div class="border-b-light-blue d-flex align-items-center">
               <div class="p-15-10 d-flex align-items-center gap-10 flex-grow-1">
                 <span class="color-grey-blue fw-medium fz-14">Продавец</span>
@@ -366,11 +373,16 @@
               </div>
             </div>
           </div>
+
         </div>
-        <div class="tabs__panel">
+
+      </div>
+      <div class="tabs__panel">
+
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6">
-              <div class="bg--white rounded-60 p-32-48 mb-20">
+              <div class="bg--white rounded-60 rounded-xl-32 p-32-48 p-xl-20 mb-20">
                 <h4 class="text-center mb-4">Вознаграждение</h4>
                 <div class="d-flex align-items-center gap-2 mb-4">
 
@@ -444,7 +456,7 @@
 
                 </div>
               </div>
-              <div class="bg--white rounded-60 p-32-48 mb-20">
+              <div class="bg--white rounded-60 rounded-xl-32 p-32-48 p-xl-20 mb-20">
                 <h4 class="text-center mb-4">Сумма вознаграждения со&nbsp;сделки</h4>
 
                 <div class="range-admin mb-4">
@@ -489,7 +501,7 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="bg--white rounded-60 p-32-48 mb-20">
+              <div class="bg--white rounded-60 rounded-xl-32 p-32-48 p-xl-20 mb-20">
                 <h4 class="text-center mb-4">Личные сделки</h4>
                 <div class="d-flex align-items-center gap-2 mb-4">
 
@@ -552,7 +564,7 @@
                 </div>
 
               </div>
-              <div class="bg--white rounded-60 p-32-48 mb-20">
+              <div class="bg--white rounded-60 rounded-xl-32 p-32-48 p-xl-20 mb-20">
                 <h4 class="text-center mb-4">Сделки продавцов</h4>
                 <div class="d-flex align-items-center gap-2 mb-4">
 
@@ -619,10 +631,10 @@
 
           </div>
 
-
         </div>
+
       </div>
     </div>
-
   </div>
+
 </section>
