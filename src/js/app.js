@@ -3,6 +3,7 @@ import "./modules/jquery-3.7.1.min.js";
 import AirDatepicker from 'air-datepicker';
 import "./modules/bootstrap.bundle.min.js";
 import "./modules/ion.rangeSlider.min.js";
+import "./modules/inputmask.min.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
 import ClipboardJS from 'clipboard';
 import { CountUp } from '../../node_modules/countup.js/dist/countUp.js';
@@ -18,12 +19,29 @@ Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Sc
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,
-
 });
 
 
-let calendarArray = document.querySelectorAll('.calendar');
+let inputs = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask({
+  mask: '+7 (999) 999-99-99',
+  onBeforePaste: function (pastedValue, opts) {
+    // Удаляем всё, кроме цифр
+    var processedValue = pastedValue.replace(/\D/g, "");
 
+    // Если первая цифра 7 или 8 и в строке 11 цифр, убираем первую
+    if (processedValue.length === 11 && (processedValue[0] === '7' || processedValue[0] === '8')) {
+      return processedValue.substring(1);
+    }
+
+    return pastedValue;
+  }
+});
+
+im.mask(inputs);
+
+
+let calendarArray = document.querySelectorAll('.calendar');
 calendarArray.forEach(el => {
   // air datepicker
   new AirDatepicker(el, {
