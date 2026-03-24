@@ -35,6 +35,16 @@ let im = new Inputmask({
     }
 
     return pastedValue;
+  },
+  onKeyDown: function (event, buffer, caretPos, opts) {
+    console.log(caretPos.begin);
+    // Проверяем:
+    // 1. Позиция каретки (caretPos) равна 5 (вторая цифра в "99")
+    // 2. Нажата клавиша "8"
+    if (caretPos.begin === 9 && event.key === '8') {
+      event.preventDefault(); // Запрещаем ввод
+      console.log("Ввод 8 в этой позиции запрещен!");
+    }
   }
 });
 
