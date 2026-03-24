@@ -16233,7 +16233,7 @@ h6,
   line-height: 140%;
   height: fit-content;
   border-radius: 4px;
-  left: 15px;
+  left: 18px;
 }
 .form-floating > .form-control:focus ~ label > span,
 .form-floating > .form-control:not(:placeholder-shown) ~ label > span {
