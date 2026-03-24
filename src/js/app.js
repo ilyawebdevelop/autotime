@@ -41,6 +41,7 @@ let im = new Inputmask({
 im.mask(inputs);
 
 
+
 let calendarArray = document.querySelectorAll('.calendar');
 calendarArray.forEach(el => {
   // air datepicker
@@ -49,6 +50,15 @@ calendarArray.forEach(el => {
     autoClose: true,
     position: 'top right',
   });
+
+  Inputmask("datetime", {
+    inputFormat: "dd.mm.yyyy",
+    placeholder: "ДД.ММ.ГГГГ",
+    leapday: "29-02-",
+    separator: ".",
+    alias: "dd/mm/yyyy"
+  }).mask(el); 
+
 });
 
 function enterCode() {
@@ -149,11 +159,11 @@ function updateSkipLink(swiperInstance) {
     // Устанавливаем новое значение в атрибут href кнопки
     // В данном примере, мы просто присваиваем значение. Если вы хотите 
     // использовать это как реальную ссылку, возможно, вам нужно будет добавить префикс, 
-    // например: `#/page/${dataLinkValue}`
+    // например: `# / page / ${ dataLinkValue } `
 
-    skipLink.href = `/${dataLinkValue}`;
+    skipLink.href = `/ ${ dataLinkValue } `;
 
-    // console.log(`Слайд изменен. Кнопка обновлена, href: ${skipLink.href}`);
+    // console.log(`Слайд изменен.Кнопка обновлена, href: ${ skipLink.href } `);
   } else {
     // console.warn("Активный слайд не содержит атрибута 'data-link'.");
   }
@@ -365,7 +375,7 @@ fieldHiddenInputs.forEach(input => {
     const isChecked = this.checked;
 
     if (isChecked) {
-      statusElement.value = `${this.value}`;
+      statusElement.value = `${ this.value } `;
     }
   });
 
@@ -381,7 +391,7 @@ const dropWithDataParent = document.querySelectorAll('[data-parent]');
 const dropWithDataChild = document.querySelectorAll('[data-child]');
 
 if (dropWithDataParent.length > 0) {
-  // console.log(`Найдено элементов с атрибутом data-parent: ${dropWithDataParent.length}`);
+  // console.log(`Найдено элементов с атрибутом data - parent: ${ dropWithDataParent.length } `);
 
   // Пример работы с найденными элементами:
   dropWithDataParent.forEach((element, index) => {
