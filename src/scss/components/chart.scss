@@ -1,3 +1,20 @@
+@keyframes spinIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) rotate(0deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(1.1) rotate(380deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
 .chart {
   width: 63px;
   height: 63px;
@@ -8,18 +25,34 @@
 
     mask: radial-gradient(transparent 24px,
         rgba(255, 255, 255, 1) 24px);
+
+    opacity: 0;
+    transform: scale(0.2) rotate(0deg);
+
+    /* Настройки анимации */
+    animation-name: spinIn;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-fill-mode: forwards;
+
+    /* Важно: Изначально анимация не должна запускаться */
+    animation-play-state: paused;
+
   }
 }
 
 .chart-color-blue {
   background-color: #0062FF;
 }
+
 .chart-color-red {
   background-color: #FE5C73;
 }
+
 .chart-color-yellow {
   background-color: #FFC542;
 }
+
 .chart-color-orange {
   background-color: #FF974A;
 }

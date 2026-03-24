@@ -57,7 +57,7 @@ calendarArray.forEach(el => {
     leapday: "29-02-",
     separator: ".",
     alias: "dd/mm/yyyy"
-  }).mask(el); 
+  }).mask(el);
 
 });
 
@@ -161,7 +161,7 @@ function updateSkipLink(swiperInstance) {
     // использовать это как реальную ссылку, возможно, вам нужно будет добавить префикс, 
     // например: `# / page / ${ dataLinkValue } `
 
-    skipLink.href = `/ ${ dataLinkValue } `;
+    skipLink.href = `/ ${dataLinkValue} `;
 
     // console.log(`Слайд изменен.Кнопка обновлена, href: ${ skipLink.href } `);
   } else {
@@ -375,7 +375,7 @@ fieldHiddenInputs.forEach(input => {
     const isChecked = this.checked;
 
     if (isChecked) {
-      statusElement.value = `${ this.value } `;
+      statusElement.value = `${this.value} `;
     }
   });
 
@@ -431,4 +431,36 @@ digitElements.forEach((targetElement) => {
   } else {
     console.error(demo.error);
   }
+});
+
+
+const donuts = document.querySelectorAll('.chart--donut');
+
+// 2. Определяем, что делать, когда элемент становится видимым
+const handleIntersect = (entries, observer) => {
+  entries.forEach(entry => {
+    // entry.isIntersecting === true, когда элемент вошел в область видимости
+    if (entry.isIntersecting) {
+
+      // Запускаем анимацию, меняя состояние play-state
+      entry.target.style.animationPlayState = 'running';
+
+      // Отключаем наблюдение, чтобы анимация не запускалась повторно при скролле вверх/вниз
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+// 3. Настраиваем Intersection Observer
+const observerOptions = {
+  root: null, // Используем вьюпорт как корень
+  rootMargin: '0px', // Не отступаем от краев
+  threshold: 0.1 // Запускать, когда 10% элемента видно
+};
+
+const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
+// 4. Начинаем наблюдать за каждым элементом
+donuts.forEach(donut => {
+  observer.observe(donut);
 });
