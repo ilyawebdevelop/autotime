@@ -16225,7 +16225,7 @@ h6,
 
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label {
-  transform: scale(0.85) translateY(-0.55rem) translateX(1.2rem);
+  transform: scale(0.85) translateY(-0.55rem);
   padding: 0 4px;
   background-color: #fff;
   color: var(--grey);
@@ -16233,6 +16233,7 @@ h6,
   line-height: 140%;
   height: fit-content;
   border-radius: 4px;
+  left: 15px;
 }
 .form-floating > .form-control:focus ~ label > span,
 .form-floating > .form-control:not(:placeholder-shown) ~ label > span {

@@ -460,8 +460,6 @@ h6,
     padding-right: 45px;
   }
 
-
-
   &.formInput--search {
     padding-left: 45px;
     background: url('@img/icons/search.svg') no-repeat left 15px center / 20px;
@@ -508,7 +506,8 @@ h6,
 
 .form-floating>.form-control:focus~label,
 .form-floating>.form-control:not(:placeholder-shown)~label {
-  transform: scale(0.85) translateY(-.55rem) translateX(1.2rem);
+  transform: scale(0.85) translateY(-.55rem);
+  // transform: scale(0.85) translateY(-.55rem);
   padding: 0 4px;
   background-color: #fff;
   color: var(--grey);
@@ -516,6 +515,7 @@ h6,
   line-height: 140%;
   height: fit-content;
   border-radius: 4px;
+  left: 15px;
 
   &>span {
     color: var(--error);
@@ -1065,8 +1065,9 @@ a.color-grey-blue {
   @media(max-width: 369px) {
     padding: 25px;
   }
+
   &.p-sm-20 {
-    @media(max-width: 575px){
+    @media(max-width: 575px) {
       padding: 20px;
     }
   }

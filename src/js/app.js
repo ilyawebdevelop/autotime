@@ -165,7 +165,7 @@ btnMenu?.addEventListener('click', function (e) {
   toggleMenu();
   toggleBurger();
   bodyOverflow();
-  overlayToggle();
+  // overlayToggle();
 });
 
 let menuItemBurger = document.querySelector('.menu-item-burger');
@@ -311,8 +311,8 @@ pofileBtnW?.addEventListener('click', () => {
 
 document.addEventListener('click', e => {
   let target = e.target;
-  let its_profileSubmenu = target == profileSubmenu || profileSubmenu.contains(target);
-  let its_pofileBtnW = target == pofileBtnW || pofileBtnW.contains(target);
+  let its_profileSubmenu = target == profileSubmenu || profileSubmenu?.contains(target);
+  let its_pofileBtnW = target == pofileBtnW || pofileBtnW?.contains(target);
 
   formInputSelectArray?.forEach(input => {
     let fieldHidden = input.closest('.selectW').querySelector('.fieldHidden');
@@ -332,7 +332,7 @@ document.addEventListener('click', e => {
   });
 
   if (!its_profileSubmenu && !its_pofileBtnW) {
-    profileSubmenu.classList.remove('active');
+    profileSubmenu?.classList.remove('active');
   }
 
 });
