@@ -5,6 +5,8 @@ import "./modules/bootstrap.bundle.min.js";
 import "./modules/ion.rangeSlider.min.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
 import ClipboardJS from 'clipboard';
+import { CountUp } from '../../node_modules/countup.js/dist/countUp.js';
+
 
 import './components.js';
 
@@ -385,4 +387,19 @@ let searchHidden = document.querySelector('.searchHidden');
 searchActionBtn?.addEventListener('click', () => {
   searchActionBtn.classList.toggle('active');
   searchHidden.classList.toggle('active');
+});
+
+let digitElements = document.querySelectorAll(".digit-box");
+
+digitElements.forEach((targetElement) => {
+  let id = targetElement.getAttribute('id');
+  let value = targetElement.dataset.val;
+  const demo = new CountUp(id, value, {
+    separator: ' ',
+  });
+  if (!demo.error) {
+    demo.start();
+  } else {
+    console.error(demo.error);
+  }
 });
