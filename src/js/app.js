@@ -424,6 +424,7 @@ digitElements.forEach((targetElement) => {
   let value = targetElement.dataset.val;
   const demo = new CountUp(id, value, {
     separator: ' ',
+    enableScrollSpy: true,
   });
   if (!demo.error) {
     demo.start();
