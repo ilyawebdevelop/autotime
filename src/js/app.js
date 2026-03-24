@@ -25,6 +25,21 @@ Fancybox.bind("[data-fancybox]", {
 let inputs = document.querySelectorAll('input[type="tel"]');
 let im = new Inputmask({
   mask: '+7 (999) 999-99-99',
+  onBeforeWrite: function (event, buffer, caretPos, opts) {
+    // console.log(caretPos);
+    // Проверяем:
+    // 1. Позиция каретки (caretPos) равна 5 (вторая цифра в "99")
+    // 2. Нажата клавиша "8"
+    if (caretPos === 5 && event.key === '8') {
+      event.preventDefault(); // Запрещаем ввод     
+      console.log("Ввод 8 в этой позиции запрещен!");
+      return {
+        refreshFromBuffer: true,
+        buffer: [],
+        caret: 4
+      };
+    }
+  },
   onBeforePaste: function (pastedValue, opts) {
     // Удаляем всё, кроме цифр
     var processedValue = pastedValue.replace(/\D/g, "");
@@ -35,17 +50,8 @@ let im = new Inputmask({
     }
 
     return pastedValue;
-  },
-  onKeyDown: function (event, buffer, caretPos, opts) {
-    console.log(caretPos.begin);
-    // Проверяем:
-    // 1. Позиция каретки (caretPos) равна 5 (вторая цифра в "99")
-    // 2. Нажата клавиша "8"
-    if (caretPos.begin === 9 && event.key === '8') {
-      event.preventDefault(); // Запрещаем ввод
-      console.log("Ввод 8 в этой позиции запрещен!");
-    }
   }
+
 });
 
 im.mask(inputs);
