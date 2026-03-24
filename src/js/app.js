@@ -312,10 +312,8 @@ document.addEventListener('click', e => {
   let its_profileSubmenu = target == profileSubmenu || profileSubmenu.contains(target);
   let its_pofileBtnW = target == pofileBtnW || pofileBtnW.contains(target);
 
-  formInputSelectArray.forEach(input => {
+  formInputSelectArray?.forEach(input => {
     let fieldHidden = input.closest('.selectW').querySelector('.fieldHidden');
-
-
 
     let its_input = target == input || input.contains(target);
     let its_fieldHidden = target == fieldHidden || fieldHidden.contains(target);
