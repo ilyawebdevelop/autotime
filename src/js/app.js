@@ -125,6 +125,49 @@ function enterCode() {
       // Удаляем нечисловые символы, если они вдруг просочились
       this.value = this.value.replace(/[^0-9]/g, '');
     });
+
+    input.addEventListener('paste', function (event) {
+      event.preventDefault(); // Предотвращаем стандартное поведение вставки
+
+      const pasteData = (event.clipboardData || window.clipboardData).getData('text');
+      const cleanPasteData = pasteData.replace(/\D/g, ''); // Удаляем все нецифровые символы
+
+      // Проверяем, скопировано ли ровно 4 цифры
+      if (cleanPasteData.length === 4) {
+        // Вставляем ровно 4 цифры
+        for (let i = 0; i < cleanPasteData.length; i++) {
+          const char = cleanPasteData[i];
+          const targetInput = inputs[i]; // Вставляем в первое поле, затем во второе и т.д.
+
+          targetInput.value = char;
+          targetInput.classList.remove('invalid');
+
+          // Переводим фокус на следующее поле
+          if (i < inputs.length - 1) {
+            inputs[i + 1].focus();
+          } else {
+            // Если вставили последнюю цифру
+            console.log("OTP заполнен (после вставки):", getOtpValue());
+            // Здесь вы можете выполнить любое действие
+            // alert("OTP заполнен: " + getOtpValue());
+          }
+        }
+      } else if (cleanPasteData.length > 0) {
+        // Если скопировано что-то, но не ровно 4 цифры
+        console.warn(`Неверное количество цифр при вставке: ${cleanPasteData.length}. Требуется 4.`);
+
+        // Очищаем все поля, если вставлено не 4 цифры, и сообщаем пользователю (если есть где)
+        // Если нет вывода результата, можно просто очистить поля или никак не реагировать
+        inputs.forEach(inp => inp.value = '');
+        // Можно добавить подсветку контейнера или отдельных полей, если нужно
+        // otpContainer.classList.add('warning'); // Пример
+      } else {
+        // Если скопированные данные пусты после очистки (не содержат цифр)
+        console.warn("Вставленные данные не содержат цифр.");
+        // otpContainer.classList.add('warning'); // Пример
+      }
+    });
+
   });
 }
 
