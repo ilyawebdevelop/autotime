@@ -17063,6 +17063,9 @@ a.color-grey-blue:hover svg {
     width: fit-content;
   }
 }
+.sidebar + .sect.w-100 {
+  max-width: calc(100% - 250px);
+}
 @media (max-width: 1199px) {
   .sidebar + .sect.w-100 {
     max-width: calc(100% - 51px);
@@ -17562,6 +17565,10 @@ a.color-grey-blue:hover svg {
 
 .prev-link {
   flex-shrink: 0;
+}
+
+.copyBtn {
+  cursor: pointer;
 }
 
 /* Hamburger Menu */

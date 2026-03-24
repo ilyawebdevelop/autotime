@@ -1413,6 +1413,7 @@ a.color-grey-blue {
   }
 
   &+.sect.w-100 {
+    max-width: calc(100% - 250px);
     @media(max-width: 1199px) {
       max-width: calc(100% - 51px);
     }
